@@ -1,12 +1,16 @@
 {
   "extends": "./.nuxt/tsconfig.json",
-  "include": [
-    "app/**/*.ts",
-    "app/**/*.vue",
-    "components/**/*.vue",
-    "layouts/**/*.vue",
-    "pages/**/*.vue",
-    "plugins/**/*.ts",
-    "types/**/*.d.ts"
-  ]
+  "compilerOptions": {
+    "paths": {
+      "~/*": ["./app/*"],
+      "@/*": ["./app/*"],
+      "#types/*": ["./app/types/*"],
+      "#utils/*": ["./app/utils/*"],
+      "#constants/*": ["./app/constants/*"],
+      "#imports": ["./.nuxt/imports.d.ts"]
+    },
+    "moduleResolution": "bundler",
+    "types": ["node", "vite/client", "nuxt"]
+  },
+  "exclude": ["dist", ".output", "node_modules"]
 }

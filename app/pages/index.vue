@@ -1,35 +1,24 @@
 <script setup lang="ts">
-// import PageHeader from '~/components/page-header/PageHeader.vue'
-// import SectionHeader from '~/components/section-header/SectionHeader.vue'
-// import HeroSection from '~/components/hero-section/HeroSection.vue'
+// Home page bootstrapping HeroSection
+import HeroSection from '~/components/hero/HeroSection.vue'
+import { PHONE_HREF, MAPS_HREF } from '~/constants/links'
 
-// const { data, pending } = await useAsyncData('home', () => queryContent('/sena/json').findOne())
-
-// // computed
-// const header = computed(() => data.value?.header)
-// const sections = computed(() => data.value?.sections)
-
-// // page meta
-// definePageMeta({
-//   layout: 'sena-default',
-// })
+const hero = {
+  title: 'Willkommen in der Seña Bar',
+  subtitle: 'Handgemachte Cocktails und gute Musik im Herzen von Hannover',
+  heroImage: '/images/hero/Cocktail6.avif',
+  happyHour: {
+    active: true,
+    text: 'Happy Hour täglich 17–19 Uhr — Alle Cocktails 7,95 €'
+  },
+  phoneHref: PHONE_HREF,
+  mapsHref: MAPS_HREF,
+  openInfo: 'Heute geöffnet ab 17:00'
+}
 </script>
+
 <template>
   <main>
-    <!-- <div v-if="!pending">
-      <HeroSection>
-        <PageHeader v-if="header" :title="header.title" :description="header.description" :text-centered="true" />
-      </HeroSection>
-
-      <section v-for="(section, index) in sections" :key="index">
-        <SectionHeader :title="section.header.title" :text-centered="true" :description="section.header.description" />
-
-        <div class="button-group">
-          <a v-for="(button, index) in section.buttons" :key="index" :href="button.url" v-html="button.html" />
-        </div>
-      </section>
-    </div>
-    <div v-else>Daten laden...</div> -->
+    <HeroSection v-bind="hero" />
   </main>
 </template>
-
