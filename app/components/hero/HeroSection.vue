@@ -3,6 +3,7 @@
 import type { HeroProps } from '~/types/hero'
 import { track } from '~/utils/analytics'
 import { useIntersection } from '~/composables/useIntersection'
+import Button from '~/components/ui/Button.vue'
 
 const heroRoot = useIntersection({ threshold: 0.5, once: true })
 const badgeRef = useIntersection({ threshold: 0.6, once: true })
@@ -62,32 +63,15 @@ onMounted(() => {
         <div
           v-if="props.happyHour?.active"
           id="happy-hour-badge"
-          class="mt-6 inline-flex select-none items-center rounded-full bg-gold px-4 py-2 text-sm font-medium text-onyx shadow"
+          class="mt-6 inline-flex items-center rounded-full bg-gold/90 text-onyx/90 px-4 h-10 text-sm font-medium shadow-sm ring-1 ring-black/5"
         >
           {{ props.happyHour.text }}
         </div>
 
         <!-- Actions -->
         <div class="mt-6 grid grid-cols-2 gap-3 sm:max-w-md">
-          <a
-            :href="props.phoneHref"
-            aria-label="Anrufen"
-            @click="() => { track('hero_call_click'); emit('callClick') }"
-            class="inline-flex items-center justify-center rounded-xl bg-gold px-4 py-3 font-medium text-onyx shadow hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/70"
-          >
-            Anrufen
-          </a>
-
-          <a
-            :href="props.mapsHref"
-            target="_blank"
-            rel="noopener"
-            aria-label="Route öffnen"
-            @click="() => { track('hero_route_click'); emit('routeClick') }"
-            class="inline-flex items-center justify-center rounded-xl border border-white/20 bg-transparent px-4 py-3 font-medium text-white hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
-          >
-            Route öffnen
-          </a>
+          <Button size="lg">Anrufen</Button>
+          <Button variant="outline" size="lg" :href="mapsHref">Route öffnen</Button>
         </div>
 
         <!-- Open info line -->

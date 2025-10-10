@@ -1,16 +1,14 @@
 <script setup lang="ts">
-// Home page bootstrapping HeroSection
 import HeroSection from '~/components/hero/HeroSection.vue'
+import SignatureCarousel from '~/components/cocktail/SignatureCarousel.vue'
+import { SIGNATURE_COCKTAILS } from '~/constants/cocktails'
 import { PHONE_HREF, MAPS_HREF } from '~/constants/links'
 
 const hero = {
   title: 'Willkommen in der Seña Bar',
   subtitle: 'Handgemachte Cocktails und gute Musik im Herzen von Hannover',
-  heroImage: '/images/hero/Cocktail6.avif',
-  happyHour: {
-    active: true,
-    text: 'Happy Hour täglich 17–19 Uhr — Alle Cocktails 7,95 €'
-  },
+  heroImage: '/images/hero/Cocktail5.avif',
+  happyHour: { active: true, text: 'Happy Hour täglich 17–19 Uhr — Alle Cocktails 7,95 €' },
   phoneHref: PHONE_HREF,
   mapsHref: MAPS_HREF,
   openInfo: 'Heute geöffnet ab 17:00'
@@ -20,5 +18,16 @@ const hero = {
 <template>
   <main>
     <HeroSection v-bind="hero" />
+
+    <SignatureCarousel
+      :items="SIGNATURE_COCKTAILS"
+      :title="'Signature Cocktails'"
+      :cta="{ label: 'Alle Cocktails ansehen', href: '/menu/cocktails' }"
+    />
   </main>
 </template>
+<style scoped>
+main {
+  @apply bg-black bg-opacity-80 pb-12;
+}
+</style>
