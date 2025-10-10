@@ -2,6 +2,10 @@
 // Hero section with background image, actions and happy hour badge
 import type { HeroProps } from '~/types/hero'
 import { track } from '~/utils/analytics'
+import { useIntersection } from '~/composables/useIntersection'
+
+const heroRoot = useIntersection({ threshold: 0.5, once: true })
+const badgeRef = useIntersection({ threshold: 0.6, once: true })
 
 const props = defineProps<HeroProps>()
 
@@ -12,42 +16,11 @@ const emit = defineEmits<{
   impression: []
 }>()
 
-// Track hero impression when component becomes visible
 onMounted(() => {
-  const el = document.getElementById('hero-root')
-  if (!el) return
-
-  const io = new IntersectionObserver(
-    entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          track('hero_impression')
-          emit('impression')
-          io.disconnect()
-        }
-      })
-    },
-    { threshold: 0.5 }
-  )
-
-  io.observe(el)
-
+  // Track hero impression when component becomes visible
+  heroRoot.startOnce(() => track('hero_impression'))
   // Track happy hour badge visibility when present
-  const badge = document.getElementById('happy-hour-badge')
-  if (!badge) return
-  const ioBadge = new IntersectionObserver(
-    entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          track('hero_happyhour_view')
-          emit('happyHourView')
-          ioBadge.disconnect()
-        }
-      })
-    },
-    { threshold: 0.6 }
-  )
-  ioBadge.observe(badge)
+  badgeRef.startOnce(() => track('hero_happyhour_view'))
 })
 </script>
 
