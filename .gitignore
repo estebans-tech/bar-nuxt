@@ -1,0 +1,44 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Nuxt / Nitro
+.nuxt/
+.nitro/
+.output/
+.cache/
+dist/
+
+# Env
+.env
+.env.*
+!.env.example
+*.local
+
+# Build reports
+coverage/
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Hosts / platforms
+.vercel/
+.netlify/
+
+# Misc
+*.swp
+*.tmp
