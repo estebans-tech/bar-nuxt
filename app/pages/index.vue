@@ -5,6 +5,7 @@ import VisitSection from '~/components/visit/VisitSection.vue'
 import VibeGallerySection from '~/components/gallery/VibeGallerySection.vue'
 import SiteFooter from '~/components/footer/SiteFooter.vue'
 import MenuLinksSection from '~/components/menu/PdfLinks.vue'
+import OffersSection from '~/components/offer/OffersSection.vue'
 
 import { SIGNATURE_COCKTAILS } from '~/constants/cocktails'
 import { PHONE_HREF, MAPS_HREF } from '~/constants/links'
@@ -30,7 +31,34 @@ const hero = {
       :intro="'Unsere aktuellen Karten als PDF zum Download.'"
       :items="PDF_MENU"
     />
-
+    <OffersSection
+      title="Angebote"
+      subtitle="Unsere aktuellen Specials – frisch, lecker und fair."
+      :items="[
+        {
+          id: 'happy-hour',
+          title: 'Cocktail Happy Hour',
+          imageSrc: '/images/cocktails/blackberry-fizz.avif',
+          alt: 'Zwei Cocktails an der Bar',
+          badge: 'von 17–19 Uhr',
+          lines: [
+            '',
+            'Alle Cocktails 7,95 €.'
+          ]
+        }, 
+        {
+          id: 'food-deal',
+          title: 'Wochenangebot Essen',
+          imageSrc: '/images/food/sallad.avif',
+          alt: 'Frischer Salat mit Brot',
+          badge: 'Diese Woche',
+          lines: [
+            'Erhaltet Ihre Lieblingssalat',
+            'mit 20% Ermäßigung.'
+          ]
+        }
+      ]"
+    />
     <SignatureCarousel
       :items="SIGNATURE_COCKTAILS"
       :title="'Signature Cocktails'"
