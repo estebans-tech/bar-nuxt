@@ -35,20 +35,18 @@ onMounted(() => {
     <div class="pointer-events-none absolute inset-0 bg-black/40">
       <!-- riktad skugga från vänster (bakom texten) -->
       <div
-        class="absolute inset-0
-        [background:linear-gradient(90deg,rgba(0,0,0,.8)_0%,rgba(0,0,0,.4)_38%,rgba(0,0,0,.22)_62%,rgba(0,0,0,.46)_100%)]">
+        class="absolute inset-0 [background:linear-gradient(90deg,rgba(0,0,0,.8)_0%,rgba(0,0,0,.4)_38%,rgba(0,0,0,.22)_62%,rgba(0,0,0,.46)_100%)]">
       </div>
       <!-- mjuk vignette i kanterna -->
       <div
-        class="absolute inset-0
-        [background:radial-gradient(120%_90%_at_50%_42%,rgba(0,0,0,0)_46%,rgba(0,0,0,.5)_100%)]">
+        class="absolute inset-0 [background:radial-gradient(120%_90%_at_50%_42%,rgba(0,0,0,0)_46%,rgba(0,0,0,.5)_100%)]">
       </div>
     </div>
 
     <!-- Content -->
     <div class="relative z-10 mx-auto w-full max-w-5xl px-6 py-24 md:py-32">
       <div class="max-w-xl">
-        <h1 class="text-4xl md:text-6xl font-semibold leading-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">
+        <h1 class="text-4xl sm:text-6xl md:text-6xl font-semibold leading-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">
           {{ props.title }}
         </h1>
 
@@ -56,7 +54,7 @@ onMounted(() => {
           {{ props.subtitle }}
         </p>
 
-        <!-- Happy hour chip (dold just nu) -->
+       <!-- Actions / happy hour / open info hålls gömda för nu -->
         <div
           v-if="props.happyHour?.active"
           id="happy-hour-badge"
