@@ -1,7 +1,7 @@
 import type { ButtonSize, ButtonVariant } from '~/types/button'
 
 export const btnBase =
-  'inline-flex items-center justify-center gap-2 font-semibold transition ' +
+  'inline-flex items-center justify-center gap-2 font-medium transition ' +
   'focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 ' +
   'disabled:opacity-50 disabled:pointer-events-none select-none'
 
