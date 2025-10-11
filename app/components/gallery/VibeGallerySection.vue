@@ -19,8 +19,8 @@ const onProfileClick = () => click('gallery_profile_click', { href: gallery.href
 </script>
 
 <template>
-  <section ref="root.target" class="bg-onyx py-12 md:py-16">
-    <div class="mx-auto w-full max-w-6xl xl:max-w-7xl px-6">
+  <section ref="root.target" class="bg-black/85 py-12 md:py-16">
+    <div class="mx-auto w-full max-w-6xl xl:max-w-7xl px-6 lg:px-8">
       <header class="flex items-end justify-between gap-4">
         <!-- <div> -->
           <h2 class="text-2xl md:text-3xl font-semibold text-white">
@@ -46,7 +46,7 @@ const onProfileClick = () => click('gallery_profile_click', { href: gallery.href
       </header>
 
       <!-- Grid: 2 / 3 / 4 columns -->
-      <div class="mt-6 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
         <figure
           v-for="img in gallery.images"
           :key="img.src"
