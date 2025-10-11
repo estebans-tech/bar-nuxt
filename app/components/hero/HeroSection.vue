@@ -2,6 +2,7 @@
 import type { HeroProps } from '~/types/hero'
 import { track } from '~/utils/analytics'
 import { useIntersection } from '~/composables/useIntersection'
+import Button from '~/components/ui/Button.vue'
 
 const props = defineProps<HeroProps>()
 
