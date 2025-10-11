@@ -1,21 +1,21 @@
 <script setup lang="ts">
 // Simple, responsive vibe grid with CTA to Instagram
-import { INSTAGRAM } from '~/constants/gallery'
+import { GALLERY } from '~/constants/gallery'
 import Button from '~/components/ui/Button.vue'
 import { useIntersection } from '~/composables/useIntersection'
 
 import { useAnalytics } from '~/composables/useAnalytics'
 
-const ig = INSTAGRAM
+const gallery = GALLERY
 
 const root = useIntersection({ threshold: 0.4, once: true })
 const { view, click } = useAnalytics()
 
 onMounted(() => {
-  root.startOnce(() => view('instagram_grid_impression'))
+  root.startOnce(() => view('gallery_grid_impression'))
 })
 
-const onProfileClick = () => click('instagram_profile_click', { href: ig.href })
+const onProfileClick = () => click('gallery_profile_click', { href: gallery.href })
 </script>
 
 <template>
@@ -26,7 +26,7 @@ const onProfileClick = () => click('instagram_profile_click', { href: ig.href })
           <h2 class="text-2xl md:text-3xl font-semibold text-white">
             Ein Blick in die Nacht
           </h2>
-          <p class="mt-1 text-white/70">
+          <p class="mt-1 text-white/70 hidden">
             Momente aus der Bar – mehr auf Instagram
           </p>
         <!-- </div> -->
@@ -35,20 +35,20 @@ const onProfileClick = () => click('instagram_profile_click', { href: ig.href })
           class="hidden md:inline-flex"
           variant="outline"
           size="md"
-          :href="ig.href"
+          :href="gallery.href"
           target="_blank"
           rel="noopener"
           aria-label="Open Instagram profile"
           @click="onProfileClick"
         >
-          {{ ig.handle || 'Instagram' }}
+          {{ gallery.handle || 'Instagram' }}
         </Button>
       </header>
 
       <!-- Grid: 2 / 3 / 4 columns -->
       <div class="mt-6 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
         <figure
-          v-for="img in ig.images"
+          v-for="img in gallery.images"
           :key="img.src"
           class="group relative aspect-square overflow-hidden rounded-2xl ring-1 ring-white/10 bg-white/5"
         >
@@ -75,13 +75,13 @@ const onProfileClick = () => click('instagram_profile_click', { href: ig.href })
         <Button
           variant="outline"
           size="md"
-          :href="ig.href"
+          :href="gallery.href"
           target="_blank"
           rel="noopener"
           aria-label="Open Instagram profile"
           @click="onProfileClick"
         >
-          {{ ig.handle || 'Instagram' }}
+          {{ gallery.handle || 'Instagram' }}
         </Button>
       </div>
     </div>

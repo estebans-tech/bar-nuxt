@@ -1,8 +1,7 @@
 // Replace src paths with your real images under /public/images/gallery
+import type { GalleryConfig } from '~/types/gallery'
 
-import type { InstagramConfig } from '~/types/gallery'
-
-export const INSTAGRAM: InstagramConfig = {
+export const GALLERY: GalleryConfig = {
   handle: '@barsenahannover',
   href: 'https://instagram.com/barsenahannover',
   images: [

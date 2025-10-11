@@ -2,7 +2,7 @@
 import HeroSection from '~/components/hero/HeroSection.vue'
 import SignatureCarousel from '~/components/cocktail/SignatureCarousel.vue'
 import VisitSection from '~/components/visit/VisitSection.vue'
-import InstagramGridSection from '~/components/gallery/InstagramGridSection.vue'
+import VibeGallerySection from '~/components/gallery/VibeGallerySection.vue'
 import SiteFooter from '~/components/footer/SiteFooter.vue'
 
 import { SIGNATURE_COCKTAILS } from '~/constants/cocktails'
@@ -30,7 +30,7 @@ const hero = {
     />
 
     <VisitSection id="visit" />
-    <InstagramGridSection />
+    <VibeGallerySection />
     <SiteFooter />
   </main>
 </template>
