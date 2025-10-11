@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import HeroSection from '~/components/hero/HeroSection.vue'
 import SignatureCarousel from '~/components/cocktail/SignatureCarousel.vue'
+import VisitSection from '~/components/visit/VisitSection.vue'
 import { SIGNATURE_COCKTAILS } from '~/constants/cocktails'
 import { PHONE_HREF, MAPS_HREF } from '~/constants/links'
 
 const hero = {
   title: 'Willkommen in der Seña Bar',
   subtitle: 'Handgemachte Cocktails und gute Musik im Herzen von Hannover',
-  heroImage: '/images/hero/Cocktail5.avif',
+  heroImage: '/images/hero/bg-sena-bar.avif',
   happyHour: { active: true, text: 'Happy Hour täglich 17–19 Uhr — Alle Cocktails 7,95 €' },
   phoneHref: PHONE_HREF,
   mapsHref: MAPS_HREF,
@@ -24,6 +25,8 @@ const hero = {
       :title="'Signature Cocktails'"
       :cta="{ label: 'Alle Cocktails ansehen', href: '/menu/cocktails' }"
     />
+
+    <VisitSection id="visit" />
   </main>
 </template>
 <style scoped>

@@ -5,6 +5,7 @@
 import type { CocktailCard } from '~/types/cocktail'
 import CocktailCardComp from '~/components/cocktail/CocktailCard.vue'
 import Button from '~/components/ui/Button.vue'
+import Hero from '~/components/Hero.vue'
 
 const props = defineProps<{
   items: CocktailCard[]
@@ -31,7 +32,7 @@ const onKey = (e: KeyboardEvent) => {
 </script>
 
 <template>
-  <section class="py-12 md:py-16 bg-onyx">
+  <Hero>
     <div class="mx-auto w-full max-w-6xl xl:max-w-7xl px-6">
       <header class="flex items-end justify-between gap-4">
         <h2 class="text-2xl md:text-3xl font-semibold text-white">
@@ -106,5 +107,5 @@ const onKey = (e: KeyboardEvent) => {
         </a>
       </div>
     </div>
-  </section>
+  </Hero>
 </template>
