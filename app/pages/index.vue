@@ -29,8 +29,8 @@ const hero = {
       :cta="{ label: 'Alle Cocktails ansehen', href: '/menu/cocktails' }"
     />
 
-    <VisitSection id="visit" />
     <VibeGallerySection />
+    <VisitSection id="visit" />
     <SiteFooter />
   </main>
 </template>
