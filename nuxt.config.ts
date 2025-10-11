@@ -3,6 +3,7 @@ import { projectRootId } from './config/setup'
 export default defineNuxtConfig({
   compatibilityDate: '2025-10-07',
   devtools: { enabled: true },
+  nitro: { preset: "netlify" },
   modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
   typescript: {
     strict: true,
@@ -54,7 +55,7 @@ export default defineNuxtConfig({
       ],
     },
     rootId: projectRootId || 'barAppNuxt',
-
+    buildAssetsDir: '/_nuxt/',
   },
   runtimeConfig: {
     public: {
