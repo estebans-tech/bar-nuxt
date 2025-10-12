@@ -22,8 +22,8 @@ const props = withDefaults(defineProps<{
   keyField: 'id',
   keyFn: undefined,
   ariaLabel: 'Karusell',
-  itemWidthClass: 'w-[80%] sm:w-72 shrink-0',
-  gapClass: 'gap-1 sm:gap-5',
+  itemWidthClass: 'w-3/4 sm:w-72 shrink-0',
+  gapClass: 'gap-5 sm:gap-5',
   edgeFade: true,
 })
 
@@ -86,7 +86,7 @@ onMounted(() => {
     <!-- spår -->
     <div
       ref="scroller"
-      class="flex gap-4 overflow-x-auto overflow-y-visible snap-start snap-mandatory scroll-smooth pl-6 pr-6 -mx-6"
+      class="flex overflow-x-auto overflow-y-visible snap-start snap-mandatory scroll-smooth pl-6 pr-6 -mx-6"
       :class="gapClass"
       style="scroll-padding-left: 1.5rem"
       role="region"
@@ -99,7 +99,7 @@ onMounted(() => {
         v-for="(item, i) in items"
         :key="itemKey(item, i)"
         data-carousel-item
-        class="snap-start"
+        class="snap-end sm:snap-start"
         :class="itemWidthClass"
         role="listitem"
       >

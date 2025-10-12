@@ -38,7 +38,10 @@ const { title, cta, items } = toRefs(props)
           :aria-label="title"
           class="mt-8 md:mt-10 mb-8 md:mb-12">
           <template #item="{ item }">
-            <CocktailCardComp :item="item" analytics-prefix="sig" />
+            <CocktailCardComp
+              :item="item"
+              analytics-prefix="sig"
+            />
           </template>
         </HorizontalCarousel>
       </div>

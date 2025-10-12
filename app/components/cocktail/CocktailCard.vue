@@ -1,14 +1,30 @@
 <script setup lang="ts">
 // Presentational card for a single cocktail
 import type { CocktailCard } from '~/types/cocktail'
+import type { CardVariant } from '~/types/card'
 import { useIntersection } from '~/composables/useIntersection'
 import { useAnalytics } from '~/composables/useAnalytics'
 import { euro } from '~/utils/format'
+import { cardClass } from '~/utils/card'
 
-const props = defineProps<{ item: CocktailCard; analyticsPrefix?: string }>()
+const props = defineProps<{
+  item: CocktailCard;
+  analyticsPrefix?: string
+  variant?: CardVariant
+  radius?: string
+  shadow?: string
+  hoverLift?: boolean
+}>()
 
 const cardRef = useIntersection({ threshold: 0.6, once: true })
 const { click, view } = useAnalytics()
+
+const getCard = () =>
+cardClass(props.variant ?? 'elegant', {
+  hoverLift: props.hoverLift ?? true,
+  radius: props.radius,
+  shadow: props.shadow
+})
 
 onMounted(() => {
   cardRef.startOnce(() => view(`${props.analyticsPrefix || 'sig'}_${props.item.id}`))
@@ -22,14 +38,14 @@ const onClick = () => {
 <template>
   <article
     ref="cardRef.target"
-    class="h-full flex flex-col rounded-2xl ring-1 ring-white/10 bg-onyx/80
-          transition-shadow hover:ring-white/20 hover:shadow-lg hover:shadow-black/20
-          overflow-hidden isolate
-          snap-start w-[80%] sm:w-72 shrink-0
-          md:snap-none md:w-full md:shrink md:mx-0"
     @click="onClick"
     :aria-label="item.name"
     role="listitem"
+    :class="[
+      'h-full flex flex-col overflow-hidden isolate snap-start w-3/4 sm:w-72 shrink-0 md:snap-none md:w-full md:shrink md:mx-0 ',
+      getCard().class
+    ]"
+    :style="getCard().style"
   >
     <div class="relative aspect-[4/5] flex-none">
       <img
@@ -41,7 +57,7 @@ const onClick = () => {
       />
       <!-- subtle bottom gradient for text legibility if needed later -->
       <div class="pointer-events-none absolute inset-x-0 bottom-0 h-20
-+                bg-gradient-to-t from-black/40 to-transparent" />
+                 bg-gradient-to-t from-black/40 to-transparent" />
     </div>
 
     <div class="p-4 flex-1 flex flex-col">

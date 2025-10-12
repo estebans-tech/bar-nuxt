@@ -1,11 +1,14 @@
 <script setup lang="ts">
+import { cardClass } from '~/utils/card'
+
 type Props = {
   staticSrc: string
   iframeSrc: string
   alt?: string
   activateLabel?: string
 }
-const props = withDefaults(defineProps<Props>(), {
+
+withDefaults(defineProps<Props>(), {
   alt: 'Karte: Bar Seña in Hannover',
   activateLabel: 'Karte aktivieren'
 })
@@ -16,13 +19,17 @@ const activate = () => {
   activated.value = true
   requestAnimationFrame(() => iframeRef.value?.focus())
 }
+const card = cardClass('elegant', { hoverLift: false })
+
 </script>
 
 <template>
   <!-- Viktigt: lägg aspect *här* och INTE på föräldern -->
-  <div class="relative w-full overflow-hidden rounded-3xl bg-white/5 shadow-lg
+  <div class="relative w-full overflow-hidden bg-white/5
            aspect-[4/3] sm:aspect-[3/2] lg:aspect-auto lg:flex-1 lg:min-h-0 min-h-[240px]"
-            >
+           :class="card.class"
+           :style="card.style"
+          >
     <!-- static preview -->
     <img
       v-if="!activated"

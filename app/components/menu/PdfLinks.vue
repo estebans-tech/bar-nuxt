@@ -1,9 +1,10 @@
 <!-- ~/components/sections/MenuLinksSection.vue -->
 <script setup lang="ts">
-import Button from '~/components/ui/Button.vue'
 import { useIntersection } from '~/composables/useIntersection'
 import { track } from '~/utils/analytics'
 import type { MenuLink } from '~/types/menuLink'
+import { cardClass } from '~/utils/card'
+const plate = cardClass('elegant', { hoverLift: true })
 
 const props = withDefaults(defineProps<{
   title?: string
@@ -39,18 +40,20 @@ const onClick = (label: string) => {
                justify-items-center"
         role="list"
       >
-        <li v-for="item in items" :key="item.href" class="w-full">
+        <li v-for="item in items" :key="item.href" class="w-full my-auto">
           <a
             :href="item.href"
             target="_blank"
             rel="noopener"
             @click="onClick(item.label)"
-            class="group block rounded-2xl ring-1 ring-white/10 bg-white/5 hover:bg-white/7
-                   transition-colors px-5 py-6 text-left"
+            :class="[plate.class, 'px-5 py-6 text-left group block transition-colors']"
+            :style="plate.style"
             aria-label="Öffnen  {{ item.label }} (PDF) in neuem Fenster"
-          >
+            >
+            <!-- class="group block rounded-2xl ring-1 ring-white/10 bg-white/5 hover:bg-white/7
+                   transition-colors px-5 py-6 text-left" -->
             <div
-              class="flex items-center justify-between gap-4"
+              class="flex items-center gap-4"
               :class="item.badge ? 'justify-between' : 'justify-center'">
               <h3
                 class="text-white text-xl font-semibold"
