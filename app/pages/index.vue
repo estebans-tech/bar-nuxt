@@ -10,6 +10,7 @@ import OffersSection from '~/components/offer/OffersSection.vue'
 import { SIGNATURE_COCKTAILS } from '~/constants/cocktails'
 import { PHONE_HREF, MAPS_HREF } from '~/constants/links'
 import { PDF_MENU } from '~/constants//pdf-menu'
+import { OFFERS, OFFER_HEADING } from '~/constants/offers'
 
 const hero = {
   title: 'Willkommen in der Seña Bar',
@@ -24,7 +25,7 @@ const hero = {
 
 <template>
   <main>
-      <HeroSection v-bind="hero" />
+    <HeroSection v-bind="hero" />
 
     <MenuLinksSection
       title="Cocktails & Menüs"
@@ -32,32 +33,10 @@ const hero = {
       :items="PDF_MENU"
     />
     <OffersSection
-      title="Angebote"
-      subtitle="Unsere aktuellen Specials – frisch, lecker und fair."
-      :items="[
-        {
-          id: 'happy-hour',
-          title: 'Cocktail Happy Hour',
-          imageSrc: '/images/cocktails/blackberry-fizz.avif',
-          alt: 'Zwei Cocktails an der Bar',
-          badge: 'von 17–19 Uhr',
-          lines: [
-            '',
-            'Alle Cocktails 7,95 €.'
-          ]
-        }, 
-        {
-          id: 'food-deal',
-          title: 'Wochenangebot Essen',
-          imageSrc: '/images/food/sallad.avif',
-          alt: 'Frischer Salat mit Brot',
-          badge: 'Diese Woche',
-          lines: [
-            'Erhaltet Ihre Lieblingssalat',
-            'mit 20% Ermäßigung.'
-          ]
-        }
-      ]"
+      :title="OFFER_HEADING.title"
+      :subtitle="OFFER_HEADING.subtitle"
+      variant="modern"
+      :items="OFFERS"
     />
     <SignatureCarousel
       :items="SIGNATURE_COCKTAILS"

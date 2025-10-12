@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lägg dina variabler/override under base-lagret */
+@layer base {
+  :root {
+    --radius-card: 1.25rem;      /* ex: rundade hörn */
+    --radius-btn: 0.5rem;
+    --shadow-card: 0 10px 30px rgba(0,0,0,.25);
+  }
+}

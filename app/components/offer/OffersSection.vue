@@ -1,4 +1,8 @@
 <script setup lang="ts">
+import { cardClass } from '~/utils/card'
+import type { CardVariant} from '~/types/card' 
+import type { OfferItem } from '~/types/offer' 
+import { badgeClass } from '~/utils/badge'
 /**
  * Sektion: Aktuella erbjudanden (Cocktail + Essen)
  * - Ingen upprepning av menyknappar
@@ -8,19 +12,15 @@
 
 import { useIntersection } from '~/composables/useIntersection'
 
-type OfferItem = {
-  id: string
-  title: string               // t.ex. "Cocktail Happy Hour"
-  imageSrc: string
-  alt?: string
-  lines?: string[]            // kort beskrivning i flera rader (valfritt)
-  badge?: string              // t.ex. "Neu", "Heute", "17–19 Uhr"
-}
 
 const props = defineProps<{
   title?: string              // t.ex. "Angebote"
   subtitle?: string           // t.ex. "Unsere aktuellen Specials"
-  items: OfferItem[]          // 2–3 st (vi tänker primärt 2)
+  items: OfferItem[],          // 2–3 st (vi tänker primärt 2)
+  variant?: CardVariant
+  radius?: string
+  shadow?: string
+  hoverLift?: boolean
 }>()
 
 // enkel visnings-tracking om du vill
@@ -30,6 +30,12 @@ onMounted(() => {
     // track('offers_impression')  // om du vill aktivera
   })
 })
+const getCard = () =>
+  cardClass(props.variant ?? 'elegant', {
+    hoverLift: props.hoverLift ?? true,
+    radius: props.radius,
+    shadow: props.shadow
+  })
 </script>
 
 <template>
@@ -40,7 +46,7 @@ onMounted(() => {
     <div class="mx-auto w-full max-w-6xl xl:max-w-7xl px-6 lg:px-8">
       <!-- Header -->
       <header class="text-center max-w-3xl mx-auto">
-        <h2 class="text-white text-3xl md:text-4xl font-semibold leading-tight">
+        <h2 class="text-white text-3xl md:text-4xl font-semibold leading-tight tracking-tight">
           {{ title || 'Angebote' }}
         </h2>
         <p v-if="subtitle"
@@ -50,13 +56,15 @@ onMounted(() => {
       </header>
 
       <!-- Grid -->
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-9">
         <article
           v-for="offer in items"
           :key="offer.id"
-          class="overflow-hidden rounded-2xl ring-1 ring-white/10 bg-black/35 backdrop-blur-sm
-                 transition-all hover:ring-white/20 hover:shadow-lg hover:shadow-black/25"
-        >
+          :class="getCard().class"
+          :style="getCard().style"
+          class="overflow-hidden rounded-lg md:rounded-xl shadow-[var(--shadow-card)] ring-1 ring-white/12 bg-onyx/85"
+          >
+          <!-- class="overflow-hidden rounded-[var(--radius-card)] shadow-[var(--shadow-card)] ring-1 ring-white/10 bg-onyx/80" -->
           <!-- Bild -->
           <div class="relative aspect-[16/11] sm:aspect-[4/3]">
             <img
@@ -67,7 +75,7 @@ onMounted(() => {
               loading="lazy"
             />
             <!-- mjuk vignett i botten för läsbarhet om man vill lägga text över bilden senare -->
-            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent"></div>
           </div>
 
           <!-- Innehåll -->
@@ -80,7 +88,7 @@ onMounted(() => {
               <!-- Badge (valfri) -->
               <span
                 v-if="offer.badge"
-                class="shrink-0 inline-flex items-center rounded-full bg-gold/90 px-3 py-1 text-[13px] font-semibold text-onyx ring-1 ring-black/5"
+                :class="badgeClass('glass', 'sm')"
               >
                 {{ offer.badge }}
               </span>
@@ -91,7 +99,7 @@ onMounted(() => {
               <li
                 v-for="(line, i) in offer.lines"
                 :key="i"
-                class="text-white/80 text-[15px]"
+                class="text-white/75 text-[15px] leading-relaxed"
               >
                 {{ line }}
               </li>

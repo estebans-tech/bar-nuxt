@@ -12,6 +12,7 @@ export default defineNuxtConfig({
   tailwindcss: {
     viewer: false // disable Tailwind viewer in prod
   },
+  css: ['~/assets/css/app.css'],
   app: {
     head: {
       title: 'Seña Bar — Cocktail Lounge in Hannover',

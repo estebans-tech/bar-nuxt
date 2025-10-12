@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    :root {
+      --radius-card: 1.25rem;   /* default rounded-xl */
+      --radius-btn:  0.75rem;   /* default rounded-lg */
+      --shadow-card: 0 6px 24px rgba(0,0,0,.18);
+    }
+  
+    /* === Theme: Classic (skarp, elegant) === */
+    .theme-classic {
+      --radius-card: 0.5rem;   /* rounded-md */
+      --radius-btn:  0.375rem; /* rounded-md */
+      --shadow-card: 0 2px 12px rgba(0,0,0,.12);
+    }
+  
+    /* === Theme: Soft Minimal (mjuk, modern) === */
+    .theme-soft {
+      --radius-card: 1rem;     /* rounded-lg */
+      --radius-btn:  0.625rem; /* rundare knappar men ej pill */
+      --shadow-card: 0 8px 28px rgba(0,0,0,.22);
+    }
+  
+    /* === Theme: Editorial (helt “platt”) === */
+    .theme-editorial {
+      --radius-card: 0px;  /* square */
+      --radius-btn:  0px;  /* square */
+      --shadow-card: none; /* inga skuggor */
+    }
+  }
