@@ -65,7 +65,7 @@ const imageAspectClass = computed(() => {
     v-if="count > 0"
     class="bg-black w-full py-16 md:py-20 min-h-screen flex items-center min-h-screen"
   >
-    <div class="mx-auto w-3/4 md:w-11/12 px-6 lg:px-8">
+    <div class="mx-auto w-full sm:w-3/4 md:w-11/12 px-6 lg:px-8">
       <!-- Header -->
       <header class="text-center max-w-3xl mx-auto">
         <h2 class="text-white text-3xl md:text-4xl font-semibold leading-tight tracking-tight">
