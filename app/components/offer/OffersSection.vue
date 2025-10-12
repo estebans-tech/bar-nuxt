@@ -15,9 +15,9 @@ import { useIntersection } from '~/composables/useIntersection'
 
 
 const props = defineProps<{
-  title?: string              // t.ex. "Angebote"
-  subtitle?: string           // t.ex. "Unsere aktuellen Specials"
-  items: OfferItem[],          // 2–3 st (vi tänker primärt 2)
+  title?: string 
+  subtitle?: string
+  items: OfferItem[],
   variant?: CardVariant
   radius?: string
   shadow?: string
@@ -41,14 +41,31 @@ const getCard = () =>
 
 const cardClasses = computed(() => getCard().class)
 const cardStyles = computed(() => getCard().style)
+const count = computed(() => props.items?.length || 0)
+
+const gridShellClass = computed(() => {
+  const n = props.items?.length || 0
+  // shell width + columns
+  // single: keep it elegant, not hero-wide
+  if (n === 1) return 'max-w-4xl grid-cols-1'
+  if (n === 2) return 'max-w-5xl grid-cols-1 md:grid-cols-2 justify-items-stretch'
+  return 'max-w-6xl lg:max-w-7xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
+})
+
+const imageAspectClass = computed(() => {
+  const n = props.items?.length || 0
+  if (n === 1) return 'aspect-[16/10] sm:aspect-[5/3]'
+  return 'aspect-[4/3]'
+})
 </script>
 
 <template>
   <section
     ref="root.target"
-    class="bg-onyx/95 w-full py-14 md:py-18"
+    v-if="count > 0"
+    class="bg-onyx/95 w-full py-16 md:py-20 min-h-screen flex items-center min-h-screen"
   >
-    <div class="mx-auto w-full max-w-6xl xl:max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto w-3/4 md:w-11/12 px-6 lg:px-8">
       <!-- Header -->
       <header class="text-center max-w-3xl mx-auto">
         <h2 class="text-white text-3xl md:text-4xl font-semibold leading-tight tracking-tight">
@@ -61,14 +78,22 @@ const cardStyles = computed(() => getCard().style)
       </header>
 
       <!-- Grid -->
-      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-7 lg:gap-9">
+      <div
+        :class="['mt-10 grid gap-6 lg:gap-8 mx-auto', gridShellClass]"
+        role="list"
+        :aria-label="title"
+        >
         <article
           v-for="offer in items"
           :key="offer.id"
-          :class="cardClasses"
           :style="cardStyles"
-        >
-          <div class="relative aspect-[16/11] sm:aspect-[4/3]">
+          :class="[
+            'overflow-hidden rounded-[var(--radius-card)] shadow-[var(--shadow-card)] ring-1 ring-white/10 bg-onyx/80',
+            cardClasses
+          ]"
+          role="listitem"
+          >
+          <div :class="['relative', imageAspectClass]">
             <img
               :src="offer.imageSrc"
               :alt="offer.alt || offer.title"
@@ -77,7 +102,7 @@ const cardStyles = computed(() => getCard().style)
               loading="lazy"
             />
             <!-- mjuk vignett i botten för läsbarhet om man vill lägga text över bilden senare -->
-            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent"></div>
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
           </div>
 
           <!-- Innehåll -->
@@ -90,7 +115,7 @@ const cardStyles = computed(() => getCard().style)
               <!-- Badge (valfri) -->
               <span
                 v-if="offer.badge"
-                :class="badgeClass('glass', 'sm')"
+                :class="[badgeClass('elegant', 'sm'), 'shrink-0']"
               >
                 {{ offer.badge }}
               </span>
