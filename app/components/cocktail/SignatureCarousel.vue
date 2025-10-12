@@ -17,7 +17,7 @@ const { title, cta, items } = toRefs(props)
 </script>
 
 <template>
-  <section class="bg-black/85 relative isolate flex items-center min-h-screen">
+  <section class="bg-onyx relative isolate flex items-center min-h-screen">
     <div class="mx-auto w-full max-w-6xl xl:max-w-7xl px-6 lg:px-8">
       <!-- Header -->
       <header class="flex items-end justify-between gap-4 mb-6 md:mb-8">

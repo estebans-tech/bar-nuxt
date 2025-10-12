@@ -29,3 +29,9 @@
       --shadow-card: none; /* inga skuggor */
     }
   }
+html {
+  @apply bg-black;
+}
+.theme-soft {
+  @apply bg-black;
+}

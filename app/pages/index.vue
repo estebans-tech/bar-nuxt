@@ -46,11 +46,6 @@ const hero = {
 
     <VibeGallerySection />
     <VisitSection id="visit" />
-    <SiteFooter />
   </main>
+  <SiteFooter />
 </template>
-<style scoped>
-main {
-  @apply bg-black bg-opacity-80 pb-12;
-}
-</style>

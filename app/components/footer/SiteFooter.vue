@@ -5,7 +5,7 @@ import Button from '~/components/ui/Button.vue'
 </script>
 
 <template>
-  <footer class="bg-onyx border-t border-white/10">
+  <footer class="bg-black border-t border-white/10">
     <div class="mx-auto w-full max-w-6xl xl:max-w-7xl px-6 py-12 md:py-14">
       <!-- top row: brand + address + call -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">

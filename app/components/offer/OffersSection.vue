@@ -63,7 +63,7 @@ const imageAspectClass = computed(() => {
   <section
     ref="root.target"
     v-if="count > 0"
-    class="bg-onyx/95 w-full py-16 md:py-20 min-h-screen flex items-center min-h-screen"
+    class="bg-black w-full py-16 md:py-20 min-h-screen flex items-center min-h-screen"
   >
     <div class="mx-auto w-3/4 md:w-11/12 px-6 lg:px-8">
       <!-- Header -->
@@ -88,7 +88,7 @@ const imageAspectClass = computed(() => {
           :key="offer.id"
           :style="cardStyles"
           :class="[
-            'overflow-hidden rounded-[var(--radius-card)] shadow-[var(--shadow-card)] ring-1 ring-white/10 bg-onyx/80',
+            'overflow-hidden rounded-[var(--radius-card)] shadow-[var(--shadow-card)] ring-1 ring-white/10 bg-onyx/80 mb-12 sm:mb-6',
             cardClasses
           ]"
           role="listitem"

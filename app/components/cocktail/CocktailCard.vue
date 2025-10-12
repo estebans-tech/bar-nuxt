@@ -42,7 +42,7 @@ const onClick = () => {
     :aria-label="item.name"
     role="listitem"
     :class="[
-      'h-full flex flex-col overflow-hidden isolate snap-start w-3/4 sm:w-72 shrink-0 md:snap-none md:w-full md:shrink md:mx-0 ',
+      'h-full flex flex-col overflow-hidden isolate snap-start w-3/4 sm:w-72 shrink-0 md:snap-none md:w-full md:shrink md:mx-0',
       getCard().class
     ]"
     :style="getCard().style"
