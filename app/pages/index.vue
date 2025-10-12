@@ -29,7 +29,7 @@ const hero = {
 
     <MenuLinksSection
       title="Cocktails & Menüs"
-      :intro="'Unsere aktuellen Karten als PDF zum Download.'"
+      :intro="'Unsere aktuellen Karten als PDF.'"
       :items="PDF_MENU"
     />
     <OffersSection
