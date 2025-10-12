@@ -35,7 +35,8 @@ const hero = {
     <OffersSection
       :title="OFFER_HEADING.title"
       :subtitle="OFFER_HEADING.subtitle"
-      variant="modern"
+      variant="elegant"
+      hoverLift
       :items="OFFERS"
     />
     <SignatureCarousel

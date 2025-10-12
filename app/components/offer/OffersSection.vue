@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { cardClass } from '~/utils/card'
+import { computed } from 'vue'
 import type { CardVariant} from '~/types/card' 
 import type { OfferItem } from '~/types/offer' 
 import { badgeClass } from '~/utils/badge'
+import { cardClass } from '~/utils/card'
 /**
  * Sektion: Aktuella erbjudanden (Cocktail + Essen)
  * - Ingen upprepning av menyknappar
@@ -30,12 +31,16 @@ onMounted(() => {
     // track('offers_impression')  // om du vill aktivera
   })
 })
+
 const getCard = () =>
   cardClass(props.variant ?? 'elegant', {
     hoverLift: props.hoverLift ?? true,
     radius: props.radius,
     shadow: props.shadow
   })
+
+const cardClasses = computed(() => getCard().class)
+const cardStyles = computed(() => getCard().style)
 </script>
 
 <template>
@@ -60,12 +65,9 @@ const getCard = () =>
         <article
           v-for="offer in items"
           :key="offer.id"
-          :class="getCard().class"
-          :style="getCard().style"
-          class="overflow-hidden rounded-lg md:rounded-xl shadow-[var(--shadow-card)] ring-1 ring-white/12 bg-onyx/85"
-          >
-          <!-- class="overflow-hidden rounded-[var(--radius-card)] shadow-[var(--shadow-card)] ring-1 ring-white/10 bg-onyx/80" -->
-          <!-- Bild -->
+          :class="cardClasses"
+          :style="cardStyles"
+        >
           <div class="relative aspect-[16/11] sm:aspect-[4/3]">
             <img
               :src="offer.imageSrc"
