@@ -3,7 +3,6 @@ import Badge from '~/components/ui/Badge.vue'
 import { computed } from 'vue'
 import type { CardVariant} from '~/types/card' 
 import type { OfferItem } from '~/types/offer' 
-import { badgeClass } from '~/utils/badge'
 import { cardClass } from '~/utils/card'
 /**
  * Sektion: Aktuella erbjudanden (Cocktail + Essen)
@@ -13,6 +12,7 @@ import { cardClass } from '~/utils/card'
  */
 
 import { useIntersection } from '~/composables/useIntersection'
+import { useAnalytics } from '~/composables/useAnalytics'
 
 
 const props = defineProps<{
@@ -25,12 +25,12 @@ const props = defineProps<{
   hoverLift?: boolean
 }>()
 
+const { click, view } = useAnalytics()
+
 // enkel visnings-tracking om du vill
 const root = useIntersection({ threshold: 0.35, once: true })
 onMounted(() => {
-  root.startOnce(() => {
-    // track('offers_impression')  // om du vill aktivera
-  })
+  root.startOnce(() => view('offers_section', { count: props.items?.length || 0 }))
 })
 
 const getCard = () =>
@@ -58,6 +58,10 @@ const imageAspectClass = computed(() => {
   if (n === 1) return 'aspect-[16/10] sm:aspect-[5/3]'
   return 'aspect-[4/3]'
 })
+
+// methods
+const onCardClick = (it: { id: string; title: string }) =>
+  click('offer_card', { id: it.id, title: it.title })
 </script>
 
 <template>
@@ -93,6 +97,7 @@ const imageAspectClass = computed(() => {
             cardClasses
           ]"
           role="listitem"
+          @click="onCardClick(offer)"
           >
           <div :class="['relative', imageAspectClass]">
             <img
