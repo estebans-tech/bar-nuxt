@@ -1,5 +1,6 @@
 <!-- ~/components/sections/MenuLinksSection.vue -->
 <script setup lang="ts">
+import Badge from '~/components/ui/Badge.vue'
 import { useIntersection } from '~/composables/useIntersection'
 import { track } from '~/utils/analytics'
 import type { MenuLink } from '~/types/menuLink'
@@ -60,14 +61,8 @@ const onClick = (label: string) => {
                 :class="item.badge ? 'text-left' : 'lg:text-center w-full'">
                 {{ item.label }}
               </h3>
+              <Badge v-if="item.badge" variant="elegant" tone="gold" size="sm">{{item.badge}}</Badge>
 
-              <span
-                v-if="item.badge"
-                class="inline-flex items-center rounded-full bg-gold/90 text-onyx/90
-                      px-4 py-2 text-sm font-semibold ring-1 ring-black/5"
-              >
-                {{ item.badge }}
-              </span>
             </div>
 
             <p v-if="item.description" class="mt-2 text-white/70 text-sm">

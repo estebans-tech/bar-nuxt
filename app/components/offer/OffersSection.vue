@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Badge from '~/components/ui/Badge.vue'
 import { computed } from 'vue'
 import type { CardVariant} from '~/types/card' 
 import type { OfferItem } from '~/types/offer' 
@@ -113,12 +114,13 @@ const imageAspectClass = computed(() => {
               </h3>
 
               <!-- Badge (valfri) -->
-              <span
+              <Badge 
                 v-if="offer.badge"
-                :class="[badgeClass('elegant', 'sm'), 'shrink-0']"
-              >
-                {{ offer.badge }}
-              </span>
+                class="shring-0"
+                size="xs"
+                variant="elegant"
+                tone="gold">{{ offer.badge }}</Badge>
+
             </div>
 
             <!-- Beskrivning (flera rader, valfritt) -->
