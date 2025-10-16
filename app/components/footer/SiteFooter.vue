@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // Compact site footer; mobile-first, balanced columns on md+
 import { FOOTER } from '~/constants/footer'
-import Button from '~/components/ui/Button.vue'
+import LinkButton from '~/components/ui/LinkButton.vue'
 </script>
 
 <template>
@@ -23,17 +23,17 @@ import Button from '~/components/ui/Button.vue'
           </div>
 
           <div class="mt-4 flex gap-3">
-            <Button size="sm" :href="FOOTER.phone.href" aria-label="Anrufen">
+            <LinkButton size="sm" :href="FOOTER.phone.href" aria-label="Anrufen">
               Anrufen
-            </Button>
-            <Button
+            </LinkButton>
+            <LinkButton
               size="sm"
               variant="outline"
               href="#visit"
               aria-label="Route öffnen"
             >
               Route
-            </Button>
+            </LinkButton>
           </div>
         </div>
 

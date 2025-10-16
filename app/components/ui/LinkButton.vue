@@ -10,9 +10,6 @@ const props = withDefaults(defineProps<{
   href?: string
   target?: string
   rel?: string
-  type?: 'button' | 'submit' | 'reset'
-  disabled?: boolean
-  loading?: boolean
   ariaLabel?: string
   pill?: boolean // new: choose pill or rounded
 }>(), {
@@ -26,24 +23,29 @@ const props = withDefaults(defineProps<{
 })
 
 const classes = computed(() => btnClass(props.variant, props.size, props.full, props.pill))
+const computedRel = computed(() =>
+  props.rel ?? (props.target === '_blank' ? 'noopener noreferrer' : undefined)
+)
 </script>
 
 <template>
-  <button
-    :target="target"
-    :disabled="disabled || loading"
-    :aria-busy="loading || undefined"
+  <NuxtLink
+    v-if="to"
+    :to="to"
     :aria-label="ariaLabel"
     :class="classes"
   >
     <slot />
-    <svg
-      v-if="loading"
-      class="ml-2 h-4 w-4 animate-spin text-current"
-      viewBox="0 0 24 24" aria-hidden="true"
-    >
-      <circle cx="12" cy="12" r="10" class="opacity-20" stroke="currentColor" stroke-width="4" fill="none" />
-      <path d="M22 12a10 10 0 0 1-10 10" stroke="currentColor" stroke-width="4" fill="none" />
-    </svg>
-  </button>
+  </NuxtLink>
+  <!-- external link -->
+  <a
+    v-else
+    :href="href"
+    :target="target"
+    :rel="computedRel"
+    :aria-label="ariaLabel"
+    :class="classes"
+  >
+    <slot />
+  </a>
 </template>

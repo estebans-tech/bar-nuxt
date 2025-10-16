@@ -2,8 +2,8 @@
 // Visit / Contact section – address, CTAs, map preview, hours
 import { VISIT_INFO } from '~/constants/visit'
 import MapPreview from './MapPreview.vue'
-import HoursList from './HoursList.vue'
-import Button from '~/components/ui/Button.vue'
+import HoursList from '~/components/visit/HoursList.vue'
+import LinkButton from '~/components/ui/LinkButton.vue'
 import { useIntersection } from '~/composables/useIntersection'
 import { useAnalytics } from '~/composables/useAnalytics'
 import { cardClass } from '~/utils/card'
@@ -39,23 +39,24 @@ const onRoute = () => click('visit_route_click')
           </div>
 
           <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:gap-4">
-            <Button
+            <LinkButton
               size="md"
               :href="info.phoneHref"
               aria-label="Anrufen Seña Bar"
               @click="onCall"
             >
               Anrufen
-            </Button>
-            <Button
+            </LinkButton>
+            <LinkButton
               variant="outline"
               size="md"
               :href="info.mapsHref"
               aria-label="Route öffnen"
+              target="_blank"
               @click="onRoute"
             >
               Route öffnen
-            </Button>
+            </LinkButton>
           </div>
 
           <p class="mt-3 text-white/70 text-sm">
