@@ -22,7 +22,7 @@ const props = withDefaults(defineProps<{
   type: 'button',
   disabled: false,
   loading: false,
-  pill: true
+  pill: false
 })
 
 const classes = computed(() => btnClass(props.variant, props.size, props.full, props.pill))

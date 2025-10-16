@@ -23,11 +23,11 @@ import Button from '~/components/ui/Button.vue'
           </div>
 
           <div class="mt-4 flex gap-3">
-            <Button size="md" :href="FOOTER.phone.href" aria-label="Anrufen">
+            <Button size="sm" :href="FOOTER.phone.href" aria-label="Anrufen">
               Anrufen
             </Button>
             <Button
-              size="md"
+              size="sm"
               variant="outline"
               href="#visit"
               aria-label="Route öffnen"

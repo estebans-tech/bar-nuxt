@@ -1,19 +1,28 @@
 import type { ButtonSize, ButtonVariant } from '~/types/button'
 
+/**
+ * Bas – samma ring-baseline som Card och samma hover-ring.
+ * Ingen yttre box-shadow; vi låter korten stå för djupet.
+ */
 export const btnBase =
-  'inline-flex items-center justify-center gap-2 font-medium transition ' +
-  'focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/40 ' +
-  'disabled:opacity-50 disabled:pointer-events-none select-none'
+  'inline-flex items-center justify-center gap-2 font-medium select-none ' +
+  'transition-colors transition-shadow duration-150 ' +
+  'focus:outline-none ring-1 ring-white/10 focus-visible:ring-2 focus-visible:ring-gold/40 ' +
+  'hover:ring-white/20' // matchar cardHoverShadow
 
 export const btnVariants: Record<ButtonVariant, string> = {
-  // brand gold on dark bg – subtle hover, no layout shift
-  primary: 'bg-gold text-onyx hover:brightness-95 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]',
+  // Guld – subtil, elegant (inner-stroke istället för stor skugga)
+  primary:
+    'bg-gold text-onyx hover:brightness-95 ' +
+    'shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]',
 
-  // glass outline – matches “före”-bilden
-  outline: 'text-white ring-1 ring-white/40 bg-white/5 hover:bg-white/10 backdrop-blur-sm',
+  // Glas/outline – samma “glas” som card: ring + svag blur
+  outline:
+    'text-white bg-white/5 hover:bg-white/10 ring-white/25 backdrop-blur-[1px]',
 
-  // text only
-  ghost: 'text-white/90 hover:text-white'
+  // Text – diskret, men behåller ring-baseline + liten hover-bg för träffyta
+  ghost:
+    'ring-transparent text-white/90 hover:text-white hover:bg-white/5'
 }
 
 export const btnSizes: Record<ButtonSize, string> = {
@@ -22,16 +31,20 @@ export const btnSizes: Record<ButtonSize, string> = {
   lg: 'h-14 px-6 text-base'
 }
 
-// pill as default shape for hero; can be overridden via class on <Button>
+/**
+ * Shape: default **inte** pill → följer --radius-btn så kort & knappar har samma rundning.
+ * Vill du ha pill i något fall så skicka `pill = true`.
+ */
 export const btnClass = (
   variant: ButtonVariant,
   size: ButtonSize,
   full?: boolean,
-  pill = true
+  pill?: boolean
 ) => [
   btnBase,
   btnVariants[variant],
   btnSizes[size],
-  pill ? 'rounded-full' : 'rounded-xl',
-  full ? 'w-full' : ''
+  pill ? 'rounded-full' : 'rounded-[var(--radius-btn)]',
+  full ? 'w-full' : '',
+  'hover:ring-white/20'
 ].join(' ')
