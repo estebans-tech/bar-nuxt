@@ -11,6 +11,7 @@ export interface VisitInfo {
   postalCity: string
   phoneHref: string
   mapsHref: string
+  mapAnchorHref?: string
   todayOpenText: string
   hours: HoursMap
   mapStaticSrc: string     // static preview image (avif)

@@ -1,9 +1,15 @@
 <script setup lang="ts">
 // Simple week list with current day highlight
-
 import type { HoursMap, Weekday } from '~/types/visit'
 
-const props = defineProps<{ hours: HoursMap }>()
+withDefaults(defineProps<{
+  hours: HoursMap
+  title?: string
+  closedLabel?: string
+}>(), {
+  closedLabel: '-'
+})
+
 
 const DAYS: { key: Weekday, label: string }[] = [
   { key: 'mon', label: 'Mo' },
@@ -17,24 +23,32 @@ const DAYS: { key: Weekday, label: string }[] = [
 
 // map JS day (0=Sun) to our keys
 const todayKey = computed<Weekday>(() => {
-  const d = new Date().getDay()
-  return ['sun','mon','tue','wed','thu','fri','sat'][d] as Weekday
+  const day = new Date().getDay() // 0=Sun ... 6=Sat
+  return ['sun','mon','tue','wed','thu','fri','sat'][day] as Weekday
 })
 </script>
 
 <template>
+  <h3 v-if="title" class="text-white font-medium mb-2">
+    {{ title }}
+  </h3>
   <ul class="divide-y divide-white/5">
     <li
-      v-for="d in DAYS"
-      :key="d.key"
-      class="flex items-center justify-between py-2"
-      :aria-current="d.key === todayKey ? 'date' : undefined"
+      v-for="day in DAYS"
+      :key="day.key"
+      :aria-current="day.key === todayKey ? 'date' : undefined"
+      class="flex items-center justify-between py-2.5 px-3 transition-colors"
+      :class="day.key === todayKey ? 'bg-white/5 px-3 -mx-2' : 'px-0'"
     >
+    <span
+      :class="day.key === todayKey ? 'font-bold text-white' : 'text-white/80'"
+      >
+      {{ day.label }}</span>
       <span
-        class="text-white/80"
-        :class="d.key === todayKey ? 'font-medium text-white' : ''"
-      >{{ d.label }}</span>
-      <span class="text-white/70">{{ hours[d.key] || '—' }}</span>
+        class="tabular-nums font-mono"
+        :class="day.key === todayKey ? 'font-bold text-white' : 'text-white/80'">
+        {{ hours[day.key] || closedLabel }}
+      </span>
     </li>
   </ul>
 </template>

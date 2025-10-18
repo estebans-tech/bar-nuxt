@@ -9,6 +9,7 @@ export const VISIT_INFO: VisitInfo = {
   postalCity: '30171 Hannover',
   phoneHref: PHONE_HREF,
   mapsHref: MAPS_HREF,
+  mapAnchorHref: '#visit',
   todayOpenText: 'Heute geöffnet ab 17:00',
   hours: {
     mon: '17:00 – Open End',

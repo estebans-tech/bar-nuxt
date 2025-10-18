@@ -1,9 +1,11 @@
 <script setup lang="ts">
 // Visit / Contact section – address, CTAs, map preview, hours
 import { VISIT_INFO } from '~/constants/visit'
-import MapPreview from './MapPreview.vue'
 import HoursList from '~/components/visit/HoursList.vue'
-import LinkButton from '~/components/ui/LinkButton.vue'
+import VisitInfo from '~/components/visit/VisitInfo.vue'
+import OpenStatus from '~/components/visit/OpenStatus.vue'
+import MapPreview from '~/components/visit/MapPreview.vue'
+
 import { useIntersection } from '~/composables/useIntersection'
 import { useAnalytics } from '~/composables/useAnalytics'
 import { cardClass } from '~/utils/card'
@@ -22,68 +24,49 @@ const onRoute = () => click('visit_route_click')
 </script>
 
 <template>
-  <section ref="root.target" class="bg-onyx py-12 md:py-16 w-full min-h-[240px]">
+  <section
+    ref="root.target"
+    class="bg-onyx w-full py-12 md:py-16">
     <div class="mx-auto w-full max-w-6xl xl:max-w-7xl px-6 lg:px-8">
-      <div class="grid gap-8 lg:grid-cols-2 items-start lg:items-stretch">
-        <div>
-          <!-- vänster spalt: text + tider -->
-          <header class="flex items-end justify-between">
-            <h2 class="text-2xl md:text-3xl font-semibold text-white">
-              Hier findest du uns
-            </h2>
-          </header>
-          <div class="text-white">
-            <p class="text-lg font-medium">{{ info.name }}</p>
-            <p class="text-white/80">{{ info.street }}</p>
-            <p class="text-white/80">{{ info.postalCity }}</p>
+      <!-- Target grid: mobile stack, desktop 2 cols -->
+      <div class="grid lg:grid-cols-2 items-start lg:items-stretch lg:grid-rows-[auto_auto] gap-x-10 gap-y-6 lg:gap-y-8">
+          <!-- INFO -->
+          <div class="lg:col-start-1 lg:row-start-1">
+            <VisitInfo
+              :info="info"
+              @call-click="onCall"
+              @route-click="onRoute"
+              />
           </div>
 
-          <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:gap-4">
-            <LinkButton
-              size="md"
-              :href="info.phoneHref"
-              aria-label="Anrufen Seña Bar"
-              @click="onCall"
+          <!-- MAP -->
+          <div class="lg:col-start-2 lg:row-start-1 lg:row-span-2">
+            <div class="w-full h-[320px] sm:h-[360px] lg:h-full">
+              <MapPreview
+                :static-src="info.mapStaticSrc"
+                :iframe-src="info.mapIframeSrc"
+                :alt="info.mapAlt"
+              />
+            </div>
+          </div>
+
+          <!-- HOURS -->
+          <section
+             class="lg:col-start-1 lg:row-start-2"
+            aria-labelledby="hours-heading">
+            <div
+              class="p-4 md:p-5"
+              :class="card.class"
+              :style="card.style"
             >
-              Anrufen
-            </LinkButton>
-            <LinkButton
-              variant="outline"
-              size="md"
-              :href="info.mapsHref"
-              aria-label="Route öffnen"
-              target="_blank"
-              @click="onRoute"
-            >
-              Route öffnen
-            </LinkButton>
-          </div>
+              <OpenStatus :hours="info.hours" :soon-threshold-min="45" class="mb-3" />
 
-          <p class="mt-3 text-white/70 text-sm">
-            {{ info.todayOpenText }}
-          </p>
-
-          <!-- <div class="mt-12 rounded-2xl bg-white/5 ring-1 ring-white/10 p-4 md:p-5"> -->
-          <div 
-            class="mt-12 p-4 md:p-5 bg-black"
-            :class="card.class"
-            :style="card.style">
-            <p class="text-white font-medium mb-2">Öffnungszeiten</p>
-            <HoursList :hours="info.hours" />
-          </div>
-        </div>
-
-        <div class="self-stretch lg:flex">
-          <!-- höger spalt -->
-            <MapPreview
-              :static-src="info.mapStaticSrc"
-              :iframe-src="info.mapIframeSrc"
-              :alt="info.mapAlt"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Bar Seña – Karte"
-            />
-        </div>
+              <h3 id="hours-heading" class="sr-only">Öffnungszeiten</h3>
+              <HoursList
+                :hours="info.hours"
+                />
+            </div>
+          </section>
       </div>
     </div>
   </section>
