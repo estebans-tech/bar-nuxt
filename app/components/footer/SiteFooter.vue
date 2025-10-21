@@ -1,7 +1,11 @@
 <script setup lang="ts">
 // Compact site footer; mobile-first, balanced columns on md+
+import { VISIT_INFO } from '~/constants/visit'
 import { FOOTER } from '~/constants/footer'
 import LinkButton from '~/components/ui/LinkButton.vue'
+import OpenStatus from '~/components/visit/OpenStatus.vue'
+const info = VISIT_INFO
+
 </script>
 
 <template>
@@ -19,7 +23,12 @@ import LinkButton from '~/components/ui/LinkButton.vue'
           </p>
 
           <div v-if="FOOTER.todayOpenText" class="mt-3 text-sm text-white/70">
-            {{ FOOTER.todayOpenText }}
+            <OpenStatus
+                :hours="info.hours"
+                :soon-threshold-min="45"
+                class="mb-3"
+              />
+            <!-- {{ FOOTER.todayOpenText }} -->
           </div>
 
           <div class="mt-4 flex gap-3">

@@ -19,7 +19,8 @@ export const FOOTER: FooterConfig = {
     ]
   },
   social: [
-    { label: 'Instagram', href: 'https://instagram.com/barsenahannover', external: true }
+    { label: 'Instagram', href: 'https://instagram.com/barsenahannover', external: true },
+    { label: 'Facebook', href: 'https://www.facebook.com/BarSenahannover', external: true }
   ],
   todayOpenText: 'Heute geöffnet ab 17:00'
 }

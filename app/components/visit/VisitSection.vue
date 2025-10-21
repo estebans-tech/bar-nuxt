@@ -59,7 +59,11 @@ const onRoute = () => click('visit_route_click')
               :class="card.class"
               :style="card.style"
             >
-              <OpenStatus :hours="info.hours" :soon-threshold-min="45" class="mb-3" />
+              <OpenStatus
+                :hours="info.hours"
+                :soon-threshold-min="45"
+                class="mb-3"
+              />
 
               <h3 id="hours-heading" class="sr-only">Öffnungszeiten</h3>
               <HoursList
