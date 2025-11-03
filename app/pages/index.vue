@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HeroSection from '~/components/hero/HeroSection.vue'
-import SignatureCarousel from '~/components/cocktail/SignatureCarousel.vue'
+import SignatureCocktailSection from '~/components/cocktail/SignatureCocktailSection.vue'
 import VisitSection from '~/components/visit/VisitSection.vue'
 import VibeGallerySection from '~/components/gallery/VibeGallerySection.vue'
 import SiteFooter from '~/components/footer/SiteFooter.vue'
@@ -39,7 +39,11 @@ const hero = {
       hoverLift
       :items="OFFERS"
     />
-    <SignatureCarousel
+    <!-- <SignatureCarousel
+      :items="SIGNATURE_COCKTAILS"
+      :title="'Signature Cocktails'"
+    /> -->
+    <SignatureCocktailSection
       :items="SIGNATURE_COCKTAILS"
       :title="'Signature Cocktails'"
     />

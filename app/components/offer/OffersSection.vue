@@ -68,7 +68,7 @@ const onCardClick = (it: { id: string; title: string }) =>
   <section
     ref="root.target"
     v-if="count > 0"
-    class="bg-black w-full py-16 md:py-20 min-h-screen flex items-center min-h-screen"
+    class="bg-black w-full min-h-screen py-16 md:py-20 flex items-center"
   >
     <div class="mx-auto w-full sm:w-3/4 md:w-11/12 px-6 lg:px-8">
       <!-- Header -->
@@ -125,15 +125,16 @@ const onCardClick = (it: { id: string; title: string }) =>
                 size="xs"
                 variant="elegant"
                 tone="gold">{{ offer.badge }}</Badge>
-
             </div>
 
             <!-- Beskrivning (flera rader, valfritt) -->
-            <ul v-if="offer.lines?.length" class="mt-2 space-y-1">
+            <ul
+              v-if="offer.lines?.length"
+              class="mt-3 space-y-1">
               <li
                 v-for="(line, i) in offer.lines"
                 :key="i"
-                class="text-white/75 text-[15px] leading-relaxed"
+                class="text-white/75 text-sm leading-relaxed"
               >
                 {{ line }}
               </li>
