@@ -1,27 +1,26 @@
-<!-- ~/components/sections/MenuLinksSection.vue -->
 <script setup lang="ts">
 import Badge from '~/components/ui/Badge.vue'
 import { useIntersection } from '~/composables/useIntersection'
 import { track } from '~/utils/analytics'
-import type { PdfMenuLink } from '~/types/menuLink'
+import type { MenuLink } from '~/types/menuLink'
 import { cardClass } from '~/utils/card'
 const plate = cardClass('elegant', { hoverLift: true })
 
 const props = withDefaults(defineProps<{
   title?: string
   intro?: string
-  items: PdfMenuLink[]
+  items: MenuLink[]
 }>(), {
   title: 'Menüs',
   intro: ''
 })
 
-const root = useIntersection({ threshold: 0.35, once: true })
-onMounted(() => root.startOnce(() => track('pdf_links_impression')))
+// const root = useIntersection({ threshold: 0.35, once: true })
+// onMounted(() => root.startOnce(() => track('menu_links_impression')))
 
-const onClick = (label: string) => {
-  track('pdf_link_click', { label })
-}
+// const onClick = (label: string) => {
+//   track('menu_link_click', { label })
+// }
 </script>
 
 <template>
@@ -42,17 +41,11 @@ const onClick = (label: string) => {
         role="list"
       >
         <li v-for="item in items" :key="item.href" class="w-full my-auto">
-          <a
-            :href="item.href"
-            target="_blank"
+          <NuxtLink
+            :to="item.href"
             rel="noopener"
-            @click="onClick(item.label)"
             :class="[plate.class, 'px-5 py-6 text-left group block transition-colors']"
-            :style="plate.style"
-            aria-label="Öffnen  {{ item.label }} (PDF) in neuem Fenster"
             >
-            <!-- class="group block rounded-2xl ring-1 ring-white/10 bg-white/5 hover:bg-white/7
-                   transition-colors px-5 py-6 text-left" -->
             <div
               class="flex items-center gap-4"
               :class="item.badge ? 'justify-between' : 'justify-center'">
@@ -68,15 +61,7 @@ const onClick = (label: string) => {
             <p v-if="item.description" class="mt-2 text-white/70 text-sm">
               {{ item.description }}
             </p>
-
-            <!-- PDF meta / ikonrad -->
-            <div class="mt-4 flex items-center gap-2 text-white/60 text-sm hidden">
-              <span aria-hidden="true">📄</span>
-              <span>PDF</span>
-              <span class="mx-1">·</span>
-              <span class="group-hover:underline">In Fenster öffnen</span>
-            </div>
-          </a>
+          </NuxtLink>
         </li>
       </ul>
     </div>

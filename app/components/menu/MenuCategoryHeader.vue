@@ -14,14 +14,14 @@ const asLines = (text?: MultilineCopy) => {
 
 <template>
   <div>
-    <h2 class="text-2xl font-semibold tracking-[0.2em] text-[#d8c08a]">
+    <h2 class="text-[#d8c08a] text-xl md:text-2xl font-semibold leading-tight tracking-tight">
       {{ title }}
     </h2>
 
     <p
       v-for="(line, i) in asLines(subtitle)"
       :key="i"
-      class="mt-2 text-sm text-white/85"
+      class="mt-2 text-sm text-white/95 font-medium leading-tight tracking-tight"
     >
       {{ line }}
     </p>

@@ -2,9 +2,9 @@
 import SiteFooter from '~/components/footer/SiteFooter.vue'
 import type { MenuPageModel } from "~/types/menu"
 
-const { data: model } = await useAsyncData("menu-speise", () =>
+const { data: model } = await useAsyncData("menu-getraenke", () =>
   queryCollection("menus")
-    .where("stem", "=", "menus/karte/speise")
+    .where("stem", "=", "menus/karte/getraenke")
     .first()
 )
 </script>

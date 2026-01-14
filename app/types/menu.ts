@@ -27,11 +27,18 @@ export type AllergenWarning =
   | "MOLLUSCS"
   | string
 
+export type PriceLine = {
+  label?: string // t.ex. "Saft", "Schorle", "Flasche", "Alcohol Free"
+  unit?: string  // t.ex. "0,2l", "2cl", "0,75l", "Fl.", "Portion"
+  price: Money
+}
+
 export type MenuItem = {
   id: string
   name: string
   description: MultilineCopy
   price: Money
+  prices?: PriceLine[]     // nya vägen
   tags?: DietaryTag[]
   allergens?: AllergenWarning[]
 }

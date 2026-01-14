@@ -9,7 +9,7 @@ import OffersSection from '~/components/offer/OffersSection.vue'
 
 import { SIGNATURE_COCKTAILS } from '~/constants/cocktails'
 import { PHONE_HREF, MAPS_HREF } from '~/constants/links'
-import { PDF_MENU } from '~/constants//pdf-menu'
+import { PDF_MENU } from '~/constants/pdf-menu'
 import { OFFERS, OFFER_HEADING } from '~/constants/offers'
 
 const hero = {

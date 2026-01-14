@@ -3,12 +3,12 @@ locale: de-DE
 defaultCurrency: EUR
 
 blocks:
-  - type: callout
-    title: MONTAG IST PIZZATAG
-    body:
-      - Montags erhaltet Ihr Eure
-      - Lieblingspizza mit 20% Ermäßigung
-    variant: promo
+#  - type: callout
+#    title: MONTAG IST PIZZATAG
+#    body:
+#      - Montags erhaltet Ihr Eure
+#      - Lieblingspizza mit 20% Ermäßigung
+#    variant: promo
 
   - type: category
     title: PIZZA
@@ -139,16 +139,6 @@ blocks:
   - type: note
     body: V = Vegetarisch
 
-  - type: note
-    body: "Die Küche ist bis 22.00 Uhr geöffnet. Danach servieren wir weiter mit ☆ gekennzeichnete Snacks!"
-
-  - type: callout
-    title: MITTWOCH IST SALATTAG
-    body:
-      - Mittwochs erhaltet Ihre Lieblingssalat mit
-      - 20% Ermäßigung
-    variant: promo
-
   - type: category
     title: ENCHILADAS
     subtitle:
@@ -181,6 +171,13 @@ blocks:
       price:
         amount: 18.0
         currency: EUR
+
+  - type: callout
+    title: MITTWOCH IST SALATTAG
+    body:
+      - Mittwochs erhaltet Ihre Lieblingssalat mit
+      - 20% Ermäßigung
+    variant: promo
 
   - type: category
     title: SALATE DER SAISON
@@ -294,7 +291,7 @@ blocks:
   - type: item
     item:
       id: starters-tortillachips-3-dips
-      name: "☆ Tortillachips im Korb mit 3 Dips"
+      name: " Tortillachips im Korb mit 3 Dips"
       tags: [V]
       description: ""
       price:
@@ -314,7 +311,7 @@ blocks:
   - type: item
     item:
       id: tapas-nachos-mit-dips
-      name: "☆ Nachos mit Dips"
+      name: " Nachos mit Dips"
       tags: [V]
       description: Jalapeños & Käse überbacken
       price:
@@ -324,7 +321,7 @@ blocks:
   - type: item
     item:
       id: tapas-nachos-mit-putenbrust
-      name: "☆ Nachos mit Putenbrust"
+      name: " Nachos mit Putenbrust"
       description: Dips, Jalapeños & Käse überbacken
       price:
         amount: 14.0
@@ -361,7 +358,7 @@ blocks:
   - type: item
     item:
       id: tapas-portion-oliven-mit-kern
-      name: "☆ Portion Oliven mit Kern"
+      name: " Portion Oliven mit Kern"
       description: ""
       price:
         amount: 5.5
@@ -407,15 +404,12 @@ blocks:
   - type: item
     item:
       id: tapas-erdnuesse
-      name: "☆ Erdnüsse"
+      name: " Erdnüsse"
       tags: [V]
       description: ""
       price:
         amount: 3.5
         currency: EUR
-
-  - type: note
-    body: "Die Küche ist bis 22.00 Uhr geöffnet. Danach servieren wir weiter mit ☆ gekennzeichnete Snacks!"
 
   - type: category
     title: OFENKARTOFFEL
@@ -555,4 +549,7 @@ blocks:
       price:
         amount: 2.0
         currency: EUR
+
+  - type: note
+    body: "Die Küche ist bis 22.00 Uhr geöffnet. Danach servieren wir weiter mit  gekennzeichnete Snacks!"
 

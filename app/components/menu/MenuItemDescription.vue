@@ -11,10 +11,10 @@ const descriptionLines = computed(() => {
 </script>
 
 <template>
-  <div class="text-sm text-white/85">
+  <div class="text-md font-light text-white/85">
     <p
-      v-for="(line, lineIndex) in descriptionLines"
-      :key="lineIndex"
+      v-for="(line, index) in descriptionLines"
+      :key="index"
       class="leading-relaxed"
     >
       {{ line }}

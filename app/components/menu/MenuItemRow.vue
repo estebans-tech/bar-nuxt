@@ -13,9 +13,7 @@ const hasAllergens = (item: MenuItem) => (item.allergens?.length ?? 0) > 0
 <template>
   <article>
     <MenuItemTitleLine
-      :name="item.name"
-      :tags="item.tags"
-      :price="item.price"
+      :item="item"
       :locale="locale"
       :default-currency="defaultCurrency"
     />

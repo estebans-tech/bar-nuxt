@@ -1,0 +1,1272 @@
+pageTitle: Getränkekarte
+locale: de-DE
+defaultCurrency: EUR
+
+blocks:
+- type: category
+  title: WEINE, PROSECCO & CHAMPAGNER
+- type: category
+  title: WEISSWEINE
+- type: item
+  item:
+    id: weissweine-grauer-burgunder
+    name: Grauer Burgunder
+    description: ''
+    prices:
+    - price:
+        amount: 4.0
+        currency: EUR
+      unit: 0,1l
+    - price:
+        amount: 8.0
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 26.0
+        currency: EUR
+      label: Flasche
+      unit: 0,75l
+- type: item
+  item:
+    id: weissweine-weisser-burgunder
+    name: Weisser Burgunder
+    description: ''
+    prices:
+    - price:
+        amount: 4.0
+        currency: EUR
+      unit: 0,1l
+    - price:
+        amount: 8.0
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 26.0
+        currency: EUR
+      label: Flasche
+      unit: 0,75l
+- type: item
+  item:
+    id: weissweine-weinschorle
+    name: Weinschorle
+    description: ''
+    prices:
+    - price:
+        amount: 5.4
+        currency: EUR
+      unit: 0,3l
+- type: item
+  item:
+    id: weissweine-cabernet-rose
+    name: Cabernet Rosé
+    description: ''
+    prices:
+    - price:
+        amount: 4.0
+        currency: EUR
+      unit: 0,1l
+    - price:
+        amount: 8.0
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 26.0
+        currency: EUR
+      label: Flasche
+      unit: 0,75l
+- type: item
+  item:
+    id: weissweine-mueller-thurgau
+    name: Müller Thurgau
+    description: ''
+    prices:
+    - price:
+        amount: 3.5
+        currency: EUR
+      unit: 0,1l
+    - price:
+        amount: 7.0
+        currency: EUR
+      unit: 0,2l
+- type: category
+  title: ROTWEINE
+- type: item
+  item:
+    id: rotweine-merlot
+    name: Merlot
+    description: ''
+    prices:
+    - price:
+        amount: 4.0
+        currency: EUR
+      unit: 0,1l
+    - price:
+        amount: 8.0
+        currency: EUR
+      unit: 0,2l
+- type: item
+  item:
+    id: rotweine-rioja
+    name: Rioja
+    description: ''
+    prices:
+    - price:
+        amount: 4.7
+        currency: EUR
+      unit: 0,1l
+    - price:
+        amount: 9.4
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 28.0
+        currency: EUR
+      label: Flasche
+      unit: 0,75l
+- type: item
+  item:
+    id: rotweine-primitivo
+    name: Primitivo
+    description: ''
+    prices:
+    - price:
+        amount: 4.0
+        currency: EUR
+      unit: 0,1l
+    - price:
+        amount: 8.0
+        currency: EUR
+      unit: 0,2l
+- type: item
+  item:
+    id: rotweine-tinto-de-verano
+    name: Tinto de Verano
+    description: Rotwein, Sprite, Orangenscheibe
+    prices:
+    - price:
+        amount: 7.5
+        currency: EUR
+      unit: 0,3l
+- type: category
+  title: PROSECCO
+- type: item
+  item:
+    id: prosecco-glas
+    name: Glas
+    description: ''
+    prices:
+    - price:
+        amount: 4.0
+        currency: EUR
+      unit: 0,1l
+    - price:
+        amount: 8.0
+        currency: EUR
+      unit: 0,2l
+- type: item
+  item:
+    id: prosecco-auf-eis
+    name: Auf Eis
+    description: ''
+    prices:
+    - price:
+        amount: 4.0
+        currency: EUR
+      unit: 0,1l
+    - price:
+        amount: 8.0
+        currency: EUR
+      unit: 0,2l
+- type: item
+  item:
+    id: prosecco-hugo
+    name: Hugo
+    description: Holundersirup, Soda, Prosecco, frische Minze
+    prices:
+    - price:
+        amount: 8.9
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-aperol-spritz
+    name: Aperol Spritz
+    description: ''
+    prices:
+    - price:
+        amount: 7.9
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-aperol-spritz-alcohol-free
+    name: Aperol Spritz Alcohol Free
+    description: ''
+    prices:
+    - price:
+        amount: 7.5
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-sarti-spritz
+    name: Sarti Spritz
+    description: Sarti, Prosecco, soda water, Limette
+    prices:
+    - price:
+        amount: 8.5
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-limoncello-spritz
+    name: Limoncello Spritz
+    description: Limoncello, Prosecco, Soda water, Lemon zest
+    prices:
+    - price:
+        amount: 8.0
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-lillet-berry
+    name: Lillet Berry
+    description: ''
+    prices:
+    - price:
+        amount: 7.9
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-geburtstagsflasche
+    name: Geburtstagsflasche
+    description: ''
+    prices:
+    - price:
+        amount: 19.0
+        currency: EUR
+      label: Flasche
+- type: category
+  title: CHAMPAGNER
+- type: item
+  item:
+    id: champagner-bollinger-special-cuvee-brut
+    name: Bollinger Special Cuvée Brut
+    description: ''
+    prices:
+    - price:
+        amount: 95.0
+        currency: EUR
+      label: Flasche
+- type: item
+  item:
+    id: champagner-pol-roger-reserve-brut
+    name: Pol Roger Réserve Brut
+    description: ''
+    prices:
+    - price:
+        amount: 90.0
+        currency: EUR
+      label: Flasche
+- type: category
+  title: BIER
+- type: category
+  title: VOM FASS
+- type: item
+  item:
+    id: bier-gilde-ratskeller
+    name: Gilde Ratskeller
+    description: ''
+    prices:
+    - price:
+        amount: 2.5
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 3.75
+        currency: EUR
+      unit: 0,3l
+    - price:
+        amount: 5.0
+        currency: EUR
+      unit: 0,5l
+- type: item
+  item:
+    id: bier-alster
+    name: Alster
+    description: ''
+    prices:
+    - price:
+        amount: 2.5
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 3.75
+        currency: EUR
+      unit: 0,3l
+    - price:
+        amount: 5.0
+        currency: EUR
+      unit: 0,5l
+- type: item
+  item:
+    id: bier-franziskaner-hefeweizen
+    name: Franziskaner Hefeweizen
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      unit: 0,3l
+    - price:
+        amount: 5.95
+        currency: EUR
+      unit: 0,5l
+- type: item
+  item:
+    id: bier-bananenweizen
+    name: Bananenweizen
+    description: ''
+    prices:
+    - price:
+        amount: 5.95
+        currency: EUR
+      unit: 0,5l
+- type: item
+  item:
+    id: bier-spaten-muenchener-hell
+    name: Spaten Münchener Hell
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      unit: 0,3l
+    - price:
+        amount: 5.95
+        currency: EUR
+      unit: 0,5l
+- type: item
+  item:
+    id: bier-san-miguel
+    name: San Miguel
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      unit: 0,3l
+    - price:
+        amount: 5.95
+        currency: EUR
+      unit: 0,5l
+- type: category
+  title: FLASCHENBIER
+- type: item
+  item:
+    id: bier-gilde-free
+    name: Gilde Free
+    description: ''
+    prices:
+    - price:
+        amount: 3.75
+        currency: EUR
+      label: Flasche
+      unit: 0,33l
+- type: item
+  item:
+    id: bier-franziskaner-dunkel
+    name: Franziskaner Dunkel
+    description: ''
+    prices:
+    - price:
+        amount: 5.95
+        currency: EUR
+      label: Flasche
+      unit: 0,5l
+- type: item
+  item:
+    id: bier-franziskaner-alkoholfrei
+    name: Franziskaner Alkoholfrei
+    description: ''
+    prices:
+    - price:
+        amount: 5.95
+        currency: EUR
+      label: Flasche
+      unit: 0,5l
+- type: item
+  item:
+    id: bier-corona
+    name: Corona
+    description: ''
+    prices:
+    - price:
+        amount: 4.5
+        currency: EUR
+      label: Flasche
+      unit: 0,33l
+- type: item
+  item:
+    id: bier-corona-cero
+    name: Corona Cero 0,0%
+    description: ''
+    prices:
+    - price:
+        amount: 4.5
+        currency: EUR
+      label: Flasche
+      unit: 0,33l
+- type: category
+  title: NON ALCOHOLICS
+- type: category
+  title: MOCKTAILS
+- type: item
+  item:
+    id: non-911er
+    name: 911er
+    description: Mangosaft, Zitrone, Lime Juice, Ananassaft, Orangensaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-ipanema-joana
+    name: Ipanema Joana
+    description: Limette, Rohrzucker, Ginger Ale
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-mango-ipanema
+    name: Mango Ipanema
+    description: Limette, Rohrzucker, Mangosaft, Ginger Ale
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-peach-ipanema
+    name: Peach Ipanema
+    description: Limette, Rohrzucker, Pfirsichnektar, Ginger Ale
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-strawberry-ipanema
+    name: Strawberry Ipanema
+    description: Limette, Rohrzucker, Erdbeere, Ginger Ale
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-joana-fresh
+    name: Joana Fresh
+    description: Limette, Rohrzucker, Grapefruitsaft, Grenadine
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-virgin-mary
+    name: Virgin Mary
+    description: Tomatensaft, Zitronensaft, Tabasco, Worcestersauce, Sellerie, Salz, Pfeffer
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-virgin-colada
+    name: Virgin Colada / Coconut Kiss
+    description: Sahne, Kokos, Ananassaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-virgin-strawberry-colada
+    name: Virgin Strawberry Colada
+    description: Sahne, Kokos, Erdbeersaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-virgin-peach-colada
+    name: Virgin Peach Colada
+    description: Sahne, Kokos, Pfirsichsaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-virgin-passoa-colada
+    name: Virgin Passoa Colada
+    description: Sahne, Kokos, Maracujanektar
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-virgin-mango-colada
+    name: Virgin Mango Colada
+    description: Sahne, Kokos, Mangosaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-san-francisco
+    name: San Francisco
+    description: Ananassaft, Orangensaft, Maracujanektar, Zitrone, Grenadine
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-simply-red
+    name: Simply Red
+    description: Ananassaft, Zitrone, Grenadine, Kokos
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-virgin-choco-colada
+    name: Virgin Choco Colada
+    description: Sahne, Kokos, Schokosirup, Ananassaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: category
+  title: WEITERE
+- type: item
+  item:
+    id: non-manco
+    name: Manco
+    description: Mango, Kokos, Sahne, Orangensaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-blue-lady
+    name: Blue Lady
+    description: Blue Curacao alkoholfrei, Ananassaft, Orangensaft, Maracujanektar, Zitrone
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-strawberry-kiss
+    name: Strawberry Kiss
+    description: Erdbeere, Zitrone, Ananassaft, Orangensaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-green-dream
+    name: Green Dream
+    description: Creme de Menthe alkoholfrei, Orangensaft, Maracujanektar, Ananassaft, Zitrone
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-yellow-bird
+    name: Yellow Bird
+    description: Ananassaft, Orangensaft, Lime Juice, Zitrone, Mandelsirup
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-freshmaker
+    name: Freshmaker
+    description: Blue Curacao alkoholfrei, Zitrone, Lime Juice, Ananassaft, Grapefruitsaft, Tonic Water
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-citrus-punch
+    name: Citrus Punch
+    description: Grapefruitsaft, Ananassaft, Rohrzucker, Zitrone, Mandelsirup
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-gin-and-tonic-alcohol-free
+    name: Gin and Tonic Alcohol Free
+    description: Tonic Water, Lime, Lemon zest
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: item
+  item:
+    id: non-frozen-melon-fun
+    name: Frozen Melon Fun (saisonabhängig)
+    description: Zuckersirup, Zitrone, frische Wassermelone
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-mr-ramos
+    name: Mr. Ramos
+    description: Gingerbier, Frishe Maracuja, Ingwer, Limette, Maracujanektar
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: category
+  title: HOMEMADE LIMONADE
+- type: item
+  item:
+    id: limonade-mango-fusion-frozen-strawberry
+    name: Mango Fusion Frozen Strawberry
+    description: ''
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: limonade-sensation-frozen
+    name: Sensation Frozen
+    description: ''
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: limonade-himbeere-minze-limette
+    name: Himbeere, Minze, Limette
+    description: ''
+    prices:
+    - price:
+        amount: 6.5
+        currency: EUR
+- type: item
+  item:
+    id: limonade-basilikum-zitrone-mango
+    name: Basilikum Zitrone Mango
+    description: ''
+    prices:
+    - price:
+        amount: 6.5
+        currency: EUR
+- type: item
+  item:
+    id: limonade-maracuja
+    name: Maracuja
+    description: ''
+    prices:
+    - price:
+        amount: 6.5
+        currency: EUR
+- type: category
+  title: SOFTDRINKS, SÄFTE & WASSER
+- type: category
+  title: SOFTDRINKS
+- type: item
+  item:
+    id: softdrinks-coca-cola
+    name: Coca Cola
+    description: ''
+    prices:
+    - price:
+        amount: 2.8
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 5.95
+        currency: EUR
+      unit: 0,5l
+- type: item
+  item:
+    id: softdrinks-coca-cola-zero
+    name: Coca Cola Zero
+    description: ''
+    prices:
+    - price:
+        amount: 2.8
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 5.95
+        currency: EUR
+      unit: 0,5l
+- type: item
+  item:
+    id: softdrinks-fanta
+    name: Fanta
+    description: ''
+    prices:
+    - price:
+        amount: 2.8
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 5.95
+        currency: EUR
+      unit: 0,5l
+- type: item
+  item:
+    id: softdrinks-sprite
+    name: Sprite
+    description: ''
+    prices:
+    - price:
+        amount: 2.8
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 5.95
+        currency: EUR
+      unit: 0,5l
+- type: item
+  item:
+    id: softdrinks-spezi
+    name: Spezi
+    description: ''
+    prices:
+    - price:
+        amount: 2.8
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 5.95
+        currency: EUR
+      unit: 0,5l
+- type: item
+  item:
+    id: softdrinks-bionade
+    name: Bionade
+    description: Litschi, Holunder, Ingwer, Orange
+    prices:
+    - price:
+        amount: 4.5
+        currency: EUR
+      label: Flasche
+      unit: 0,33l
+- type: item
+  item:
+    id: softdrinks-schweppes-bitter-lemon
+    name: Schweppes Bitter Lemon
+    description: ''
+    prices:
+    - price:
+        amount: 2.8
+        currency: EUR
+      unit: 0,2l
+- type: item
+  item:
+    id: softdrinks-schweppes-ginger-ale
+    name: Schweppes Ginger Ale
+    description: ''
+    prices:
+    - price:
+        amount: 2.8
+        currency: EUR
+      unit: 0,2l
+- type: item
+  item:
+    id: softdrinks-schweppes-tonic-water
+    name: Schweppes Tonic Water
+    description: ''
+    prices:
+    - price:
+        amount: 2.8
+        currency: EUR
+      unit: 0,2l
+- type: item
+  item:
+    id: softdrinks-red-bull
+    name: Red Bull
+    description: ''
+    prices:
+    - price:
+        amount: 4.5
+        currency: EUR
+      unit: 0,25l
+- type: note
+  body: 'Red Bull: Für Kinder und Schwangere oder Stillenden Frauen nicht empfohlen.'
+- type: category
+  title: FRUCHTSÄFTE | SCHORLEN
+- type: item
+  item:
+    id: saft-apfel-naturtrub
+    name: Apfel naturtrüb
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      label: Saft
+      unit: 0,2l
+    - price:
+        amount: 5.45
+        currency: EUR
+      label: Saft
+      unit: 0,5l
+    - price:
+        amount: 3.8
+        currency: EUR
+      label: Schorle
+      unit: 0,2l
+    - price:
+        amount: 5.3
+        currency: EUR
+      label: Schorle
+      unit: 0,5l
+- type: item
+  item:
+    id: saft-orange
+    name: Orange
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      label: Saft
+      unit: 0,2l
+    - price:
+        amount: 5.45
+        currency: EUR
+      label: Saft
+      unit: 0,5l
+    - price:
+        amount: 3.8
+        currency: EUR
+      label: Schorle
+      unit: 0,2l
+    - price:
+        amount: 5.3
+        currency: EUR
+      label: Schorle
+      unit: 0,5l
+- type: item
+  item:
+    id: saft-ananas
+    name: Ananas
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      label: Saft
+      unit: 0,2l
+    - price:
+        amount: 5.45
+        currency: EUR
+      label: Saft
+      unit: 0,5l
+    - price:
+        amount: 3.8
+        currency: EUR
+      label: Schorle
+      unit: 0,2l
+    - price:
+        amount: 5.3
+        currency: EUR
+      label: Schorle
+      unit: 0,5l
+- type: item
+  item:
+    id: saft-maracuja
+    name: Maracuja
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      label: Saft
+      unit: 0,2l
+    - price:
+        amount: 5.45
+        currency: EUR
+      label: Saft
+      unit: 0,5l
+    - price:
+        amount: 3.8
+        currency: EUR
+      label: Schorle
+      unit: 0,2l
+    - price:
+        amount: 5.3
+        currency: EUR
+      label: Schorle
+      unit: 0,5l
+- type: item
+  item:
+    id: saft-pfirsich
+    name: Pfirsich
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      label: Saft
+      unit: 0,2l
+    - price:
+        amount: 5.45
+        currency: EUR
+      label: Saft
+      unit: 0,5l
+    - price:
+        amount: 3.8
+        currency: EUR
+      label: Schorle
+      unit: 0,2l
+    - price:
+        amount: 5.3
+        currency: EUR
+      label: Schorle
+      unit: 0,5l
+- type: item
+  item:
+    id: saft-banane
+    name: Banane
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      label: Saft
+      unit: 0,2l
+    - price:
+        amount: 5.45
+        currency: EUR
+      label: Saft
+      unit: 0,5l
+    - price:
+        amount: 3.8
+        currency: EUR
+      label: Schorle
+      unit: 0,2l
+    - price:
+        amount: 5.3
+        currency: EUR
+      label: Schorle
+      unit: 0,5l
+- type: item
+  item:
+    id: saft-kirsch
+    name: Kirsch
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      label: Saft
+      unit: 0,2l
+    - price:
+        amount: 5.45
+        currency: EUR
+      label: Saft
+      unit: 0,5l
+    - price:
+        amount: 3.8
+        currency: EUR
+      label: Schorle
+      unit: 0,2l
+    - price:
+        amount: 5.3
+        currency: EUR
+      label: Schorle
+      unit: 0,5l
+- type: item
+  item:
+    id: saft-mango
+    name: Mango
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      label: Saft
+      unit: 0,2l
+    - price:
+        amount: 5.45
+        currency: EUR
+      label: Saft
+      unit: 0,5l
+    - price:
+        amount: 3.8
+        currency: EUR
+      label: Schorle
+      unit: 0,2l
+    - price:
+        amount: 5.3
+        currency: EUR
+      label: Schorle
+      unit: 0,5l
+- type: item
+  item:
+    id: saft-erdbeere
+    name: Erdbeere
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      label: Saft
+      unit: 0,2l
+    - price:
+        amount: 5.45
+        currency: EUR
+      label: Saft
+      unit: 0,5l
+    - price:
+        amount: 3.8
+        currency: EUR
+      label: Schorle
+      unit: 0,2l
+    - price:
+        amount: 5.3
+        currency: EUR
+      label: Schorle
+      unit: 0,5l
+- type: item
+  item:
+    id: saft-rhabarber
+    name: Rhabarber
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      label: Saft
+      unit: 0,2l
+    - price:
+        amount: 5.45
+        currency: EUR
+      label: Saft
+      unit: 0,5l
+    - price:
+        amount: 3.8
+        currency: EUR
+      label: Schorle
+      unit: 0,2l
+    - price:
+        amount: 5.3
+        currency: EUR
+      label: Schorle
+      unit: 0,5l
+- type: item
+  item:
+    id: saft-cranberry
+    name: Cranberry
+    description: ''
+    prices:
+    - price:
+        amount: 3.95
+        currency: EUR
+      label: Saft
+      unit: 0,2l
+    - price:
+        amount: 5.45
+        currency: EUR
+      label: Saft
+      unit: 0,5l
+    - price:
+        amount: 3.8
+        currency: EUR
+      label: Schorle
+      unit: 0,2l
+    - price:
+        amount: 5.3
+        currency: EUR
+      label: Schorle
+      unit: 0,5l
+- type: category
+  title: WASSER
+- type: item
+  item:
+    id: wasser-gerolsteiner-naturell
+    name: Gerolsteiner Naturell
+    description: Ohne Kohlensäure
+    prices:
+    - price:
+        amount: 2.5
+        currency: EUR
+      unit: 0,25l
+    - price:
+        amount: 6.4
+        currency: EUR
+      label: Flasche
+      unit: 0,75l
+- type: item
+  item:
+    id: wasser-gerolsteiner-medium
+    name: Gerolsteiner Medium
+    description: ''
+    prices:
+    - price:
+        amount: 2.5
+        currency: EUR
+      unit: 0,25l
+    - price:
+        amount: 6.4
+        currency: EUR
+      label: Flasche
+      unit: 0,75l
+- type: item
+  item:
+    id: wasser-tafelwasser
+    name: Tafelwasser
+    description: Sprudel und Stilles
+    prices:
+    - price:
+        amount: 2.2
+        currency: EUR
+      unit: 0,2l
+    - price:
+        amount: 3.5
+        currency: EUR
+      unit: 0,5l
+    - price:
+        amount: 5.9
+        currency: EUR
+      unit: 1,0l
+- type: category
+  title: KAFFEE & TEE
+- type: category
+  title: KAFFEE
+- type: item
+  item:
+    id: kaffee-espresso
+    name: Espresso
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: kaffee-doppelter-espresso
+    name: Doppelter Espresso
+    description: ''
+    prices:
+    - price:
+        amount: 4.0
+        currency: EUR
+- type: item
+  item:
+    id: kaffee-cappuccino
+    name: Cappuccino
+    description: ''
+    prices:
+    - price:
+        amount: 3.9
+        currency: EUR
+- type: item
+  item:
+    id: kaffee-milchkaffee
+    name: Milchkaffee
+    description: ''
+    prices:
+    - price:
+        amount: 4.0
+        currency: EUR
+- type: item
+  item:
+    id: kaffee-latte-macchiato
+    name: Latte Macchiato
+    description: ''
+    prices:
+    - price:
+        amount: 3.9
+        currency: EUR
+- type: item
+  item:
+    id: kaffee-latte-macchiato-flavoured
+    name: Latte Macchiato Flavoured
+    description: ''
+    prices:
+    - price:
+        amount: 4.1
+        currency: EUR
+- type: item
+  item:
+    id: kaffee-cortado
+    name: Cortado
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: kaffee-kaffee
+    name: Kaffee
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: kaffee-heisse-schokolade
+    name: Heisse Schokolade
+    description: ''
+    prices:
+    - price:
+        amount: 3.2
+        currency: EUR
+- type: item
+  item:
+    id: kaffee-heisse-schokolade-mit-sahne
+    name: Heisse Schokolade mit Sahne
+    description: ''
+    prices:
+    - price:
+        amount: 3.6
+        currency: EUR
+- type: category
+  title: TEE
+- type: item
+  item:
+    id: tee-tee
+    name: Tee
+    description: Pfefferminze, Schwarzer Tee, Grüner Tee, Kamillentee, Roibusch, Roibusch Vanille, Früchtetee
+    prices:
+    - price:
+        amount: 2.9
+        currency: EUR
+- type: item
+  item:
+    id: tee-frischer-tee
+    name: Frischer Tee
+    description: Ingwer, Minze, Orange und Honig; Minze mit Honig
+    prices:
+    - price:
+        amount: 3.9
+        currency: EUR
+      unit: 0,3l

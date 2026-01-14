@@ -1,6 +1,6 @@
-import type { MenuLink } from '~/types/menuLink'
+import type { PdfMenuLink } from '~/types/menuLink'
 
-export const PDF_MENU: MenuLink[] = [
+export const PDF_MENU: PdfMenuLink[] = [
     {
         label: 'Cocktailkarte',
         href: '/menu/SenaCocktailkarte2025_02.pdf',

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import MenuLinksSection from '~/components/menu/PdfLinks.vue'
+import MenuLinksSection from '~/components/menu/MenuLinks.vue'
 import HeroSection from '~/components/hero/HeroSection.vue'
 import OffersSection from '~/components/offer/OffersSection.vue'
 import SiteFooter from '~/components/footer/SiteFooter.vue'
-import { PDF_MENU } from '~/constants//pdf-menu'
+import { KARTEN_MENU } from '~/constants/karten-menu'
 import { OFFERS, OFFER_HEADING } from '~/constants/offers'
 
 const hero = {
@@ -18,20 +18,20 @@ const hero = {
 </script>
 <template>
     <main>
-    <HeroSection v-bind="hero" />
-<OffersSection
-      :title="OFFER_HEADING.title"
-      :subtitle="OFFER_HEADING.subtitle"
-      variant="elegant"
-      hoverLift
-      :items="OFFERS"
-    />
-        <section>
-        </section>
-       <MenuLinksSection
-          title="Cocktails & Menüs"
+      <HeroSection v-bind="hero" />
+
+      <OffersSection
+          :title="OFFER_HEADING.title"
+          :subtitle="OFFER_HEADING.subtitle"
+          variant="elegant"
+          hoverLift
+          :items="OFFERS"
+        />
+
+      <MenuLinksSection
+          title="Speise- und Getränkekarte"
           :intro="'Unsere aktuellen Karten als PDF.'"
-          :items="PDF_MENU"
+          :items="KARTEN_MENU"
           class="h-[100vh]"
         />
     </main>
