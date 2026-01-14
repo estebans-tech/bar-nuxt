@@ -21,7 +21,7 @@ const asLines = (text?: MultilineCopy) => {
     <p
       v-for="(line, i) in asLines(subtitle)"
       :key="i"
-      class="mt-2 text-sm text-white/95 font-medium leading-tight tracking-tight"
+      class="mt-1 text-sm text-white/95 font-medium leading-tight tracking-tight"
     >
       {{ line }}
     </p>

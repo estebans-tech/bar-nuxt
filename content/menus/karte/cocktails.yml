@@ -1,0 +1,1686 @@
+pageTitle: Cocktailkarte
+locale: de-DE
+defaultCurrency: EUR
+blocks:
+- type: category
+  title: CLASSICS COCKTAILS
+  subtitle: Mit hohem Alkoholanteil on the Rock serviert
+- type: item
+  item:
+    id: classics-cocktails-americano
+    name: Americano
+    description: Campari, Sweet Vermouth
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-black-russian
+    name: Black Russian
+    description: Vodka, Kahlua
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-negroni
+    name: Negroni
+    description: Gin, Campari, Sweet Vermouth
+    prices:
+    - price:
+        amount: 12.5
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-white-russian
+    name: White Russian
+    description: Vodka, Kahlua Kafeelikör, Sahne (Zweilagig in der v-schale oder Tumbler)
+    prices:
+    - price:
+        amount: 10.5
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-negroni-sbagliato
+    name: Negroni Sbagliato
+    description: Sweet Vermouth, Campari, Prosecco
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-golden-dream
+    name: Golden dream
+    description: Galliano, Cointreau, Sahne, Orangensaft
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-brandy-alexander
+    name: Brandy Alexander
+    description: Brandy, Creme De Cacao Braun, Sahne
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-between-the-sheets
+    name: Between the sheets
+    description: Havana 3 Años, Brandy, Triple Sec, Zitrone
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-side-car
+    name: Side Car
+    description: Brandy, Cointreau, Zitrone
+    prices:
+    - price:
+        amount: 10.0
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-godfather
+    name: Godfather
+    description: Jack Daniel‘s Tennessee Whiskey, Amaretto
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-white-lady
+    name: White Lady
+    description: Gin, Triple Sec, Zitrone
+    prices:
+    - price:
+        amount: 9.9
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-cosmopolitan
+    name: Cosmopolitan
+    description: Vodka, Triple Sec, Lime Juice,Cranberrysaft
+    prices:
+    - price:
+        amount: 9.9
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-manhattan
+    name: Manhattan
+    description: Canadian Club, Sweet Vermouth, Angostura
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-old-fashioned
+    name: Old Fashioned
+    description: Bourbon whiskey, Angostura, Zucker, Orangenzeste
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: classics-cocktails-bloody-mary
+    name: Bloody Mary
+    description: Vodka, Tabasco, Worcester Sauce,Salz, Pfeffer, Tomatensaft
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: category
+  title: MULES
+- type: category
+  title: PROSECCO COCKTAILS
+- type: category
+  title: JULEPS
+  subtitle:
+  - Grand Marnier, Orangensaft, Prosecco
+  - Mit frischer Minze und hohem Alkoholanteil
+  - Tropical Champagne
+  - Brandy Julep
+  - Rum, Maracujanektar, Zitronensaft, Prosecco
+  - Brandy, Limette, Orange, Rohrzucker, Minze,
+- type: item
+  item:
+    id: prosecco-cocktails-moscow-mule
+    name: Moscow Mule
+    description: Vodka, Ginger Beer, Gurke, Ingwer,
+    prices:
+    - price:
+        amount: 10.5
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-cocktails-hemingway
+    name: Hemingway
+    description: Rum, Triple Sec, Zitronensaft, Prosecco
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-cocktails-angostura
+    name: Angostura
+    description: Jack Daniel's Tennessee Whiskey, Ginger Ale, Angostura, Gurke
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-cocktails-bellini
+    name: Bellini
+    description: Vodka, Peach Likör, Pfirsichsaft, Prosecco
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-cocktails-campari-milano
+    name: Campari Milano
+    description: Campari, cranberrysaft, Prosecco, Frische Minze
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-cocktails-southern-mule
+    name: Southern Mule
+    description: Southern Comfort, Ginger Ale, Angostura,
+    prices:
+    - price:
+        amount: 11.5
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-cocktails-campari-fresch
+    name: Campari Fresch
+    description: Campari, Zitrone, Ananas
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-cocktails-gurke
+    name: Gurke
+    description: ''
+    prices:
+    - price:
+        amount: 11.5
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-cocktails-pick-me-up
+    name: Pick Me Up
+    description: Gognac, Grenadier, Angostura, Prosecco
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-cocktails-mango-royal
+    name: Mango Royal
+    description: Vodka, Mangosaft, Prosecco
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: prosecco-cocktails-take-me-home
+    name: Take me Home
+    description: Grand Marnier, Orangensaft, Prosecco Tropical Champagne
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: juleps-ginger-ale
+    name: Ginger Ale
+    description: Bourbon Julep Bourbon whiskey, Limette, Orange, Minze, Rohrzucker, Ginger Ale
+    prices:
+    - price:
+        amount: 11.5
+        currency: EUR
+- type: item
+  item:
+    id: juleps-prince-of-wales
+    name: Prince of Wales
+    description: Cognac, Grand Marnier, Prosecco
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: category
+  title: CAIPIRINHAS
+- type: item
+  item:
+    id: caipirinhas-caipirinha
+    name: Caipirinha
+    description: Cachaça, Lime Juice, Limette, Rohrzucker
+    prices:
+    - price:
+        amount: 8.95
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-mangorissima
+    name: Mangorissima
+    description: Rum, Mangosaft, Limette, Rohrzucker
+    prices:
+    - price:
+        amount: 8.95
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-caipi-secco
+    name: Caipi Secco
+    description: Prosecco, Limette, Rohrzucker
+    prices:
+    - price:
+        amount: 8.95
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-caipiretto
+    name: Caipiretto
+    description: Amaretto, Orangensaft, Limette,
+    prices:
+    - price:
+        amount: 8.95
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-rohrzucker
+    name: Rohrzucker
+    description: Midori Melon Liqueur, Vodka, Limmette, Rohrzucker, Lime Juice
+    prices:
+    - price:
+        amount: 8.95
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-strawberry-caipirinha
+    name: Strawberry Caipirinha
+    description: Cachaça, Erdbeeren, Lime Juice, Limette,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-rohrzucker
+    name: Rohrzucker
+    description: Vodka, Erdeeren, Lime Juice, Limette,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-peach-caipi
+    name: Peach Caipi
+    description: Peach Likör, Vodka, Limette, Rohrzucker
+    prices:
+    - price:
+        amount: 8.95
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-rohrzucker
+    name: Rohrzucker
+    description: Rum, Lime Juice, Limette, Rohrzucker
+    prices:
+    - price:
+        amount: 8.95
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-southerinha
+    name: Southerinha
+    description: Southern Comfort, Lime Juice, Limette,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-rohrzucke
+    name: Rohrzucke
+    description: Cachaça, Lime Juice, Limette, Minze,
+    prices:
+    - price:
+        amount: 8.95
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-caipiroska
+    name: Caipiroska
+    description: Vodka, Lime Juice, Limette, Rohrzucker
+    prices:
+    - price:
+        amount: 8.95
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-caipirol
+    name: Caipirol
+    description: Aperol, Orangensaft, Limette, Rohrzucker
+    prices:
+    - price:
+        amount: 8.95
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-rohrzucker
+    name: Rohrzucker
+    description: Tequila Blanco, Vodka, Lime Juice, Limette, Orangensaft, Rohrzucker
+    prices:
+    - price:
+        amount: 9.9
+        currency: EUR
+- type: item
+  item:
+    id: caipirinhas-caipimara
+    name: Caipimara
+    description: Tequila Gold, Limette, Maracujasaft, Grenadine, Rohrzucker
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: category
+  title: MOJITOS
+- type: category
+  title: MARGARITAS
+  subtitle:
+  - Mit frischer Minze und Rum
+  - Tropischer Cocktail auf Tequila Basis
+- type: item
+  item:
+    id: margaritas-mojito-classic
+    name: Mojito Classic
+    description: Havanna Club 3 Años Limette, Sodawasser, Frische Minze, Rohrzucker
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-margarita-classic
+    name: Margarita Classic
+    description: Tequila Blanco, Orangenlikör, Zitronensaft
+    prices:
+    - price:
+        amount: 9.9
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-golden-margarita
+    name: Golden Margarita
+    description: Tequila Gold, Orangelikör, Zitronen,
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-mojito-a-ejo-especial
+    name: Mojito Añejo Especial
+    description: Rum Pampero, Añejo Especial, Limette, frische Minze, Rohrzucker, Sodawasser
+    prices:
+    - price:
+        amount: 11.5
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-salzrand
+    name: Salzrand
+    description: Tequila Blanco, Orangenlikör, Erdbeere, Zitronensaft, Zucker Sirup
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-razz-mojito
+    name: Razz Mojito
+    description: Rum Bacardi Razz, Limette, Frische Minze, Himbeer, Sprite, Rohrzucker
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-pineapple-margarita
+    name: Pineapple Margarita
+    description: Sierra Tequila Blanco, Triple Sec, Zitrone, Ananassaft, Zucker Sirup
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-green-apple-sour-mojito
+    name: Green Apple Sour Mojito
+    description: Havanna 3 Años, Green Apple, frische Minze, Rohrzucker, Sodawasser
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-peach-margarita
+    name: Peach Margarita
+    description: Sierra Tequila silver, Peachtree, Zitrone,
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-strawberry-sensation-mojito
+    name: Strawberry Sensation Mojito
+    description: Havana 3 años, Strawberry, frische Minze, Sodawasser, Rohrzucker
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-mango-fusion-mojito
+    name: Mango Fusion Mojito
+    description: Havana 3 Años, Mango, Limette, frische Minze, Sodawasser, Rohrzucker
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-mango-margarita
+    name: Mango Margarita
+    description: Sierra Tequila silver, Mango, Zitrone,
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-zucker-sirup
+    name: Zucker Sirup
+    description: Sierra Tequila silver, Passoa, Zitrone, Maracujanektar, Zucker Sirup
+    prices:
+    - price:
+        amount: 9.95
+        currency: EUR
+- type: item
+  item:
+    id: margaritas-bombay-crushed
+    name: Bombay Crushed
+    description: Bombay Sapphire Gin, Kumquats, Lime Juice, Limette, Rohrzucker
+    prices:
+    - price:
+        amount: 11.5
+        currency: EUR
+- type: category
+  title: COLADAS
+  subtitle: Sahne und Kokos sind die Basis für alle Coladas
+- type: item
+  item:
+    id: coladas-pi-a-colada
+    name: Piña Colada
+    description: Rum, Sahne, Kokos, Ananassaft
+    prices:
+    - price:
+        amount: 8.95
+        currency: EUR
+- type: item
+  item:
+    id: coladas-choco-colada
+    name: Choco Colada
+    description: Rum, Sahne, Kokos, Schokosirup,
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-ananassaft
+    name: Ananassaft
+    description: Rum, Sahne, Kokos, Pfirsichsaft,
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-strawberry-colada
+    name: Strawberry Colada
+    description: Rum, Sahne, Kokos, Erdbeere
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-italien-colada
+    name: Italien Colada
+    description: Rum, Sahne, Kokos, Amaretto, Ananassaft
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-peachlikor
+    name: Peachlikör
+    description: Rum, Sahne, Kokos, Espresso,
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-mexican-colada
+    name: Mexican Colada
+    description: Sierra Tequila silver, Kahlua, Sahne, Kokos,
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-kahlua
+    name: Kahlua
+    description: Rum, Sahne, Kokos, Ananassaft,
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-ananassaft
+    name: Ananassaft
+    description: Rum, Sahne, Kokos, Mangonektar
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-creme-de-menthe-grun
+    name: Creme de Menthe grün
+    description: Baileys, Kokos, Ananassaft
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-banana-colada
+    name: Banana Colada
+    description: Rum, Sahne, Kokos, Frische Banane
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-43er-colada
+    name: 43er Colada
+    description: Licor 43, Sahne, Maracujanektar,
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-melon-colada
+    name: Melon Colada
+    description: Rum, Sahne, Kokos, Ananassaft, Melonlikör
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-kokos
+    name: Kokos
+    description: Rum, Sahne, Kokos, Galliano, Ananassaft, Orangensaft
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: item
+  item:
+    id: coladas-passion-colada
+    name: Passion Colada
+    description: Rum, Sahne, Kokos, Maracujanektar, Passoa
+    prices:
+    - price:
+        amount: 9.4
+        currency: EUR
+- type: category
+  title: DAIQUIRIS
+- type: category
+  title: CARRIBEAN DRINKS
+  subtitle:
+  - Tropische Cocktails auf Rumbasis
+  - Mit Sahne, cremig
+- type: item
+  item:
+    id: carribean-drinks-daiquiri
+    name: Daiquiri
+    description: Havana 3 Años, Zitronensaft, Zuckersirup, Triple
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-prinz
+    name: Prinz
+    description: Sierra Tequila silver, Likör 43, Sahne, Kokos,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-sec
+    name: Sec
+    description: Havana 3 Años doppelt, Zitronensaft, Triple Sec, Grapefruitsaft, Maraschino, Zuckersirup
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-flying-kangaroo
+    name: Flying Kangaroo
+    description: Vodka, Rum, Galliano, Sahne, Kokos, Ananassaft, Orangensaft
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-strawberry-sensation-daiquiri
+    name: Strawberry Sensation Daiquiri
+    description: Havana 3 Años, Zitronensaft, Erdbeere, Triple Sec,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-swimming-pool
+    name: Swimming Pool
+    description: Vodka, Rum, Blue Curacao, Sahne, Kokos,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-zuckersirup
+    name: Zuckersirup
+    description: Havana 3 Años, Zitronensaft, Mangonektar, Triple Sec, Zuckersirup
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-mamasita
+    name: Mamasita
+    description: Sierra Tequila Silver, Blue Curacao, Creme de Cacao, Sahne, Maracujanektar
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-banana-daiquiri
+    name: Banana Daiquiri
+    description: Havana 3 Años, Zitrone, Zuckersirup, Frische, Triple Sec, Banane
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-melon-daiquiri
+    name: Melon Daiquiri
+    description: Havana 3 Años, Zitrone, Zuckersirup, Melonlikör,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-cuja-mara
+    name: Cuja Mara
+    description: Vodka, Vanille, Passoa, Sahne, Maracujanektar,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-triple-sec
+    name: Triple Sec
+    description: Havana 3 Años, Zitrone, Maracujanektar, Zuckersirup, Maracujasirup, Triple Sec
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-orangensaft
+    name: Orangensaft
+    description: Galliano, Weißer Cacao, Sahne, Orange
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-peach-daiquiri
+    name: Peach Daiquiri
+    description: Havana 3 Años, Zitrone, Peachtree, Triple Sec, Pfirsichnektar, Zuckersirup
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: carribean-drinks-pineapple-daiquiri
+    name: Pineapple Daiquiri
+    description: Havana 3 Años, Zitrone, Ananassaft, Zuckersirup, Triple Sec
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: category
+  title: STARKE COCKTAILS
+- type: item
+  item:
+    id: starke-cocktails-cassady-s-can
+    name: Cassady‘s Can
+    description: Weißer Rum, dunkler Rum, Apricot Brandy, Creme de Cassis, Zitrone, Maracujanektar
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: starke-cocktails-mai-tai
+    name: Mai Tai
+    description: Weißer Rum, dunkler Rum, Rum 73%, Lime Juice, Ananassaft, Mandelsirup, Apricot Brandy, Zitrone
+    prices:
+    - price:
+        amount: 13.0
+        currency: EUR
+- type: item
+  item:
+    id: starke-cocktails-tonga-punch
+    name: Tonga Punch
+    description: Weißer Rum, dunkler Rum, Batida, Lime Juice, Maracujanektar, Passoa
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: starke-cocktails-long-island-ice-tea
+    name: Long Island Ice Tea
+    description: Vodka, Rum, Sierra Tequila silver, Gin, Triple sec, Limette, Coca Cola
+    prices:
+    - price:
+        amount: 13.0
+        currency: EUR
+- type: item
+  item:
+    id: starke-cocktails-cranberry-ice-tea
+    name: Cranberry Ice Tea
+    description: Vodka, Rum, Sierra Tequila silver, Gin, Triple sec, Limette, Cranberrynektar
+    prices:
+    - price:
+        amount: 13.0
+        currency: EUR
+- type: item
+  item:
+    id: starke-cocktails-rum-runner
+    name: Rum Runner
+    description: Weißer Rum, dunkler Rum, Lime Juice, Ananassaft, Angostura, Muskatnuss
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: starke-cocktails-zombie
+    name: Zombie
+    description: Weißer Rum, dunkler Rum, Jamaica-Rum, Rum 73%, Creme de Cassis, Grenadine, Orangensaft, Cherrylikör
+    prices:
+    - price:
+        amount: 13.0
+        currency: EUR
+- type: item
+  item:
+    id: starke-cocktails-scorpion
+    name: Scorpion
+    description: Weißer Rum, dunkler Rum, Brandy, Triple Sec, Zitronensaft, Orangensaft
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: category
+  title: CARIBBEAN DRINKS & KLASSIKER
+  subtitle: Fruchtige Cocktails ohne Sahne
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-brasilia
+    name: Brasilia
+    description: Rum, Apricot Brandy, Lime Juice, Zitrone, Grenadine, Ananassaft
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-seabreeze
+    name: Seabreeze
+    description: Vodka, Lime Juice, Cranberryektar, Grapefruitsaft,
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-orangenlikor
+    name: Orangenlikör
+    description: Havana 3 Años, Coca Cola, Limette
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-coco-queen
+    name: Coco Queen
+    description: Malibu, Grenadine, Zitrone, Orangensaft,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-grapefruitsaft
+    name: Grapefruitsaft
+    description: Burbon Whiskey, Creme de Cassis, Zitrone,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-sex-on-the-beach-se-a
+    name: Sex on the Beach Seña
+    description: Gin, Peachtree, Cassis, Zitrone, Kokos, Mangosaft
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-sex-on-the-beach-orange
+    name: Sex on the Beach Orange
+    description: Gin, Peachtree, Grenadine, Zitrone, Orangensaft
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-orangensaft
+    name: Orangensaft
+    description: Rum, Apricot Brandy, Galliano, Ananassaft
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-sex-on-the-beach-passionsfrucht
+    name: Sex on the Beach Passionsfrucht
+    description: Gin, Peachtree, Cassis, Zitrone, Maracujanektar
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-tequila-sunrise
+    name: Tequila Sunrise
+    description: Sierra Tequila silver, Zitrone, Orangensaft,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-planter-s-punch
+    name: Planter's Punch
+    description: Meyer's Rum, Grenadine, Lime, Zitrone, Orangensaft, Muskatnuss
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-grenadine
+    name: Grenadine
+    description: Sierra Tequila silver, Triple Sec, Grenadine, Lime, Grapefruitsaft
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-love-dream
+    name: Love Dream
+    description: Rum, Peachtree, Blue Curacao, Zitrone, Lime, Ananassaft, Orangensaft
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-el-diablo
+    name: El Diablo
+    description: Sierra Tequila silver, Lime Juice, Creme de Cassis, Ginger Ale, Limette
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-orangina
+    name: Orangina
+    description: Gin, Campari, Orange Bitter, Orangensaft,
+    prices:
+    - price:
+        amount: 9.9
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-orangenlikor
+    name: Orangenlikör
+    description: Gin, Apricot Brandy, Zitrone, Grenadine, Orangensaft, Pfirsichsaft
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: caribbean-drinks-klassiker-castros-cooler
+    name: Castros Cooler
+    description: Havana Club, Calvados, Lime Juice, Zitrone, Orangensaft
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: category
+  title: GIMLETS
+  subtitle:
+  - Latin Lover
+  - Cachaça, Ananassaft , Mangosaft, Zitrone, Lime
+- type: item
+  item:
+    id: gimlets-blue-jeans
+    name: Blue Jeans
+    description: Vodka, Blue Curacao, Lime Juice, Ananassaft,
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-singapore-sling
+    name: Singapore Sling
+    description: Gin, Cherrylikör, Ananassaft, Angostura, Benedectine Likör, Zitrone, Moskatnuss
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-grapefruit
+    name: Grapefruit
+    description: Vodka, Mangosaft, Zitrone, Lime Juice, Ananassaft,
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-se-a
+    name: Seña
+    description: Havana 3 Años, Peachtree, Zitrone, Grenadine, Orangensaft, Pfirsichsaft
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-orangensaft
+    name: Orangensaft
+    description: Rum, Frangelico, Lime Juice, Maracujanektar,
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-honolulu-juicer
+    name: Honolulu Juicer
+    description: Rum, Southern Comfort, Lime Juice, Zitrone,
+    prices:
+    - price:
+        amount: 9.9
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-orangensaft
+    name: Orangensaft
+    description: Cachaça, Zitrone, Lime Juice, Ananassaft,
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-grenadine
+    name: Grenadine
+    description: Cachaça, Ananassaft , Mangosaft, Zitrone, Lime
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-juice
+    name: Juice
+    description: Vodka, Gin, Blue Curacao, Mangosaft, Zitrone, Ananassaft, Orangensaft
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-gin-gimlet
+    name: Gin Gimlet
+    description: Bombay Sapphire Gin, Lime Juice
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-vodka-gimlet
+    name: Vodka Gimlet
+    description: Vodka, Lime Juice
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-frozen-melon-saisonabhangig
+    name: Frozen Melon (saisonabhängig)
+    description: Vodka, Zitrone, frische, Wassermelone,
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-schuhmann-s-gimlet
+    name: Schuhmann's Gimlet
+    description: Gin, Lime Juice, Zitronensaft
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: gimlets-zuckersirup
+    name: Zuckersirup
+    description: French Vanilla Kiss Vodka, Vanille, Limette, Lime Juice, Erdbeersaft
+    prices:
+    - price:
+        amount: 9.5
+        currency: EUR
+- type: category
+  title: SOURS, FIZZES & COLLINS
+  subtitle: Klassischer Cocktail basierend auf den 3 Zutaten Spirituose, Zucker und Zitronensaft
+- type: item
+  item:
+    id: sours-fizzes-collins-aperol-sour-fizz
+    name: Aperol Sour / Fizz
+    description: Aperol, Zucker, Zitrone, Soda
+    prices:
+    - price:
+        amount: 9.9
+        currency: EUR
+- type: item
+  item:
+    id: sours-fizzes-collins-gin-sour-fizz
+    name: Gin Sour / Fizz
+    description: Gin, Zucker, Zitrone, Soda
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: sours-fizzes-collins-peach-sour-fizz
+    name: Peach Sour / Fizz
+    description: Peachtree, Vodka, Zucker, Zitrone, Pfirsichsaft, Soda
+    prices:
+    - price:
+        amount: 9.9
+        currency: EUR
+- type: item
+  item:
+    id: sours-fizzes-collins-vodka-sour-fizz
+    name: Vodka Sour / Fizz
+    description: Vodka, Zucker, Zitrone , Soda
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: sours-fizzes-collins-whisky-sour
+    name: Whisky Sour
+    description: Scotch, Bourbon oder Canadian Whiskey, Zucker, Zitronensaft, Soda
+    prices:
+    - price:
+        amount: 10.5
+        currency: EUR
+- type: item
+  item:
+    id: sours-fizzes-collins-mango-sour-fizz
+    name: Mango Sour / Fizz
+    description: Vodka, Mangosaft, Zitrone, Zucker,
+    prices:
+    - price:
+        amount: 9.9
+        currency: EUR
+- type: item
+  item:
+    id: sours-fizzes-collins-soda
+    name: Soda
+    description: Southern Comfort, Zitrone, Zucker, Orangensaft
+    prices:
+    - price:
+        amount: 9.9
+        currency: EUR
+- type: item
+  item:
+    id: sours-fizzes-collins-jacky-sour
+    name: Jacky Sour
+    description: Jack Daniel's Tenessee Whiskey, Orangensaft, Zucker, Zitrone, Soda
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: sours-fizzes-collins-pisco-sour
+    name: Pisco Sour
+    description: Pisco, Zucker, Zitrone, Angostura, Soda
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: sours-fizzes-collins-amaretto-sour
+    name: Amaretto Sour
+    description: Amaretto, Zucker, Zitrone, Orangensaft,
+    prices:
+    - price:
+        amount: 10.5
+        currency: EUR
+- type: item
+  item:
+    id: sours-fizzes-collins-soda
+    name: Soda
+    description: 43 Likör, Zucker, Zitrone, Orangensaft,
+    prices:
+    - price:
+        amount: 10.5
+        currency: EUR
+- type: item
+  item:
+    id: sours-fizzes-collins-soda
+    name: Soda
+    description: Melon Liqueur, Zucker, Zitrone, Soda
+    prices:
+    - price:
+        amount: 10.5
+        currency: EUR
+- type: category
+  title: HIGHBALL
+  subtitle: Highballs sind von der Happy Hour ausgeschlossen
+- type: category
+  title: MARTINIS
+  subtitle:
+  - Klassische Cocktails mit hohem Alkoholanteil
+- type: item
+  item:
+    id: highball-gin-passion
+    name: Gin Passion
+    description: Gin, frische Limette, frische Maracuja, Gurke, frische Ingwer, Gingerbier, Maracujanektar
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: highball-pornstar-martini
+    name: Pornstar Martini
+    description: Vodka, Passionsfrucht, Passionsfrucht liquör, Vanillesirup, Limette, Prosecco
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: highball-sena-43
+    name: Sena 43
+    description: 43er Likör, Frischer Limettensaft, Orangensaft, Frische Ingwer, Gurke, Gingerbier
+    prices:
+    - price:
+        amount: 10.5
+        currency: EUR
+- type: item
+  item:
+    id: highball-nutty-martini
+    name: Nutty Martini
+    description: Vodka, Lime Juice trockener Vermouth, Frangelico
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: highball-gin-basel
+    name: Gin Basel
+    description: Gin, Frischer Basilikum, Limette, Zuckersirup, Ginger
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: highball-vanille-martini
+    name: Vanille Martini
+    description: Vodka, Vanillesirup, trockener Vermouth, Lime Juice
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: highball-minth-martini
+    name: Minth Martini
+    description: Vodka, Creme de menthe grün, trockener Vermouth
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: martinis-peach-martini
+    name: Peach Martini
+    description: Vodka, Peachtree, trockener
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: martinis-ap
+    name: Ap
+    description: mit Schokoladenrand Vodka, trockener Vermouth, Apple Sour, Lime Juice
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: martinis-vermouth
+    name: Vermouth
+    description: Vodka, Melonlikör, trockener
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: martinis-martini-dry
+    name: Martini Dry
+    description: Bombay Sapphire Gin, trockener Vermouth, Olive - gerührt
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: martinis-vermouth
+    name: Vermouth
+    description: Vodka, Kahlua, espresso
+    prices:
+    - price:
+        amount: 12.0
+        currency: EUR
+- type: item
+  item:
+    id: martinis-martini-dry
+    name: Martini Dry
+    description: Vodka, trockener Vermouth, Olive - geschüttelt o. gerührt
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: category
+  title: NON ALCOHOLICS
+- type: item
+  item:
+    id: non-alcoholics-911er
+    name: 911er
+    description: Mangosaft, Zitrone, Lime Juice, Ananassaft,
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-virgin-colada-coconut-kiss
+    name: Virgin Colada / Coconut Kiss
+    description: Sahne, Kokos, Ananassaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-orangensaft
+    name: Orangensaft
+    description: Limette, Rohrzucker, Ginger Ale
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-virgin-strawberry-colada
+    name: Virgin Strawberry Colada
+    description: Sahne, Kokos, Erdbeersaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-virgin-peach-colada
+    name: Virgin Peach Colada
+    description: Sahne, Kokos, Pfirsichsaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-mango-ipanema
+    name: Mango Ipanema
+    description: Limette, Rohrzucker, Mangosaft, Ginger Ale
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-virgin-passoa-colada
+    name: Virgin Passoa Colada
+    description: Sahne, Kokos, Maracujanektar
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-peach-ipanema
+    name: Peach Ipanema
+    description: Limette, Rohrzucker, Pfirsichnektar, Ginger
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-virgin-mango-colada
+    name: Virgin Mango Colada
+    description: Sahne, Kokos, Mangosaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-ale
+    name: Ale
+    description: Limette, Rohrzucker, Erdbeere, Ginger Ale
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-san-francisco
+    name: San Francisco
+    description: Ananassaft, Orangensaft, Maracujanektar, Zitrone, Grenadine
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-joana-fresh
+    name: Joana Fresh
+    description: ''
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-simply-red
+    name: Simply Red
+    description: Ananassaft, Zitrone, Grenadine, Kokos
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-virgin-mary
+    name: Virgin Mary
+    description: Worcestersauce, Sellerie, Salz, Pfeffer
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: non-alcoholics-virgin-choco-colada
+    name: Virgin Choco Colada
+    description: Sahne, Kokos, Schokosirup, Ananassaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: category
+  title: HOMEMADE LIMONADE
+  subtitle:
+  - Creme de Menthe alkoholfrei, Orangensaft,
+  - Maracujanektar, Ananassaft, Zitrone
+- type: item
+  item:
+    id: homemade-limonade-manco
+    name: Manco
+    description: Mango, Kokos, Sahne, Orangensaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-frozen-melon-fun-saisonabhangig
+    name: Frozen Melon Fun (saisonabhängig)
+    description: Zuckersirup, Zitrone, frische Wassermelone
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-blue-lady
+    name: Blue Lady
+    description: Blue Curacao alkoholfrei, Ananassaft, Orangensaft, Maracujanektar, Zitrone
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-mr-ramos
+    name: Mr. Ramos
+    description: Gingerbier, Frishe Maracuja, Ingwer, Limette, Maracujanektar
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-strawberry-kiss
+    name: Strawberry Kiss
+    description: Erdbeere, Zitrone, Ananassaft, Orangensaft
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-green-dream
+    name: Green Dream
+    description: Creme de Menthe alkoholfrei, Orangensaft, Maracujanektar, Ananassaft, Zitrone
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-mango-fusion-frozen
+    name: Mango Fusion Frozen
+    description: ''
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-yellow-bird
+    name: Yellow Bird
+    description: Ananassaft, Orangensaft, Lime Juice, Zitrone, Mandelsirup
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-sensation-frozen-strawberry
+    name: Sensation Frozen Strawberry
+    description: Himbeere, Minze, Limette
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-freshmaker
+    name: Freshmaker
+    description: Blue Curacao alkoholfrei, Zitrone, Lime Juice, Ananassaft, Grapefruitsaft, Tonic Water
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-basilikum-zitrone
+    name: Basilikum Zitrone
+    description: ''
+    prices:
+    - price:
+        amount: 6.5
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-mango-maracuja
+    name: Mango Maracuja
+    description: ''
+    prices:
+    - price:
+        amount: 6.5
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-citrus-punch
+    name: Citrus Punch
+    description: Grapefruitsaft, Ananassaft, Rohrzucker, Zitrone, Mandelsirup
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: homemade-limonade-gin-and-tonic-alcohol-free
+    name: Gin And Tonic Alcohol Free
+    description: Tonic Water, Lime, Lemon zest
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR

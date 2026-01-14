@@ -18,7 +18,7 @@ const hasAllergens = (item: MenuItem) => (item.allergens?.length ?? 0) > 0
       :default-currency="defaultCurrency"
     />
 
-    <div class="mt-1">
+    <div class="mt-0">
       <MenuItemDescription :description="item.description" />
     </div>
 
