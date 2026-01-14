@@ -30,7 +30,7 @@ const hero = {
 
       <MenuLinksSection
           title="Speise- und Getränkekarte"
-          :intro="'Unsere aktuellen Karten als PDF.'"
+          :intro="'Unsere aktuellen Karten im Überblick.'"
           :items="KARTEN_MENU"
           class="h-[100vh]"
         />

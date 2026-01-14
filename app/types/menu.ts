@@ -1,16 +1,11 @@
 export type Locale = string
-
 export type CurrencyCode = "EUR" | "SEK" | "USD" | string
-
 export type Money = {
   amount: number
   currency: CurrencyCode
 }
-
 export type MultilineCopy = string | string[]
-
 export type DietaryTag = "V" | "VEGAN" | "GF" | "SPICY" | string
-
 export type AllergenWarning =
   | "GLUTEN"
   | "MILK"

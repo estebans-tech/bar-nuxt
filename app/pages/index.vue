@@ -4,7 +4,7 @@ import SignatureCocktailSection from '~/components/cocktail/SignatureCocktailSec
 import VisitSection from '~/components/visit/VisitSection.vue'
 import VibeGallerySection from '~/components/gallery/VibeGallerySection.vue'
 import SiteFooter from '~/components/footer/SiteFooter.vue'
-import MenuLinksSection from '~/components/menu/PdfLinks.vue'
+import PdfLinks from '~/components/menu/PdfLinks.vue'
 import OffersSection from '~/components/offer/OffersSection.vue'
 
 import { SIGNATURE_COCKTAILS } from '~/constants/cocktails'
@@ -27,7 +27,7 @@ const hero = {
   <main>
     <HeroSection v-bind="hero" />
 
-    <MenuLinksSection
+    <PdfLinks
       title="Cocktails & Menüs"
       :intro="'Unsere aktuellen Karten als PDF.'"
       :items="PDF_MENU"
