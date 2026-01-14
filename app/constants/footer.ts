@@ -7,7 +7,8 @@ export const FOOTER: FooterConfig = {
   phone: { label: '+49 511 16919678', href: PHONE_HREF },
   links: {
     quick: [
-      { label: 'Menü', href: '/menu' },
+      { label: 'Home', href: '/' },
+      { label: 'Karten', href: '/karten' },
       { label: 'Hier finden', href: MAPS_HREF, external: true },
       { label: 'Öffnungszeiten', href: '#visit' },
       { label: 'Über uns', href: '/about' }

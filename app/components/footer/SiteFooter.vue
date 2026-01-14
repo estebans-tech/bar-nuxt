@@ -64,7 +64,8 @@ const info = VISIT_INFO
             <ul class="mt-2 space-y-1.5">
               <li v-for="l in FOOTER.links.quick" :key="l.label">
                 <component
-                  :is="l.external ? 'a' : 'NuxtLink'"
+                  v-if="l.external"
+                  is="a"
                   :href="l.href"
                   :to="l.external ? undefined : l.href"
                   :target="l.external ? '_blank' : undefined"
@@ -73,6 +74,9 @@ const info = VISIT_INFO
                 >
                   {{ l.label }}
                 </component>
+                <NuxtLink v-else :to="l.href" class="text-white hover:text-gold transition-colors">
+                  {{ l.label }}
+                </NuxtLink>
               </li>
             </ul>
           </div>

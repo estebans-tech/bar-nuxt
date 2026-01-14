@@ -32,6 +32,7 @@ const hero = {
       :intro="'Unsere aktuellen Karten als PDF.'"
       :items="PDF_MENU"
     />
+
     <OffersSection
       :title="OFFER_HEADING.title"
       :subtitle="OFFER_HEADING.subtitle"

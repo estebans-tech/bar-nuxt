@@ -113,32 +113,35 @@ const onCardClick = (it: { id: string; title: string }) =>
 
           <!-- Innehåll -->
           <div class="px-5 py-4">
-            <div class="flex items-center justify-between gap-3">
-              <h3 class="text-white text-xl md:text-2xl font-semibold leading-tight">
-                {{ offer.title }}
-              </h3>
+            <h3 class="text-white text-xl md:text-2xl font-semibold leading-tight">
+              {{ offer.title }}
+            </h3>
+            <div
+              class="flex items-start gap-3"
+              :class="offer.badge ? 'justify-between' : 'justify-start'">
+
+              <!-- Beskrivning (flera rader, valfritt) -->
+              <ul
+                v-if="offer.lines?.length"
+                class="mt-3 space-y-1">
+                <li
+                  v-for="(line, i) in offer.lines"
+                  :key="i"
+                  class="text-white/75 text-sm leading-relaxed"
+                >
+                  {{ line }}
+                </li>
+              </ul>
 
               <!-- Badge (valfri) -->
               <Badge 
                 v-if="offer.badge"
-                class="shring-0"
+                class="shring-0 mt-3"
                 size="xs"
                 variant="elegant"
                 tone="gold">{{ offer.badge }}</Badge>
             </div>
 
-            <!-- Beskrivning (flera rader, valfritt) -->
-            <ul
-              v-if="offer.lines?.length"
-              class="mt-3 space-y-1">
-              <li
-                v-for="(line, i) in offer.lines"
-                :key="i"
-                class="text-white/75 text-sm leading-relaxed"
-              >
-                {{ line }}
-              </li>
-            </ul>
           </div>
         </article>
       </div>
