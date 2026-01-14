@@ -1554,3 +1554,1386 @@ blocks:
     - price:
         amount: 7.95
         currency: EUR
+sections:
+- id: highball
+  title: HIGHBALL
+  subtitle: Highballs sind von der Happy Hour ausgeschlossen
+  blocks:
+  - type: item
+    item:
+      id: highball-gin-passion
+      name: Gin Passion
+      description: Gin, frische Limette, frische Maracuja, Gurke, frische Ingwer, Gingerbier, Maracujanektar
+      prices:
+      - price:
+          amount: 12.0
+          currency: EUR
+  - type: item
+    item:
+      id: highball-pornstar-martini
+      name: Pornstar Martini
+      description: Vodka, Passionsfrucht, Passionsfrucht liqour, Vanillesirup, Limette, Prosecco
+      prices:
+      - price:
+          amount: 12.0
+          currency: EUR
+  - type: item
+    item:
+      id: highball-sena-43
+      name: Sena 43
+      description: 43er Likör, Frischer Limettensaft, Orangensaft, Frische Ingwer, Gurke, Gingerbier
+      prices:
+      - price:
+          amount: 10.5
+          currency: EUR
+  - type: item
+    item:
+      id: highball-nutty-martini
+      name: Nutty Martini
+      description: Vodka, Lime Juice, trockener Vermouth, Frangelico
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: highball-gin-basel
+      name: Gin Basel
+      description: Gin, Frischer Basilikum, Limette, Zuckersirup, Ginger Ale
+      prices:
+      - price:
+          amount: 12.0
+          currency: EUR
+  - type: item
+    item:
+      id: highball-vanille-martini
+      name: Vanille Martini
+      description: Vodka, Vanillesirup, trockener Vermouth, Lime Juice
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: highball-minth-martini
+      name: Minth Martini
+      description: Vodka, Creme de menthe grün, trockener Vermouth
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+- id: martinis
+  title: MARTINIS
+  subtitle: Klassische Cocktails mit hohem Alkoholanteil
+  blocks:
+  - type: item
+    item:
+      id: martinis-apple-martini-mit-schokoladenrand
+      name: Apple Martini - mit Schokoladenrand
+      description: Vodka, trockener Vermouth, Apple Sour, Lime Juice
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: martinis-martini-dry-bombay
+      name: Martini Dry
+      description: Bombay Sapphire Gin, trockener Vermouth, Olive - gerührt
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: martinis-martini-dry-vodka
+      name: Martini Dry
+      description: Vodka, trockener Vermouth, Olive - geschüttelt o. gerührt
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: martinis-peach-martini
+      name: Peach Martini
+      description: Vodka, Peachtree, trockener Vermouth
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: martinis-melon-martini
+      name: Melon Martini
+      description: Vodka, Melonlikör, trockener Vermouth
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: martinis-espresso-martini
+      name: Espresso Martini
+      description: Vodka, Kahlua, espresso
+      prices:
+      - price:
+          amount: 12.0
+          currency: EUR
+- id: non-alcoholics
+  title: NON ALCOHOLICS
+  blocks:
+  - type: item
+    item:
+      id: na-911er
+      name: 911er
+      description: Mangosaft, Zitrone, Lime Juice, Ananassaft, Orangensaft
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-ipanema-joana
+      name: Ipanema Joana
+      description: Limette, Rohrzucker, Ginger Ale
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-mango-ipanema
+      name: Mango Ipanema
+      description: Limette, Rohrzucker, Mangosaft, Ginger Ale
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-peach-ipanema
+      name: Peach Ipanema
+      description: Limette, Rohrzucker, Pfirsichnektar, Ginger Ale
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-strawberry-ipanema
+      name: Strawberry Ipanema
+      description: Limette, Rohrzucker, Erdbeere, Ginger Ale
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-joana-fresh
+      name: Joana Fresh
+      description: Limette, Rohrzucker, Grapefruitsaft, Grenadine
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-virgin-mary
+      name: Virgin Mary
+      description: Tomatensaft, Zitronensaft, Tabasco, Worcestersauce, Sellerie, Salz, Pfeffer
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-virgin-colada-coconut-kiss
+      name: Virgin Colada / Coconut Kiss
+      description: Sahne, Kokos, Ananassaft
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-virgin-strawberry-colada
+      name: Virgin Strawberry Colada
+      description: Sahne, Kokos, Erdbeersaft
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-virgin-peach-colada
+      name: Virgin Peach Colada
+      description: Sahne, Kokos, Pfirsichsaft
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-virgin-passoa-colada
+      name: Virgin Passoa Colada
+      description: Sahne, Kokos, Maracujanektar
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-virgin-mango-colada
+      name: Virgin Mango Colada
+      description: Sahne, Kokos, Mangosaft
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-san-francisco
+      name: San Francisco
+      description: Ananassaft, Orangensaft, Maracujanektar, Zitrone, Grenadine
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-simply-red
+      name: Simply Red
+      description: Ananassaft, Zitrone, Grenadine, Kokos
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-virgin-choco-colada
+      name: Virgin Choco Colada
+      description: Sahne, Kokos, Schokosirup, Ananassaft
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-manco
+      name: Manco
+      description: Mango, Kokos, Sahne, Orangensaft
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-blue-lady
+      name: Blue Lady
+      description: Blue Curacao alkoholfrei, Ananassaft, Orangensaft, Maracujanektar, Zitrone
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-strawberry-kiss
+      name: Strawberry Kiss
+      description: Erdbeere, Zitrone, Ananassaft, Orangensaft
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-green-dream
+      name: Green Dream
+      description: Creme de Menthe alkoholfrei, Orangensaft, Maracujanektar, Ananassaft, Zitrone
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-yellow-bird
+      name: Yellow Bird
+      description: Ananassaft, Orangensaft, Lime Juice, Zitrone, Mandelsirup
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-freshmaker
+      name: Freshmaker
+      description: Blue Curacao alkoholfrei, Zitrone, Lime Juice, Ananassaft, Grapefruitsaft, Tonic Water
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-citrus-punch
+      name: Citrus Punch
+      description: Grapefruitsaft, Ananassaft, Rohrzucker, Zitrone, Mandelsirup
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-frozen-melon-fun-saison
+      name: Frozen Melon Fun (saisonabhängig)
+      description: Zuckersirup, Zitrone, frische Wassermelone
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-mr-ramos
+      name: Mr. Ramos
+      description: Gingerbier, Frishe Maracuja, Ingwer, Limette, Maracujanektar
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: na-gin-and-tonic-alcohol-free
+      name: Gin And Tonic Alcohol Free
+      description: Tonic Water, Lime, Lemon zest
+      prices:
+      - price:
+          amount: 9.0
+          currency: EUR
+- id: homemade-limonade
+  title: HOMEMADE LIMONADE
+  blocks:
+  - type: item
+    item:
+      id: limonade-mango-fusion-frozen
+      name: Mango Fusion Frozen
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: limonade-sensation-frozen-strawberry
+      name: Sensation Frozen Strawberry
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: limonade-himbeere-minze-limette
+      name: Himbeere, Minze, Limette
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: limonade-basilikum-zitrone
+      name: Basilikum Zitrone
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: limonade-mango-maracuja
+      name: Mango Maracuja
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+- id: longdrinks-cubatas
+  title: LONGDRINKS | CUBATAS
+  subtitle: Longdrinks sind von der Happy Hour ausgeschlossen
+  blocks:
+  - type: item
+    item:
+      id: ld-bacardi-cola
+      name: Bacardi Cola
+      prices:
+      - price:
+          amount: 9.0
+          currency: EUR
+  - type: item
+    item:
+      id: ld-havana-club-cola
+      name: Havana Club Cola
+      prices:
+      - price:
+          amount: 8.95
+          currency: EUR
+  - type: item
+    item:
+      id: ld-havana-club-7-anos-cola-cola
+      name: Havana Club 7 Años Cola Cola
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: ld-pampero-anejo-especial-cola
+      name: Pampero Añejo Especial Cola
+      prices:
+      - price:
+          amount: 8.95
+          currency: EUR
+  - type: item
+    item:
+      id: ld-brugal-anejo-cola
+      name: Brugal Añejo Cola
+      prices:
+      - price:
+          amount: 8.95
+          currency: EUR
+  - type: item
+    item:
+      id: ld-bacardi-razz-sprite
+      name: Bacardi Razz & Sprite
+      prices:
+      - price:
+          amount: 9.5
+          currency: EUR
+  - type: item
+    item:
+      id: ld-bacardi-razz-cranberry
+      name: Bacardi Razz & Cranberry
+      prices:
+      - price:
+          amount: 9.5
+          currency: EUR
+  - type: item
+    item:
+      id: ld-jack-daniels-cola
+      name: Jack Daniel’s Cola
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: ld-jack-daniels-ginger-ale
+      name: Jack Daniel’s & Ginger Ale
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: ld-scotch-cola
+      name: Scotch & Cola
+      prices:
+      - price:
+          amount: 9.0
+          currency: EUR
+  - type: item
+    item:
+      id: ld-jim-beam-cola
+      name: Jim Beam Cola
+      prices:
+      - price:
+          amount: 9.0
+          currency: EUR
+  - type: item
+    item:
+      id: ld-finsbury-gin-tonic-water
+      name: Finsbury Gin & Tonic Water
+      prices:
+      - price:
+          amount: 8.5
+          currency: EUR
+  - type: item
+    item:
+      id: ld-tanqueray-gin-tonic-water
+      name: Tanqueray Gin & Tonic Water
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: ld-bombay-sapphire-tonic-water
+      name: Bombay Sapphire & Tonic Water
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: ld-hendricks-tonic-water
+      name: Hendrick’s & Tonic Water
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: ld-belvedere-vodka-tonic-water
+      name: Belvedere Vodka & Tonic Water
+      prices:
+      - price:
+          amount: 11.5
+          currency: EUR
+  - type: item
+    item:
+      id: ld-grey-goose-tonic-water
+      name: Grey Goose & Tonic Water
+      prices:
+      - price:
+          amount: 9.5
+          currency: EUR
+  - type: item
+    item:
+      id: ld-southern-comfort-ginger-ale
+      name: Southern Comfort & Ginger Ale
+      prices:
+      - price:
+          amount: 9.5
+          currency: EUR
+  - type: item
+    item:
+      id: ld-southern-comfort-cranberry
+      name: Southern Comfort & Cranberry
+      prices:
+      - price:
+          amount: 9.5
+          currency: EUR
+  - type: item
+    item:
+      id: ld-vodka-lemon
+      name: Vodka & Lemon
+      prices:
+      - price:
+          amount: 8.95
+          currency: EUR
+  - type: item
+    item:
+      id: ld-vodka-tonic-water
+      name: Vodka & Tonic Water
+      prices:
+      - price:
+          amount: 8.95
+          currency: EUR
+  - type: item
+    item:
+      id: ld-vodka-orange
+      name: Vodka & Orange
+      prices:
+      - price:
+          amount: 8.95
+          currency: EUR
+  - type: item
+    item:
+      id: ld-vodka-cranberry
+      name: Vodka & Cranberry
+      prices:
+      - price:
+          amount: 8.95
+          currency: EUR
+  - type: item
+    item:
+      id: ld-vodka-red-bull
+      name: Vodka & Red Bull
+      prices:
+      - price:
+          amount: 8.95
+          currency: EUR
+  - type: item
+    item:
+      id: ld-batida-kirsche
+      name: Batida & Kirsche
+      prices:
+      - price:
+          amount: 8.95
+          currency: EUR
+  - type: item
+    item:
+      id: ld-campari-soda
+      name: Campari & Soda
+      prices:
+      - price:
+          amount: 8.95
+          currency: EUR
+- id: whiskey
+  title: WHISKEY
+  blocks:
+  - type: item
+    item:
+      id: wh-jack-daniels-40-4cl
+      name: Jack Daniel’s 40% 4cl
+      prices:
+      - price:
+          amount: 7.5
+          currency: EUR
+  - type: item
+    item:
+      id: wh-jack-daniels-barrel-45-4cl
+      name: Jack Daniel’s Barrel 45% 4cl
+      prices:
+      - price:
+          amount: 9.0
+          currency: EUR
+  - type: item
+    item:
+      id: wh-gentleman-jack-rare-40-4cl
+      name: Gentleman Jack Rare 40% 4cl
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+  - type: item
+    item:
+      id: wh-jim-beam-40-4cl
+      name: Jim Beam 40% 4cl
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: wh-makers-mark-45-4cl
+      name: Maker’s Mark 45% 4cl
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+  - type: item
+    item:
+      id: wh-wild-turkey-101-50-1-4cl
+      name: Wild Turkey 101 50,1% 4cl
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+  - type: item
+    item:
+      id: wh-johnnie-walker-red-40-4cl
+      name: Johnnie Walker red 40% 4cl
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: wh-johnnie-walker-black-40-4cl
+      name: Johnnie Walker black 40% 4cl
+      prices:
+      - price:
+          amount: 7.5
+          currency: EUR
+  - type: item
+    item:
+      id: wh-johnnie-walker-green-43-4cl
+      name: Johnnie Walker green 43% 4cl
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: wh-four-roses-bourbon-40-4cl
+      name: Four Roses Bourbon 40% 4cl
+      prices:
+      - price:
+          amount: 4.5
+          currency: EUR
+  - type: item
+    item:
+      id: wh-ballantines-40-4cl
+      name: Ballantines 40% 4cl
+      prices:
+      - price:
+          amount: 7.0
+          currency: EUR
+  - type: item
+    item:
+      id: wh-chivas-regal-12-years-40-4cl
+      name: Chivas Regal 12 Years 40% 4cl
+      prices:
+      - price:
+          amount: 7.0
+          currency: EUR
+  - type: item
+    item:
+      id: wh-chivas-regal-18-years-40-4cl
+      name: Chivas Regal 18 Years 40% 4cl
+      prices:
+      - price:
+          amount: 12.0
+          currency: EUR
+  - type: item
+    item:
+      id: wh-jameson-40-4cl
+      name: Jameson 40% 4cl
+      prices:
+      - price:
+          amount: 7.0
+          currency: EUR
+  - type: item
+    item:
+      id: wh-highland-park-12-years-40-4cl
+      name: Highland Park 12 Years 40% 4cl
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+- id: cognac-brandy
+  title: COGNAC & BRANDY
+  blocks:
+  - type: item
+    item:
+      id: cb-osbourne-veterano-30-2cl
+      name: Osbourne Veterano 30% 2cl
+      prices:
+      - price:
+          amount: 3.5
+          currency: EUR
+  - type: item
+    item:
+      id: cb-osbourne-103-30-2cl
+      name: Osbourne 103 30% 2cl
+      prices:
+      - price:
+          amount: 4.0
+          currency: EUR
+  - type: item
+    item:
+      id: cb-carlos-i-40-2cl
+      name: Carlos I 40% 2cl
+      prices:
+      - price:
+          amount: 3.5
+          currency: EUR
+  - type: item
+    item:
+      id: cb-cardenal-mendoza-40-2cl
+      name: Cardenal Mendoza 40% 2cl
+      prices:
+      - price:
+          amount: 4.0
+          currency: EUR
+  - type: item
+    item:
+      id: cb-remy-martin-vsop-40-2cl
+      name: Remy Martin V.S.O.P. 40% 2cl
+      prices:
+      - price:
+          amount: 4.5
+          currency: EUR
+- id: liqueure-bitters
+  title: LIQUEURE & BITTERS
+  blocks:
+  - type: item
+    item:
+      id: lb-averna-29-2cl
+      name: Averna 29% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-ramazzotti-30-2cl
+      name: Ramazzotti 30% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-fernet-branca-39-2cl
+      name: Fernet Branca 39% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-fernet-mentha-28-2cl
+      name: Fernet Mentha 28% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-cynar-16-5-2cl
+      name: Cynar 16,5% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-jagermeister-35-2cl
+      name: Jägermeister 35% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-baileys-17-2cl
+      name: Baileys 17% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-malibu-21-2cl
+      name: Malibu 21% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-amaretto-28-2cl
+      name: Amaretto 28% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-molinari-sambuca-extra-40-2cl
+      name: Molinari Sambuca Extra 40% 2cl
+      prices:
+      - price:
+          amount: 3.5
+          currency: EUR
+  - type: item
+    item:
+      id: lb-southern-comfort-35-2cl
+      name: Southern Comfort 35% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-licor-43-31-2cl
+      name: Licor 43 31% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-aperol-7-11-2cl
+      name: Aperol 7 11% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-grand-marnier-40-2cl
+      name: Grand Marnier 40% 2cl
+      prices:
+      - price:
+          amount: 3.8
+          currency: EUR
+  - type: item
+    item:
+      id: lb-frangelico-20-2cl
+      name: Frangelico 20% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-hierbas-30-2cl
+      name: Hierbas 30% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-campari-25-2cl
+      name: Campari 25% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: lb-berliner-luft-25-2cl
+      name: Berliner Luft 25% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+- id: shooter
+  title: SHOOTER
+  blocks:
+  - type: item
+    item:
+      id: sh-b52-4cl
+      name: B52 4cl
+      description: Kahlua, Bailey’s, Old Pascas 73%
+      prices:
+      - price:
+          amount: 7.0
+          currency: EUR
+  - type: item
+    item:
+      id: sh-bounty-4cl
+      name: Bounty 4cl
+      description: Malibu, Batido de Coco, Bailey’s
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: sh-orgasmus-4cl
+      name: Orgasmus 4cl
+      description: Sambuca, Bailey’s
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: sh-mini-black-russian-4cl
+      name: Mini Black Russian 4cl
+      description: Russian Standard, Kahlua
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: sh-mini-white-russian-4cl
+      name: Mini White Russian 4cl
+      description: Russian Standard, Kahlua, Sahne
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+- id: schnaepse
+  title: SCHNÄPSE
+  blocks:
+  - type: item
+    item:
+      id: sn-hausschnaps-marille-34-2cl
+      name: Hausschnaps Marille 34% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: sn-wiliams-poire-40-2cl
+      name: Wiliams Poire 40% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: sn-wiliams-morand-43-2cl
+      name: Wiliams Morand 43% 2cl
+      prices:
+      - price:
+          amount: 5.4
+          currency: EUR
+- id: vodka
+  title: VODKA
+  blocks:
+  - type: item
+    item:
+      id: vodka-belvedere-40-4cl
+      name: Belvedere 40% 4cl
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: vodka-absolut-40-2cl
+      name: Absolut 40% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: vodka-grey-goose-40-4cl
+      name: Grey Goose 40% 4cl
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+- id: vermouth
+  title: VERMOUTH
+  blocks:
+  - type: item
+    item:
+      id: vermouth-martini-blanco-14-5-5cl
+      name: Martini Blanco 14,5% 5cl
+      prices:
+      - price:
+          amount: 5.0
+          currency: EUR
+  - type: item
+    item:
+      id: vermouth-martini-rosso-14-4-5cl
+      name: Martini Rosso 14,4% 5cl
+      prices:
+      - price:
+          amount: 5.0
+          currency: EUR
+  - type: item
+    item:
+      id: vermouth-martini-extra-dry-15-5cl
+      name: Martini Extra Dry 15% 5cl
+      prices:
+      - price:
+          amount: 5.0
+          currency: EUR
+  - type: item
+    item:
+      id: vermouth-noilly-prat-18-5cl
+      name: Noilly Prat 18% 5cl
+      prices:
+      - price:
+          amount: 5.0
+          currency: EUR
+- id: tequila
+  title: TEQUILA
+  blocks:
+  - type: item
+    item:
+      id: tequila-sierra-silver-38-2cl
+      name: Sierra Silver 38% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: tequila-jose-cuervo-especial-38-2cl
+      name: Jose Cuervo Especial 38% 2cl
+      prices:
+      - price:
+          amount: 3.5
+          currency: EUR
+  - type: item
+    item:
+      id: tequila-jose-cuervo-1800-anejo-38-2cl
+      name: Jose Cuervo 1800 Añejo 38% 2cl
+      prices:
+      - price:
+          amount: 3.5
+          currency: EUR
+  - type: item
+    item:
+      id: tequila-silver-patron-38-2cl
+      name: Silver Patrón 38% 2cl
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: tequila-anejo-patron-38-2cl
+      name: Añejo Patrón 38% 2cl
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+- id: grappa
+  title: GRAPPA
+  blocks:
+  - type: item
+    item:
+      id: grappa-nonino-41-2cl
+      name: Nonino 41% 2cl
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: grappa-nonino-chardonnay-41-2cl
+      name: Nonino Chardonnay 41% 2cl
+      prices:
+      - price:
+          amount: 4.9
+          currency: EUR
+  - type: item
+    item:
+      id: grappa-nonino-de-prosecco-41-2cl
+      name: Nonino de Prosecco 41% 2cl
+      prices:
+      - price:
+          amount: 5.4
+          currency: EUR
+- id: rum
+  title: RUM
+  blocks:
+  - type: item
+    item:
+      id: rum-bacardi-rum-oro-37-5-4cl
+      name: Bacardi Rum Oro 37,5% 4cl
+      description: Puerto Rico
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: rum-bacardi-rum-8-anos-40-4cl
+      name: Bacardi Rum 8 Años 40% 4cl
+      description: Puerto Rico
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-pampero-anejo-especial-40-4cl
+      name: Pampero Añejo Especial 40% 4cl
+      description: Venezuela
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: rum-brugal-anejo-38-4cl
+      name: Brugal Añejo 38% 4cl
+      description: Dominikanische Republik
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: rum-botucal-reserva-exclusiva-40-4cl
+      name: Botucal Reserva Exclusiva 40% 4cl
+      description: Venezuela
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-zacapa-23-40-4cl
+      name: Zacapa 23 40% 4cl
+      description: Guatemala
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-santa-teresa-1976-40-4cl
+      name: Santa Teresa 1976 40% 4cl
+      description: Venezuela
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-matusalem-gran-reserva-15-anos-40-4cl
+      name: Matusalem Gran Reserva 15 Años 40% 4cl
+      description: Dominikanische Republik
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-kraken-38-4cl
+      name: Kraken 38% 4cl
+      description: Trinidad / Tobago
+      prices:
+      - price:
+          amount: 7.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-barcelo-gran-anejo-37-5-4cl
+      name: Barceló Gran Añejo 37,5% 4cl
+      description: Dominikanische Republik
+      prices:
+      - price:
+          amount: 7.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-havana-club-3-anos-40-4cl
+      name: Havana Club 3 Años 40% 4cl
+      description: Cuba
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: rum-havana-club-7-anos-40-4cl
+      name: Havana Club 7 Años 40% 4cl
+      description: Cuba
+      prices:
+      - price:
+          amount: 7.5
+          currency: EUR
+  - type: item
+    item:
+      id: rum-abuelo-7-anos-40-4cl
+      name: Abuelo 7 Años 40% 4cl
+      description: Panama
+      prices:
+      - price:
+          amount: 7.5
+          currency: EUR
+- id: gin-tonic
+  title: GIN & TONIC
+  blocks:
+  - type: item
+    item:
+      id: gt-finsbury-37-5-4cl
+      name: Finsbury 37,5% 4cl
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: gt-bombay-sapphire-gin-40-4cl
+      name: Bombay Sapphire Gin 40% 4cl
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+  - type: item
+    item:
+      id: gt-tanqueray-dry-gin-47-3-4cl
+      name: Tanqueray Dry Gin 47,3% 4cl
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+  - type: item
+    item:
+      id: gt-tanqueray-10-47-3-4cl
+      name: Tanqueray 10 47,3% 4cl
+      prices:
+      - price:
+          amount: 8.5
+          currency: EUR
+  - type: item
+    item:
+      id: gt-hendricks-gin-44-4cl
+      name: Hendrick’s Gin 44% 4cl
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+  - type: item
+    item:
+      id: gt-gin-mare-42-7-4cl
+      name: Gin Mare 42,7% 4cl
+      prices:
+      - price:
+          amount: 10.5
+          currency: EUR
+  - type: item
+    item:
+      id: gt-monkeys-47-4cl
+      name: Monkeys 47% 4cl
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: gt-the-duke-45-4cl
+      name: The Duke 45% 4cl
+      prices:
+      - price:
+          amount: 9.0
+          currency: EUR
+  - type: item
+    item:
+      id: gt-bulldogg-40-4cl
+      name: Bulldogg 40% 4cl
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: gt-ferdinands-55-4cl
+      name: Ferdinand’s 55% 4cl
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: gt-brockmans-40-4cl
+      name: Brockmans 40% 4cl
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: gt-cucumberland-hannover-dry-gin-43-4cl
+      name: Cucumberland Hannover Dry Gin 43% 4cl
+      prices:
+      - price:
+          amount: 7.0
+          currency: EUR
+- id: tonic
+  title: TONIC
+  blocks:
+  - type: item
+    item:
+      id: tonic-schweppes-dry-thomas
+      name: Schweppes Dry Thomas
+      prices:
+      - price:
+          amount: 3.4
+          currency: EUR
+  - type: item
+    item:
+      id: tonic-henry
+      name: Henry
+      prices:
+      - price:
+          amount: 3.6
+          currency: EUR
+  - type: item
+    item:
+      id: tonic-fever-tree-mediterranean
+      name: Fever Tree Mediterranean
+      prices:
+      - price:
+          amount: 3.9
+          currency: EUR
+  - type: item
+    item:
+      id: tonic-fever-tree-premium-india
+      name: Fever Tree Premium India
+      prices:
+      - price:
+          amount: 3.9
+          currency: EUR
