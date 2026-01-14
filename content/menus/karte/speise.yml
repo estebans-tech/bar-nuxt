@@ -1,0 +1,558 @@
+pageTitle: Speisekarte
+locale: de-DE
+defaultCurrency: EUR
+
+blocks:
+  - type: callout
+    title: MONTAG IST PIZZATAG
+    body:
+      - Montags erhaltet Ihr Eure
+      - Lieblingspizza mit 20% Ermäßigung
+    variant: promo
+
+  - type: category
+    title: PIZZA
+    subtitle: Weizentortilla Boden, 30 cm, extra dünn
+
+  - type: item
+    item:
+      id: pizza-salami
+      name: Salami
+      description: Tomatensauce, Käse, Paprika, Salami
+      price:
+        amount: 12.9
+        currency: EUR
+
+  - type: item
+    item:
+      id: pizza-leni
+      name: Leni
+      description: Tomatensauce, Käse, Schinken, Salami, Jalapeños, Champignons
+      price:
+        amount: 13.9
+        currency: EUR
+
+  - type: item
+    item:
+      id: pizza-caprese
+      name: Caprese
+      description: Tomatensauce, Tomaten, Mozzarella
+      price:
+        amount: 12.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: pizza-pavo
+      name: Pavo
+      description: Tomatensauce, Käse, Zwiebeln, Zucchini, Paprika, Putenbrust
+      price:
+        amount: 14.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: pizza-schinken
+      name: Schinken
+      description: Tomatensauce, Käse, Kochschinken
+      price:
+        amount: 11.9
+        currency: EUR
+
+  - type: item
+    item:
+      id: pizza-mediterrania
+      name: Mediterrania
+      description: Tomatensauce, Käse, Mozzarella, Serrano Schinken, Ruccola, Parmesan
+      price:
+        amount: 14.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: pizza-vegetaria
+      name: Vegetaria
+      tags: [V]
+      description: Tomatensauce, Käse, Mozzarella, Paprika, Oliven mit kern, Zwiebeln, Champignons, Zucchini
+      price:
+        amount: 12.9
+        currency: EUR
+
+  - type: item
+    item:
+      id: pizza-picante
+      name: Picante
+      tags: [V]
+      description: Tomatensauce, Käse, Zucchini, Pepperoni, Jalapeños
+      price:
+        amount: 12.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: pizza-atun
+      name: Atun
+      description: Tomatensauce, Käse, Thunfisch, Zwiebeln
+      price:
+        amount: 14.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: pizza-hawaii
+      name: Hawaii
+      description: Tomatensauce, Käse, frische Ananas, Kochschinken
+      price:
+        amount: 12.5
+        currency: EUR
+
+  - type: category
+    title: PASTA
+
+  - type: item
+    item:
+      id: pasta-linguine-1
+      name: Linguine
+      description: mit Zucchini, Champignon, Kirschtomaten, Ruccola, Tomatensauce mit Sahne und Parmesan
+      price:
+        amount: 13.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: pasta-linguine-2
+      name: Linguine
+      description: in Schinken Sahne-Soße
+      price:
+        amount: 13.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: pasta-linguine-in-tomatensauce
+      name: Linguine in Tomatensauce
+      description: ""
+      price:
+        amount: 12.0
+        currency: EUR
+
+  - type: note
+    body: V = Vegetarisch
+
+  - type: note
+    body: "Die Küche ist bis 22.00 Uhr geöffnet. Danach servieren wir weiter mit ☆ gekennzeichnete Snacks!"
+
+  - type: callout
+    title: MITTWOCH IST SALATTAG
+    body:
+      - Mittwochs erhaltet Ihre Lieblingssalat mit
+      - 20% Ermäßigung
+    variant: promo
+
+  - type: category
+    title: ENCHILADAS
+    subtitle:
+      - Gefüllte Weizentortillas mit Käse überbacken.
+      - Serviert mit Salatabeilage
+
+  - type: item
+    item:
+      id: enchiladas-vegetarisch
+      name: Vegetarisch
+      description: "Gebratenes Gemüse: Champignons, Zucchini, grüne Bohnen, Paprika, Zwiebeln, Knoblauch, Koriander, Tomatensauce, überbacken mit Salsa Fresca und Käse"
+      price:
+        amount: 17.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: enchiladas-chilli-con-carne
+      name: Chilli con Carne
+      description: Mit Schweine- und Rindfleisch, überbacken
+      price:
+        amount: 17.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: enchiladas-putenbrust
+      name: Putenbrust
+      description: Mit gebratenem Gemüse, Tomatensauce, überbacken
+      price:
+        amount: 18.0
+        currency: EUR
+
+  - type: category
+    title: SALATE DER SAISON
+    subtitle:
+      - Gemischter frischer Salat mit
+      - verschiedenen Hauptzutaten.
+
+  - type: item
+    item:
+      id: salat-atun
+      name: Atun
+      description: mit Thunfisch und Zwiebeln
+      price:
+        amount: 14.45
+        currency: EUR
+
+  - type: item
+    item:
+      id: salat-pavo
+      name: Pavo
+      description: mit warmer Putenbrust in Tomatensauce
+      price:
+        amount: 14.45
+        currency: EUR
+
+  - type: item
+    item:
+      id: salat-queso
+      name: Queso
+      tags: [V]
+      description: mit Schafskäse, Parmesan & Manchego Käse
+      price:
+        amount: 14.45
+        currency: EUR
+
+  - type: item
+    item:
+      id: salat-sena
+      name: Seña
+      description: mit Schafskäse, PepperoniEi & Oliven mit kern
+      price:
+        amount: 14.45
+        currency: EUR
+
+  - type: note
+    body: "Serviert mit: Honig Senf Dressing (hausgemacht), Olivenöl & Balsamico, Yoghurt Dressing oder French Dressing"
+
+  - type: category
+    title: BRUSCETTA
+    subtitle: 3 Bruschetta, serviert mit Salatbeilage
+
+  - type: item
+    item:
+      id: bruschetta-classic
+      name: Classic
+      tags: [V]
+      description: ""
+      price:
+        amount: 9.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: bruschetta-classic-serrano
+      name: Classic mit Serrano Schinken
+      description: ""
+      price:
+        amount: 12.9
+        currency: EUR
+
+  - type: item
+    item:
+      id: bruschetta-mozzarella-ueberbacken
+      name: Mozzarella überbacken
+      description: ""
+      price:
+        amount: 10.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: bruschetta-thunfisch-mozzarella-ueberbacken
+      name: Thunfisch / Mozzarella überbacken
+      description: ""
+      price:
+        amount: 12.9
+        currency: EUR
+
+  - type: item
+    item:
+      id: bruschetta-schafskaese-ueberbacken
+      name: Schafskäse überbacken
+      tags: [V]
+      description: ""
+      price:
+        amount: 11.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: bruschetta-gemischte-platte-15-stueck
+      name: Gemischte Platte mit 15 Stück
+      description: ""
+      price:
+        amount: 38.0
+        currency: EUR
+
+  - type: category
+    title: STARTERS | TAPAS
+
+  - type: item
+    item:
+      id: starters-tortillachips-3-dips
+      name: "☆ Tortillachips im Korb mit 3 Dips"
+      tags: [V]
+      description: ""
+      price:
+        amount: 9.9
+        currency: EUR
+
+  - type: item
+    item:
+      id: starters-brot-3-dips
+      name: Brot mit 3 Dips
+      tags: [V]
+      description: ""
+      price:
+        amount: 8.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: tapas-nachos-mit-dips
+      name: "☆ Nachos mit Dips"
+      tags: [V]
+      description: Jalapeños & Käse überbacken
+      price:
+        amount: 12.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: tapas-nachos-mit-putenbrust
+      name: "☆ Nachos mit Putenbrust"
+      description: Dips, Jalapeños & Käse überbacken
+      price:
+        amount: 14.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: tapas-nachos-mit-chilli-con-carne
+      name: Nachos mit Chilli con Carne
+      description: Jalapeños & Käse überbacken
+      price:
+        amount: 14.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: tapas-schafskaese-ueberbacken-mit-brot
+      name: Schafskäse überbacken
+      tags: [V]
+      description: Mit Tomaten und Zwiebeln, Oregano und Brot
+      price:
+        amount: 13.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: tapas-chili-con-carne-mit-brot
+      name: Chili Con Carne mit Brot
+      description: ""
+      price:
+        amount: 14.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: tapas-portion-oliven-mit-kern
+      name: "☆ Portion Oliven mit Kern"
+      description: ""
+      price:
+        amount: 5.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: tapas-serrano-schinken-brot-alioli
+      name: Serrano Schinken mit Brot und Alioli
+      description: ""
+      price:
+        amount: 11.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: tapas-chorizo-brot-alioli
+      name: Chorizo mit Brot und Alioli
+      description: ""
+      price:
+        amount: 9.9
+        currency: EUR
+
+  - type: item
+    item:
+      id: tapas-manchego-kaese-brot-alioli
+      name: Manchego Käse mit Brot und Alioli
+      tags: [V]
+      description: ""
+      price:
+        amount: 9.9
+        currency: EUR
+
+  - type: item
+    item:
+      id: tapas-tapas-teller
+      name: Tapas Teller
+      description: Serrano Schinken, Chorizo, Manchego Käse, Oliven, Pepperoni, Gemischter Salat, Aioli Dip, Auberginen-Paprika Dip
+      price:
+        amount: 17.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: tapas-erdnuesse
+      name: "☆ Erdnüsse"
+      tags: [V]
+      description: ""
+      price:
+        amount: 3.5
+        currency: EUR
+
+  - type: note
+    body: "Die Küche ist bis 22.00 Uhr geöffnet. Danach servieren wir weiter mit ☆ gekennzeichnete Snacks!"
+
+  - type: category
+    title: OFENKARTOFFEL
+    subtitle: Mit Salatbeilage, Magerquark und Kräutern
+
+  - type: item
+    item:
+      id: ofenkartoffel-salsa-fresca
+      name: Salsa Fresca
+      tags: [V]
+      description: ""
+      price:
+        amount: 11.9
+        currency: EUR
+
+  - type: item
+    item:
+      id: ofenkartoffel-putenbrust
+      name: Putenbrust
+      description: ""
+      price:
+        amount: 13.9
+        currency: EUR
+
+  - type: category
+    title: OFENBAGUETTE
+    subtitle: Überbacken mit Salatbeilage
+
+  - type: item
+    item:
+      id: ofenbaguette-schinken-kaese
+      name: Schinken & Käse
+      description: ""
+      price:
+        amount: 12.45
+        currency: EUR
+
+  - type: item
+    item:
+      id: ofenbaguette-salami-kaese
+      name: Salami & Käse
+      description: ""
+      price:
+        amount: 12.45
+        currency: EUR
+
+  - type: item
+    item:
+      id: ofenbaguette-tomaten-mozzarella
+      name: Tomaten & Mozzarella
+      tags: [V]
+      description: ""
+      price:
+        amount: 12.45
+        currency: EUR
+
+  - type: item
+    item:
+      id: ofenbaguette-thunfisch-kaese
+      name: Thunfisch & Käse
+      description: ""
+      price:
+        amount: 13.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: ofenbaguette-serrano-schinken-tomaten-kaese
+      name: Serrano Schinken & Tomaten & Käse
+      description: ""
+      price:
+        amount: 14.9
+        currency: EUR
+
+  - type: item
+    item:
+      id: ofenbaguette-putenbrust-kaese
+      name: Putenbrust & Käse
+      description: ""
+      price:
+        amount: 13.9
+        currency: EUR
+
+  - type: category
+    title: EXTRAS
+
+  - type: item
+    item:
+      id: extras-dip-schaelchen
+      name: Dip Schälchen
+      description: ""
+      price:
+        amount: 2.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: extras-extra-brot
+      name: Extra Brot
+      description: ""
+      price:
+        amount: 2.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: extras-portion-pute
+      name: Portion Pute
+      description: ""
+      price:
+        amount: 5.0
+        currency: EUR
+
+  - type: item
+    item:
+      id: extras-portion-schafskaese
+      name: Portion Schafskäse
+      description: ""
+      price:
+        amount: 2.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: extras-portion-parmesan
+      name: Portion Parmesan
+      description: ""
+      price:
+        amount: 2.5
+        currency: EUR
+
+  - type: item
+    item:
+      id: extras-schaelchen-oliven
+      name: Schälchen Oliven
+      description: ""
+      price:
+        amount: 2.0
+        currency: EUR
+
