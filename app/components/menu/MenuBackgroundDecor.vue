@@ -1,12 +1,31 @@
 <script setup lang="ts">
+import type { MenuMotif, DecorPlacement } from '~/types/menu'
+
 withDefaults(
   defineProps<{
-    variant?: "default" | "brown" | "red" | "blue"
+    motifs?: MenuMotif[], 
   }>(),
   {
-    variant: "default"
+    motifs: () => []
   }
 )
+
+const placementClass: Record<DecorPlacement, string> = {
+  "top-left": "top-0 left-0",
+  "top-right": "top-0 right-0",
+  "bottom-left": "bottom-0 left-0",
+  "bottom-right": "bottom-0 right-0",
+  left: "top-1/2 left-0 -translate-y-1/2",
+  right: "top-1/2 right-0 -translate-y-1/2",
+  top: "top-0 left-1/2 -translate-x-1/2",
+  bottom: "bottom-0 left-1/2 -translate-x-1/2",
+  center: "top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+}
+
+const motifStyle = (m: MenuMotif) => ({
+  opacity: m.opacity ?? 0.35,
+  transform: `scale(${m.scale ?? 1}) rotate(${m.rotate ?? 0}deg)`
+})
 </script>
 
 <template>

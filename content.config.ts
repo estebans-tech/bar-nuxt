@@ -39,15 +39,25 @@ const menuBlock = z.discriminatedUnion("type", [
   })
 ])
 
+const menuBackground = z.object({
+  color: z.string().optional(),
+  decors: z.array(z.object({
+    motif: z.string(),
+    position: z.string(),
+    opacity: z.number().min(0).max(1).optional()
+    })).optional()
+}).optional()
+
 export default defineContentConfig({
   collections: {
     menus: defineCollection({
       type: "data",
       source: "menus/**/*.yml",
       schema: z.object({
-        pageTitle: z.string(),
+        pageTitle: z.string().optional(),
         locale: z.string(),
         defaultCurrency: z.string(),
+        background: menuBackground,
         blocks: z.array(menuBlock)
       })
     })

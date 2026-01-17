@@ -63,10 +63,59 @@ export type NoteBlock = {
 
 export type MenuBlock = CalloutBlock | CategoryBlock | ItemBlock | NoteBlock
 
+export type MenuBgColorKey =
+  | "brown"
+  | "red"
+  | "sage"
+  | "teal"
+  | "ochre"
+  | "darkBrown"
+  | "blue"
+  | "olive"
+  | "charcoal"
+  | "olive2"
+  | "blueGray"
+  | "mocha"
+  | "deepOlive"
+  | "orange"
+  | "steel"
+  | "deepTeal"
+  | "rose"
+  | "plum"
+export type DecorMotif = "orchid" | "palm" | "leaf" | "agave" | "hibiscus" | "vine"
+export type DecorPlacement =
+  | "top-left" | "top-right" | "bottom-left" | "bottom-right"
+  | "left" | "right" | "top" | "bottom" | "center"
+
+export type BackgroundDecorLayer = {
+  motif: DecorMotif
+  placement: DecorPlacement
+  opacity?: number
+  scale?: number
+  rotate?: number
+  flipX?: boolean
+  flipY?: boolean
+}
+
+export type MenuMotif = {
+  motif: DecorMotif
+  placement: DecorPlacement
+  opacity?: number
+  scale?: number
+  rotate?: number
+  flipX?: boolean
+  flipY?: boolean
+}
+
+export type MenuBackground = {
+  color?: MenuBgColorKey | string
+  motifs?: MenuMotif[]
+}
+
 export type MenuPageModel = {
   pageTitle: string
   locale: Locale
   defaultCurrency?: CurrencyCode
   blocks: MenuBlock[]
+  background: MenuBackground 
 }
-

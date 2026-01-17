@@ -1,0 +1,1317 @@
+#pageTitle: Cocktailkarte
+locale: de-DE
+defaultCurrency: EUR
+background:
+  color: blueGray
+blocks:
+- type: category
+  title: LIQUEURE & BITTERS
+- type: item
+  item:
+    id: liqueure-bitters-averna-29-2cl
+    name: Averna 29% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-ramazzotti-30-2cl
+    name: Ramazzotti 30% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-fernet-branca-39-2cl
+    name: Fernet Branca 39% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-fernet-mentha-28-2cl
+    name: Fernet Mentha 28% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-cynar-16-5-2cl
+    name: Cynar 16,5% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-jaegermeister-35-2cl
+    name: Jägermeister 35% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-baileys-17-2cl
+    name: Baileys 17% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-malibu-21-2cl
+    name: Malibu 21% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-amaretto-28-2cl
+    name: Amaretto 28% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-molinari-sambuca-extra-40-2cl
+    name: Molinari Sambuca Extra 40% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.5
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-southern-comfort-35-2cl
+    name: Southern Comfort 35% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-licor-43-31-2cl
+    name: Licor 43 31% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-aperol-7-11-2cl
+    name: Aperol 7 11% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-grand-marnier-40-2cl
+    name: Grand Marnier 40% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.8
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-frangelico-20-2cl
+    name: Frangelico 20% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-hierbas-30-2cl
+    name: Hierbas 30% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-campari-25-2cl
+    name: Campari 25% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: liqueure-bitters-berliner-luft-25-2cl
+    name: Berliner Luft 25% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: category
+  title: SHOOTER
+- type: item
+  item:
+    id: shooter-b52-4cl
+    name: B52 4cl
+    description: Kahlua, Bailey’s, Old Pascas 73%
+    prices:
+    - price:
+        amount: 7.0
+        currency: EUR
+- type: item
+  item:
+    id: shooter-bounty-4cl
+    name: Bounty 4cl
+    description: Malibu, Batido de Coco, Bailey’s
+    prices:
+    - price:
+        amount: 7.95
+        currency: EUR
+- type: item
+  item:
+    id: shooter-orgasmus-4cl
+    name: Orgasmus 4cl
+    description: Sambuca, Bailey’s
+    prices:
+    - price:
+        amount: 6.0
+        currency: EUR
+- type: item
+  item:
+    id: shooter-mini-black-russian-4cl
+    name: Mini Black Russian 4cl
+    description: Russian Standard, Kahlua
+    prices:
+    - price:
+        amount: 6.0
+        currency: EUR
+- type: item
+  item:
+    id: shooter-mini-white-russian-4cl
+    name: Mini White Russian 4cl
+    description: Russian Standard, Kahlua, Sahne
+    prices:
+    - price:
+        amount: 6.0
+        currency: EUR
+- type: category
+  title: SCHNÄPSE
+- type: item
+  item:
+    id: schnaepse-hausschnaps-marille-34-2cl
+    name: Hausschnaps Marille 34% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: schnaepse-wiliams-poire-40-2cl
+    name: Wiliams Poire 40% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: schnaepse-wiliams-morand-43-2cl
+    name: Wiliams Morand 43% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 5.4
+        currency: EUR
+- type: category
+  title: VODKA
+- type: item
+  item:
+    id: vodka-belvedere-40-4cl
+    name: Belvedere 40% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 6.5
+        currency: EUR
+- type: item
+  item:
+    id: vodka-absolut-40-2cl
+    name: Absolut 40% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: vodka-grey-goose-40-4cl
+    name: Grey Goose 40% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 6.0
+        currency: EUR
+- type: category
+  title: VERMOUTH
+- type: item
+  item:
+    id: vermouth-martini-blanco-14-5-5cl
+    name: Martini Blanco 14,5% 5cl
+    description: ''
+    prices:
+    - price:
+        amount: 5.0
+        currency: EUR
+- type: item
+  item:
+    id: vermouth-martini-rosso-14-4-5cl
+    name: Martini Rosso 14,4% 5cl
+    description: ''
+    prices:
+    - price:
+        amount: 5.0
+        currency: EUR
+- type: item
+  item:
+    id: vermouth-martini-extra-dry-15-5cl
+    name: Martini Extra Dry 15% 5cl
+    description: ''
+    prices:
+    - price:
+        amount: 5.0
+        currency: EUR
+- type: item
+  item:
+    id: vermouth-noilly-prat-18-5cl
+    name: Noilly Prat 18% 5cl
+    description: ''
+    prices:
+    - price:
+        amount: 5.0
+        currency: EUR
+- type: category
+  title: TEQUILA
+- type: item
+  item:
+    id: tequila-sierra-silver-38-2cl
+    name: Sierra Silver 38% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: tequila-jose-cuervo-especial-38-2cl
+    name: Jose Cuervo Especial 38% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.5
+        currency: EUR
+- type: item
+  item:
+    id: tequila-jose-cuervo-1800-anejo-38-2cl
+    name: Jose Cuervo 1800 Añejo 38% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.5
+        currency: EUR
+- type: item
+  item:
+    id: tequila-silver-patron-38-2cl
+    name: Silver Patrón 38% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 6.0
+        currency: EUR
+- type: item
+  item:
+    id: tequila-anejo-patron-38-2cl
+    name: Añejo Patrón 38% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 6.0
+        currency: EUR
+- type: category
+  title: GRAPPA
+- type: item
+  item:
+    id: grappa-nonino-41-2cl
+    name: Nonino 41% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 3.0
+        currency: EUR
+- type: item
+  item:
+    id: grappa-nonino-chardonnay-41-2cl
+    name: Nonino Chardonnay 41% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 4.9
+        currency: EUR
+- type: item
+  item:
+    id: grappa-nonino-de-prosecco-41-2cl
+    name: Nonino de Prosecco 41% 2cl
+    description: ''
+    prices:
+    - price:
+        amount: 5.4
+        currency: EUR
+- type: category
+  title: RUM
+- type: item
+  item:
+    id: rum-bacardi-rum-oro-37-5-4cl
+    name: Bacardi Rum Oro 37,5% 4cl
+    description: Puerto Rico
+    prices:
+    - price:
+        amount: 6.5
+        currency: EUR
+- type: item
+  item:
+    id: rum-bacardi-rum-8-anos-40-4cl
+    name: Bacardi Rum 8 Años 40% 4cl
+    description: Puerto Rico
+    prices:
+    - price:
+        amount: 8.0
+        currency: EUR
+- type: item
+  item:
+    id: rum-pampero-anejo-especial-40-4cl
+    name: Pampero Añejo Especial 40% 4cl
+    description: Venezuela
+    prices:
+    - price:
+        amount: 6.5
+        currency: EUR
+- type: item
+  item:
+    id: rum-brugal-anejo-38-4cl
+    name: Brugal Añejo 38% 4cl
+    description: Dominikanische Republik
+    prices:
+    - price:
+        amount: 6.5
+        currency: EUR
+- type: item
+  item:
+    id: rum-botucal-reserva-exclusiva-40-4cl
+    name: Botucal Reserva Exclusiva 40% 4cl
+    description: Venezuela
+    prices:
+    - price:
+        amount: 10.0
+        currency: EUR
+- type: item
+  item:
+    id: rum-zacapa-23-40-4cl
+    name: Zacapa 23 40% 4cl
+    description: Guatemala
+    prices:
+    - price:
+        amount: 10.0
+        currency: EUR
+- type: item
+  item:
+    id: rum-santa-teresa-1976-40-4cl
+    name: Santa Teresa 1976 40% 4cl
+    description: Venezuela
+    prices:
+    - price:
+        amount: 10.0
+        currency: EUR
+- type: item
+  item:
+    id: rum-matusalem-gran-reserva-15-anos-40-4cl
+    name: Matusalem Gran Reserva 15 Años 40% 4cl
+    description: Dominikanische Republik
+    prices:
+    - price:
+        amount: 10.0
+        currency: EUR
+- type: item
+  item:
+    id: rum-kraken-38-4cl
+    name: Kraken 38% 4cl
+    description: Trinidad / Tobago
+    prices:
+    - price:
+        amount: 7.0
+        currency: EUR
+- type: item
+  item:
+    id: rum-barcelo-gran-anejo-37-5-4cl
+    name: Barceló Gran Añejo 37,5% 4cl
+    description: Dominikanische Republik
+    prices:
+    - price:
+        amount: 7.0
+        currency: EUR
+- type: item
+  item:
+    id: rum-havana-club-3-anos-40-4cl
+    name: Havana Club 3 Años 40% 4cl
+    description: Cuba
+    prices:
+    - price:
+        amount: 6.5
+        currency: EUR
+- type: item
+  item:
+    id: rum-havana-club-7-anos-40-4cl
+    name: Havana Club 7 Años 40% 4cl
+    description: Cuba
+    prices:
+    - price:
+        amount: 7.5
+        currency: EUR
+- type: item
+  item:
+    id: rum-abuelo-7-anos-40-4cl
+    name: Abuelo 7 Años 40% 4cl
+    description: Panama
+    prices:
+    - price:
+        amount: 7.5
+        currency: EUR
+- type: category
+  title: GIN & TONIC
+- type: item
+  item:
+    id: gin-tonic-finsbury-37-5-4cl
+    name: Finsbury 37,5% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 6.0
+        currency: EUR
+- type: item
+  item:
+    id: gin-tonic-bombay-sapphire-gin-40-4cl
+    name: Bombay Sapphire Gin 40% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 8.0
+        currency: EUR
+- type: item
+  item:
+    id: gin-tonic-tanqueray-dry-gin-47-3-4cl
+    name: Tanqueray Dry Gin 47,3% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 8.0
+        currency: EUR
+- type: item
+  item:
+    id: gin-tonic-tanqueray-10-47-3-4cl
+    name: Tanqueray 10 47,3% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 8.5
+        currency: EUR
+- type: item
+  item:
+    id: gin-tonic-hendrick-s-gin-44-4cl
+    name: Hendrick’s Gin 44% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 8.0
+        currency: EUR
+- type: item
+  item:
+    id: gin-tonic-gin-mare-42-7-4cl
+    name: Gin Mare 42,7% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 10.5
+        currency: EUR
+- type: item
+  item:
+    id: gin-tonic-monkeys-47-4cl
+    name: Monkeys 47% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 11.0
+        currency: EUR
+- type: item
+  item:
+    id: gin-tonic-the-duke-45-4cl
+    name: The Duke 45% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 9.0
+        currency: EUR
+- type: item
+  item:
+    id: gin-tonic-bulldogg-40-4cl
+    name: Bulldogg 40% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 6.0
+        currency: EUR
+- type: item
+  item:
+    id: gin-tonic-ferdinand-s-55-4cl
+    name: Ferdinand’s 55% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 6.0
+        currency: EUR
+- type: item
+  item:
+    id: gin-tonic-brockmans-40-4cl
+    name: Brockmans 40% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 6.0
+        currency: EUR
+- type: item
+  item:
+    id: gin-tonic-cucumberland-hannover-dry-gin-43-4cl
+    name: Cucumberland Hannover Dry Gin 43% 4cl
+    description: ''
+    prices:
+    - price:
+        amount: 7.0
+        currency: EUR
+- type: category
+  title: TONIC
+- type: item
+  item:
+    id: tonic-schweppes-dry-thomas
+    name: Schweppes Dry Thomas
+    description: ''
+    prices:
+    - price:
+        amount: 3.4
+        currency: EUR
+- type: item
+  item:
+    id: tonic-henry
+    name: Henry
+    description: ''
+    prices:
+    - price:
+        amount: 3.6
+        currency: EUR
+- type: item
+  item:
+    id: tonic-fever-tree-mediterranean
+    name: Fever Tree Mediterranean
+    description: ''
+    prices:
+    - price:
+        amount: 3.9
+        currency: EUR
+- type: item
+  item:
+    id: tonic-fever-tree-premium-india
+    name: Fever Tree Premium India
+    description: ''
+    prices:
+    - price:
+        amount: 3.9
+        currency: EUR
+sections:
+- id: liqueure-bitters
+  title: LIQUEURE & BITTERS
+  blocks:
+  - type: item
+    item:
+      id: liqueure-bitters-averna-29-2cl
+      name: Averna 29% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-ramazzotti-30-2cl
+      name: Ramazzotti 30% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-fernet-branca-39-2cl
+      name: Fernet Branca 39% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-fernet-mentha-28-2cl
+      name: Fernet Mentha 28% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-cynar-16-5-2cl
+      name: Cynar 16,5% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-jaegermeister-35-2cl
+      name: Jägermeister 35% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-baileys-17-2cl
+      name: Baileys 17% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-malibu-21-2cl
+      name: Malibu 21% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-amaretto-28-2cl
+      name: Amaretto 28% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-molinari-sambuca-extra-40-2cl
+      name: Molinari Sambuca Extra 40% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.5
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-southern-comfort-35-2cl
+      name: Southern Comfort 35% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-licor-43-31-2cl
+      name: Licor 43 31% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-aperol-7-11-2cl
+      name: Aperol 7 11% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-grand-marnier-40-2cl
+      name: Grand Marnier 40% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.8
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-frangelico-20-2cl
+      name: Frangelico 20% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-hierbas-30-2cl
+      name: Hierbas 30% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-campari-25-2cl
+      name: Campari 25% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: liqueure-bitters-berliner-luft-25-2cl
+      name: Berliner Luft 25% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+- id: shooter
+  title: SHOOTER
+  blocks:
+  - type: item
+    item:
+      id: shooter-b52-4cl
+      name: B52 4cl
+      description: Kahlua, Bailey’s, Old Pascas 73%
+      prices:
+      - price:
+          amount: 7.0
+          currency: EUR
+  - type: item
+    item:
+      id: shooter-bounty-4cl
+      name: Bounty 4cl
+      description: Malibu, Batido de Coco, Bailey’s
+      prices:
+      - price:
+          amount: 7.95
+          currency: EUR
+  - type: item
+    item:
+      id: shooter-orgasmus-4cl
+      name: Orgasmus 4cl
+      description: Sambuca, Bailey’s
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: shooter-mini-black-russian-4cl
+      name: Mini Black Russian 4cl
+      description: Russian Standard, Kahlua
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: shooter-mini-white-russian-4cl
+      name: Mini White Russian 4cl
+      description: Russian Standard, Kahlua, Sahne
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+- id: schnaepse
+  title: SCHNÄPSE
+  blocks:
+  - type: item
+    item:
+      id: schnaepse-hausschnaps-marille-34-2cl
+      name: Hausschnaps Marille 34% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: schnaepse-wiliams-poire-40-2cl
+      name: Wiliams Poire 40% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: schnaepse-wiliams-morand-43-2cl
+      name: Wiliams Morand 43% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 5.4
+          currency: EUR
+- id: vodka
+  title: VODKA
+  blocks:
+  - type: item
+    item:
+      id: vodka-belvedere-40-4cl
+      name: Belvedere 40% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: vodka-absolut-40-2cl
+      name: Absolut 40% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: vodka-grey-goose-40-4cl
+      name: Grey Goose 40% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+- id: vermouth
+  title: VERMOUTH
+  blocks:
+  - type: item
+    item:
+      id: vermouth-martini-blanco-14-5-5cl
+      name: Martini Blanco 14,5% 5cl
+      description: ''
+      prices:
+      - price:
+          amount: 5.0
+          currency: EUR
+  - type: item
+    item:
+      id: vermouth-martini-rosso-14-4-5cl
+      name: Martini Rosso 14,4% 5cl
+      description: ''
+      prices:
+      - price:
+          amount: 5.0
+          currency: EUR
+  - type: item
+    item:
+      id: vermouth-martini-extra-dry-15-5cl
+      name: Martini Extra Dry 15% 5cl
+      description: ''
+      prices:
+      - price:
+          amount: 5.0
+          currency: EUR
+  - type: item
+    item:
+      id: vermouth-noilly-prat-18-5cl
+      name: Noilly Prat 18% 5cl
+      description: ''
+      prices:
+      - price:
+          amount: 5.0
+          currency: EUR
+- id: tequila
+  title: TEQUILA
+  blocks:
+  - type: item
+    item:
+      id: tequila-sierra-silver-38-2cl
+      name: Sierra Silver 38% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: tequila-jose-cuervo-especial-38-2cl
+      name: Jose Cuervo Especial 38% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.5
+          currency: EUR
+  - type: item
+    item:
+      id: tequila-jose-cuervo-1800-anejo-38-2cl
+      name: Jose Cuervo 1800 Añejo 38% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.5
+          currency: EUR
+  - type: item
+    item:
+      id: tequila-silver-patron-38-2cl
+      name: Silver Patrón 38% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: tequila-anejo-patron-38-2cl
+      name: Añejo Patrón 38% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+- id: grappa
+  title: GRAPPA
+  blocks:
+  - type: item
+    item:
+      id: grappa-nonino-41-2cl
+      name: Nonino 41% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 3.0
+          currency: EUR
+  - type: item
+    item:
+      id: grappa-nonino-chardonnay-41-2cl
+      name: Nonino Chardonnay 41% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 4.9
+          currency: EUR
+  - type: item
+    item:
+      id: grappa-nonino-de-prosecco-41-2cl
+      name: Nonino de Prosecco 41% 2cl
+      description: ''
+      prices:
+      - price:
+          amount: 5.4
+          currency: EUR
+- id: rum
+  title: RUM
+  blocks:
+  - type: item
+    item:
+      id: rum-bacardi-rum-oro-37-5-4cl
+      name: Bacardi Rum Oro 37,5% 4cl
+      description: Puerto Rico
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: rum-bacardi-rum-8-anos-40-4cl
+      name: Bacardi Rum 8 Años 40% 4cl
+      description: Puerto Rico
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-pampero-anejo-especial-40-4cl
+      name: Pampero Añejo Especial 40% 4cl
+      description: Venezuela
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: rum-brugal-anejo-38-4cl
+      name: Brugal Añejo 38% 4cl
+      description: Dominikanische Republik
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: rum-botucal-reserva-exclusiva-40-4cl
+      name: Botucal Reserva Exclusiva 40% 4cl
+      description: Venezuela
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-zacapa-23-40-4cl
+      name: Zacapa 23 40% 4cl
+      description: Guatemala
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-santa-teresa-1976-40-4cl
+      name: Santa Teresa 1976 40% 4cl
+      description: Venezuela
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-matusalem-gran-reserva-15-anos-40-4cl
+      name: Matusalem Gran Reserva 15 Años 40% 4cl
+      description: Dominikanische Republik
+      prices:
+      - price:
+          amount: 10.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-kraken-38-4cl
+      name: Kraken 38% 4cl
+      description: Trinidad / Tobago
+      prices:
+      - price:
+          amount: 7.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-barcelo-gran-anejo-37-5-4cl
+      name: Barceló Gran Añejo 37,5% 4cl
+      description: Dominikanische Republik
+      prices:
+      - price:
+          amount: 7.0
+          currency: EUR
+  - type: item
+    item:
+      id: rum-havana-club-3-anos-40-4cl
+      name: Havana Club 3 Años 40% 4cl
+      description: Cuba
+      prices:
+      - price:
+          amount: 6.5
+          currency: EUR
+  - type: item
+    item:
+      id: rum-havana-club-7-anos-40-4cl
+      name: Havana Club 7 Años 40% 4cl
+      description: Cuba
+      prices:
+      - price:
+          amount: 7.5
+          currency: EUR
+  - type: item
+    item:
+      id: rum-abuelo-7-anos-40-4cl
+      name: Abuelo 7 Años 40% 4cl
+      description: Panama
+      prices:
+      - price:
+          amount: 7.5
+          currency: EUR
+- id: gin-tonic
+  title: GIN & TONIC
+  blocks:
+  - type: item
+    item:
+      id: gin-tonic-finsbury-37-5-4cl
+      name: Finsbury 37,5% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: gin-tonic-bombay-sapphire-gin-40-4cl
+      name: Bombay Sapphire Gin 40% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+  - type: item
+    item:
+      id: gin-tonic-tanqueray-dry-gin-47-3-4cl
+      name: Tanqueray Dry Gin 47,3% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+  - type: item
+    item:
+      id: gin-tonic-tanqueray-10-47-3-4cl
+      name: Tanqueray 10 47,3% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 8.5
+          currency: EUR
+  - type: item
+    item:
+      id: gin-tonic-hendrick-s-gin-44-4cl
+      name: Hendrick’s Gin 44% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 8.0
+          currency: EUR
+  - type: item
+    item:
+      id: gin-tonic-gin-mare-42-7-4cl
+      name: Gin Mare 42,7% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 10.5
+          currency: EUR
+  - type: item
+    item:
+      id: gin-tonic-monkeys-47-4cl
+      name: Monkeys 47% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 11.0
+          currency: EUR
+  - type: item
+    item:
+      id: gin-tonic-the-duke-45-4cl
+      name: The Duke 45% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 9.0
+          currency: EUR
+  - type: item
+    item:
+      id: gin-tonic-bulldogg-40-4cl
+      name: Bulldogg 40% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: gin-tonic-ferdinand-s-55-4cl
+      name: Ferdinand’s 55% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: gin-tonic-brockmans-40-4cl
+      name: Brockmans 40% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 6.0
+          currency: EUR
+  - type: item
+    item:
+      id: gin-tonic-cucumberland-hannover-dry-gin-43-4cl
+      name: Cucumberland Hannover Dry Gin 43% 4cl
+      description: ''
+      prices:
+      - price:
+          amount: 7.0
+          currency: EUR
+- id: tonic
+  title: TONIC
+  blocks:
+  - type: item
+    item:
+      id: tonic-schweppes-dry-thomas
+      name: Schweppes Dry Thomas
+      description: ''
+      prices:
+      - price:
+          amount: 3.4
+          currency: EUR
+  - type: item
+    item:
+      id: tonic-henry
+      name: Henry
+      description: ''
+      prices:
+      - price:
+          amount: 3.6
+          currency: EUR
+  - type: item
+    item:
+      id: tonic-fever-tree-mediterranean
+      name: Fever Tree Mediterranean
+      description: ''
+      prices:
+      - price:
+          amount: 3.9
+          currency: EUR
+  - type: item
+    item:
+      id: tonic-fever-tree-premium-india
+      name: Fever Tree Premium India
+      description: ''
+      prices:
+      - price:
+          amount: 3.9
+          currency: EUR
