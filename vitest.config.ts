@@ -1,12 +1,32 @@
 // Vitest setup for Vue/Nuxt unit tests
 import { defineConfig } from 'vitest/config'
+import { defineVitestProject } from '@nuxt/test-utils/config'
 
 export default defineConfig({
   test: {
-    globals: true,
-    environment: 'jsdom',
-    include: ['tests/unit/**/*.spec.{js,ts}'],
-    setupFiles: ['tests/unit/setup.ts'], // create when you add testing-library, etc.
-    css: true
+    globals: true, // saves importing describe/it/expect on test files
+    projects: [
+      {
+        test: {
+          name: 'unit',
+          environment: 'happy-dom',
+          css: true,
+          include: [
+            'test/unit/**/*.{test,spec}.ts',
+            'test/components/**/*.{test,spec}.ts',
+            'test/composables/**/*.{test,spec}.ts',
+            'test/tools/**/*.{test,spec}.ts',
+          ]
+        }
+      },
+      await defineVitestProject({
+        domEnvironment: 'jsdom',
+        test: {
+          name: 'nuxt',
+          environment: 'nuxt',
+          include: ['test/nuxt/**/*.{test,spec}.ts'],
+        }
+      }),
+    ]
   }
 })
