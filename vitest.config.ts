@@ -1,12 +1,21 @@
 // Vitest setup for Vue/Nuxt unit tests
 import { defineConfig } from 'vitest/config'
 import { defineVitestProject } from '@nuxt/test-utils/config'
+import { fileURLToPath, URL } from 'node:url'
+
+const r = (p: string) => fileURLToPath(new URL(p, import.meta.url))
 
 export default defineConfig({
   test: {
     globals: true, // saves importing describe/it/expect on test files
     projects: [
       {
+        resolve: {
+          alias: [
+            { find: /^~\//, replacement: r('./') + '/' },
+            { find: /^@\//, replacement: r('./') + '/' },
+          ],
+        },
         test: {
           name: 'unit',
           environment: 'happy-dom',
@@ -16,6 +25,7 @@ export default defineConfig({
             'test/components/**/*.{test,spec}.ts',
             'test/composables/**/*.{test,spec}.ts',
             'test/tools/**/*.{test,spec}.ts',
+            'test/app/**/*.{test,spec}.ts',
           ]
         }
       },
@@ -30,3 +40,4 @@ export default defineConfig({
     ]
   }
 })
+
