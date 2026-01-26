@@ -52,14 +52,14 @@ describe('useOpenStatus', () => {
 
     const hours = {} as unknown as HoursMap
 
-    const Comp = defineComponent({
+    const Component = defineComponent({
       setup() {
         const status = useOpenStatus(hours, { tz: 'Europe/Berlin', soonThresholdMin: 15, refreshMs: 999999 })
         return () => h('div', status.value)
       },
     })
 
-    mount(Comp)
+    mount(Component)
 
     const [, , calledTz, calledSoon] = (formatStatusDE as any).mock.calls[0]
     expect({ tz: calledTz, soonThresholdMin: calledSoon }).toEqual({
@@ -78,14 +78,14 @@ describe('useOpenStatus', () => {
 
     const hours = {} as unknown as HoursMap
 
-    const Comp = defineComponent({
+    const Component = defineComponent({
       setup() {
         const status = useOpenStatus(hours, { refreshMs: 60_000 })
         return () => h('div', status.value)
       },
     })
 
-    const wrapper = mount(Comp)
+    const wrapper = mount(Component)
 
     const before = wrapper.text()
     expect(before).toContain('2026-01-21T10:00:00.000Z')

@@ -57,6 +57,8 @@ export const dayKeyFor = (d: Date, tz?: string): Weekday => {
   return ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'][js] as Weekday
 }
 
+export const weekdayKeyFromDate = (date: Date): Weekday => dayKeyFor(date)
+
 export const minutesSinceMidnight = (d: Date, tz?: string) => {
   const dd = inTz(d, tz)
   return dd.getHours() * 60 + dd.getMinutes()
@@ -66,6 +68,7 @@ export const rangesForDay = (hours: HoursMap, day: Weekday): TimeRange[] => {
   const r = parseRange(hours[day])
   return r ? [r] : []
 }
+
 
 // ----- state computation -----
 export const isOpenNow = (

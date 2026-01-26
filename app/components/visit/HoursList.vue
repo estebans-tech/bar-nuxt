@@ -1,5 +1,6 @@
 <script setup lang="ts">
 // Simple week list with current day highlight
+import { weekdayKeyFromDate } from '~/utils/hours'
 import type { HoursMap, Weekday } from '~/types/visit'
 
 withDefaults(defineProps<{
@@ -7,7 +8,7 @@ withDefaults(defineProps<{
   title?: string
   closedLabel?: string
 }>(), {
-  closedLabel: '-'
+  closedLabel: '-',
 })
 
 
@@ -22,12 +23,8 @@ const DAYS: { key: Weekday, label: string }[] = [
 ]
 
 // map JS day (0=Sun) to our keys
-const todayKey = computed<Weekday>(() => {
-  const day = new Date().getDay() // 0=Sun ... 6=Sat
-  return ['sun','mon','tue','wed','thu','fri','sat'][day] as Weekday
-})
+const todayKey = computed<Weekday>(() => weekdayKeyFromDate(new Date()))
 </script>
-
 <template>
   <h3 v-if="title" class="text-white font-medium mb-2">
     {{ title }}
