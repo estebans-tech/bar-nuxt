@@ -6,7 +6,7 @@ import {
   cardHoverLift,
   cardBlur,
   cardClass,
-} from '~/app/utils/card'
+} from '~/utils/card'
 
 describe('card utils', () => {
   it('exposes expected variants', () => {

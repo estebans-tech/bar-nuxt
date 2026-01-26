@@ -11,10 +11,10 @@ export default defineConfig({
     projects: [
       {
         resolve: {
-          alias: [
-            { find: /^~\//, replacement: r('./') + '/' },
-            { find: /^@\//, replacement: r('./') + '/' },
-          ],
+            alias: {
+              '~': r('./app'),
+              '@': r('./app'),
+           },
         },
         test: {
           name: 'unit',
