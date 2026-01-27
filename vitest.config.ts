@@ -13,7 +13,7 @@ export default defineConfig({
         resolve: {
             alias: {
               '~': r('./app'),
-              '@': r('./app'),
+              '@': r('./'),
            },
         },
         test: {
