@@ -1,0 +1,32 @@
+stages:
+  - test
+
+test:
+  stage: test
+  image: node:20
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == "main"
+
+  cache:
+    key:
+      files:
+        - yarn.lock
+    paths:
+      # Yarn Berry zero-install / cache i repot (om ni använder det)
+      - .yarn/cache/
+      - .yarn/unplugged/
+      - .yarn/install-state.gz
+      # Om ni kör PnP:
+      - .pnp.cjs
+
+  before_script:
+    - corepack enable
+    # Om du har "packageManager": "yarn@x.y.z" i package.json räcker corepack enable.
+    # Annars kan du pinna:
+    # - corepack prepare yarn@stable --activate
+
+  script:
+    - yarn install --immutable
+    - yarn test:ci
+
