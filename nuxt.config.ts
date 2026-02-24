@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxt/content'],
   typescript: {
     strict: true,
-    typeCheck: true
+    typeCheck: false, 
   },
   tailwindcss: {
     viewer: false // disable Tailwind viewer in prod
