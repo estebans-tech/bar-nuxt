@@ -7,6 +7,10 @@ const { data: model } = await useAsyncData("menu-getraenke", () =>
     .where("stem", "=", "menus/karte/getraenke")
     .first()
 )
+
+definePageMeta({
+  layout: 'menus'
+})
 </script>
 
 <template>
