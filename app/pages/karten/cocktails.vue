@@ -22,6 +22,10 @@ const { data: model } = await useAsyncData("menu-cocktails", () =>
     .where("stem", "=", "menus/karte/cocktails")
     .first()
 )
+
+definePageMeta({
+  layout: 'menus'
+})
 </script>
 
 <template>

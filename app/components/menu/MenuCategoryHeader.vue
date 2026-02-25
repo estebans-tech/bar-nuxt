@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import { slugify } from "~/utils/slugify"
 import type { MultilineCopy } from "~/types/menu"
 
-defineProps<{
+const props = defineProps<{
   title: string
   subtitle?: MultilineCopy
 }>()
@@ -10,10 +11,11 @@ const asLines = (text?: MultilineCopy) => {
   if (!text) return []
   return Array.isArray(text) ? text : [text]
 }
+const id = computed(() => slugify(props.title))
 </script>
 
 <template>
-  <div>
+  <div :id="id "class="scroll-mt-6">
     <h2 class="text-[#d8c08a] text-xl md:text-2xl font-semibold leading-tight tracking-tight">
       {{ title }}
     </h2>
