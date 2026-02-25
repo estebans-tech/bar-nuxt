@@ -41,7 +41,7 @@ const blockKey = (block: MenuBlock, index: number) => {
       />
 
       <MenuItemRow
-        v-else-if="block.type='item'"
+        v-else-if="block.type === 'item'"
         :item="block.item"
         :locale="locale"
         :default-currency="defaultCurrency"
