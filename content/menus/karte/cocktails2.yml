@@ -2,6 +2,12 @@ locale: de-DE
 defaultCurrency: EUR
 background:
   color: deepOlive
+  motifs:
+    - motif: hibiscus
+      placement: top-right
+    - motif: leaf
+      placement: top-left
+
 blocks:
 - type: category
   title: COLADAS
