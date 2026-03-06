@@ -39,25 +39,11 @@ onMounted(() => {
     <MenuBackgroundDecor :motifs="model.background?.motifs" />
     <div class="relative mx-auto max-w-6xl px-8 py-10">
       <MenuHeader :title="model.pageTitle" v-if="model.pageTitle" />
-      <MenuQuickNav :categories="categories" />
       <MenuFlow
         :blocks="model.blocks"
         :locale="model.locale"
         :default-currency="model.defaultCurrency"
       />
-    <Transition name="fade">
-<button
-  v-if="showBackToTop"
-  @click="sectionRef?.scrollIntoView({ behavior: 'smooth' })"
-  class="fixed bottom-6 right-6 z-50 bg-white/20 hover:bg-white/30 text-white rounded-full w-10 h-10 flex items-center justify-center transition-colors"
->
-  ↑
-</button>
-    </Transition>
-    </div>
+   </div>
   </section>
 </template>
-<style scoped>
-.fade-enter-active, .fade-leave-active { transition: opacity 0.3s; }
-.fade-enter-from, .fade-leave-to { opacity: 0; }
-</style>

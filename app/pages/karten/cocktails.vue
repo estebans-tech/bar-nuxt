@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import SiteFooter from '~/components/footer/SiteFooter.vue'
+import StickyCategoryNav from '~/components/menu/StickyCategoryNav.vue'
+import { useMenuCategories } from '~/composables/useMenuCategories'
 import type { MenuPageModel } from "~/types/menu"
 
 const { data: model4 } = await useAsyncData("menu-cocktails-4", () =>
@@ -23,12 +25,25 @@ const { data: model } = await useAsyncData("menu-cocktails", () =>
     .first()
 )
 
+const menuModels = computed<(MenuPageModel | null | undefined)[]>(() => [
+  model.value,
+  model2.value,
+  model3.value,
+  model4.value,
+])
+
+const { categories } = useMenuCategories(menuModels)
+
 definePageMeta({
   layout: 'menus'
 })
 </script>
 
 <template>
+  <StickyCategoryNav
+    :categories="categories"
+    label="Kategorie"
+  />
   <MenuPage v-if="model" :model="model as unknown as MenuPageModel" />
   <MenuPage v-if="model2" :model="model2 as unknown as MenuPageModel" />
   <MenuPage v-if="model3" :model="model3 as unknown as MenuPageModel" />
