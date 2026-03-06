@@ -6,6 +6,7 @@ const props = defineProps<{
   categories: CategoryNavItem[]
   label?: string
   closeLabel?: string
+  footerSelector?: string
 }>()
 
 const {
@@ -14,15 +15,44 @@ const {
   toggle: toggleMenu,
 } = useOverlay()
 
+const isFooterVisible = ref(false)
+
 const onSelectCategory = () => {
   closeMenu()
 }
 
+onMounted(() => {
+  if (!import.meta.client || !props.footerSelector) return
+
+  const footer = document.querySelector(props.footerSelector)
+  if (!footer) return
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      isFooterVisible.value = entry.isIntersecting
+      if (entry.isIntersecting) {
+        closeMenu()
+      }
+    },
+    {
+      threshold: 0.05,
+    }
+  )
+
+  observer.observe(footer)
+
+  onBeforeUnmount(() => {
+    observer.disconnect()
+  })
+})
 </script>
 
 <template>
   <Teleport to="body">
-    <div class="fixed bottom-5 right-5 z-40">
+    <div
+      v-if="!isFooterVisible"
+      class="fixed bottom-5 right-5 z-40"
+    >
       <button
         type="button"
         class="flex items-center gap-2 rounded-full border border-black/10 bg-white px-4 py-3 shadow-lg transition hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-black/40"
@@ -127,5 +157,5 @@ const onSelectCategory = () => {
         </div>
       </div>
     </div>
- </Teleport>
+  </Teleport>
 </template>

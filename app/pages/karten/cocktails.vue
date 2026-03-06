@@ -43,10 +43,11 @@ definePageMeta({
   <StickyCategoryNav
     :categories="categories"
     label="Kategorie"
+    footer-selector="#site-footer"
   />
   <MenuPage v-if="model" :model="model as unknown as MenuPageModel" />
   <MenuPage v-if="model2" :model="model2 as unknown as MenuPageModel" />
   <MenuPage v-if="model3" :model="model3 as unknown as MenuPageModel" />
   <MenuPage v-if="model4" :model="model4 as unknown as MenuPageModel" />
-  <SiteFooter />
+  <SiteFooter id="site-footer" />
 </template>
