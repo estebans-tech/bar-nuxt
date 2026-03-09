@@ -106,110 +106,121 @@ onBeforeUnmount(() => {
 })
 </script>
 <template>
-  <div>
-    <button
-      v-if="!open"
-      type="button"
-      class="fixed bottom-6 right-6 z-50 rounded-full bg-yellow-500 px-5 py-3 text-base font-semibold text-black shadow-lg transition hover:scale-[1.02]"
-      @click="open = true"
-    >
-      {{ labels.open }}
-    </button>
+    <div>
+        <button
+          v-if="!open"
+          type="button"
+          class="fixed bottom-4 left-4 right-4 z-50 rounded-full bg-yellow-500 px-5 py-3 text-base font-semibold text-black shadow-lg transition hover:scale-[1.02] sm:bottom-6 sm:left-auto sm:right-6 sm:w-auto"
+          @click="open = true"
+        >
+          {{ labels.open }}
+        </button>
 
-    <div
-      v-if="open"
-      class="fixed inset-0 z-50"
-      aria-modal="true"
-      role="dialog"
-    >
-      <button
-        type="button"
-        class="absolute inset-0 h-full w-full bg-black/60 backdrop-blur-[2px]"
-        aria-label="Close reservation dialog"
-        @click="closeReservation"
-      />
-
-      <div
-        class="absolute bottom-24 right-6 w-[440px] max-w-[calc(100vw-2rem)] rounded-[24px] border border-white/10 bg-black p-6 text-white shadow-2xl"
-        @click.stop
-      >
-        <h2 class="mb-5 text-2xl font-bold">
-          {{ labels.title }}
-        </h2>
-
-        <div class="space-y-4">
-          <input
-            v-model="form.p_reservation_date"
-            type="date"
-            class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400"
-            :placeholder="labels.date"
-          />
-
-          <input
-            v-model="form.p_reservation_time"
-            type="time"
-            :min="timeConfig.min"
-            :max="timeConfig.max"
-            step="900"
-            :disabled="isClosedDate"
-            class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400 disabled:opacity-50"
-            :placeholder="labels.time"
-          />
-
-          <input
-            v-model.number="form.p_party_size"
-            type="number"
-            min="1"
-            class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400"
-            :placeholder="labels.partySize"
-          />
-
-          <input
-            v-model="form.p_guest_name"
-            type="text"
-            class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400"
-            :placeholder="labels.name"
-          />
-
-          <input
-            v-model="form.p_guest_phone"
-            type="text"
-            class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400"
-            :placeholder="labels.phone"
-          />
-
-          <input
-            v-model="form.p_guest_email"
-            type="email"
-            class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400"
-            :placeholder="labels.email"
-          />
-
+        <div
+          v-if="open"
+          class="fixed inset-0 z-50"
+          aria-modal="true"
+          role="dialog"
+        >
           <button
             type="button"
-            class="w-full rounded-2xl bg-yellow-500 px-5 py-4 text-lg font-semibold text-black disabled:opacity-60"
-            :disabled="loading || isClosedDate"
-            @click="submitReservation"
-          >
-            {{ loading ? labels.submitting : labels.submit }}
-          </button>
+            class="absolute inset-0 h-full w-full bg-black/60 backdrop-blur-[2px]"
+            aria-label="Close reservation dialog"
+            @click="closeReservation"
+          />
 
-          <p
-            v-if="successMessage"
-            class="text-base text-green-400"
+          <div
+            class="absolute inset-x-3 bottom-3 top-3 overflow-y-auto rounded-[24px] border border-white/10 bg-black p-5 text-white shadow-2xl sm:inset-x-auto sm:top-auto sm:bottom-24 sm:right-6 sm:w-[440px] sm:max-w-[calc(100vw-2rem)] sm:p-6"
+            @click.stop
           >
-            {{ successMessage }}
-          </p>
+            <div class="mb-5 flex items-start justify-between gap-4">
+              <h2 class="text-2xl font-bold sm:text-2xl">
+                {{ labels.title }}
+              </h2>
 
-          <p
-            v-if="errorMessage"
-            class="text-base text-red-400"
-          >
-            {{ errorMessage }}
-          </p>
+              <button
+                type="button"
+                class="shrink-0 rounded-full border border-white/10 px-3 py-2 text-sm text-white/80 transition hover:bg-white/5 hover:text-white"
+                aria-label="Close reservation dialog"
+                @click="closeReservation"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div class="space-y-4">
+              <input
+                v-model="form.p_reservation_date"
+                type="date"
+                class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400"
+                :placeholder="labels.date"
+              />
+
+              <input
+                v-model="form.p_reservation_time"
+                type="time"
+                :min="timeConfig.min"
+                :max="timeConfig.max"
+                step="900"
+                :disabled="isClosedDate"
+                class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400 disabled:opacity-50"
+                :placeholder="labels.time"
+              />
+
+              <input
+                v-model.number="form.p_party_size"
+                type="number"
+                min="1"
+                class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400"
+                :placeholder="labels.partySize"
+              />
+
+              <input
+                v-model="form.p_guest_name"
+                type="text"
+                class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400"
+                :placeholder="labels.name"
+              />
+
+              <input
+                v-model="form.p_guest_phone"
+                type="text"
+                class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400"
+                :placeholder="labels.phone"
+              />
+
+              <input
+                v-model="form.p_guest_email"
+                type="email"
+                class="w-full rounded-2xl bg-zinc-900 px-5 py-4 text-lg outline-none placeholder:text-zinc-400"
+                :placeholder="labels.email"
+              />
+
+              <button
+                type="button"
+                class="w-full rounded-2xl bg-yellow-500 px-5 py-4 text-lg font-semibold text-black disabled:opacity-60"
+                :disabled="loading || isClosedDate"
+                @click="submitReservation"
+              >
+                {{ loading ? labels.submitting : labels.submit }}
+              </button>
+
+              <p
+                v-if="successMessage"
+                class="text-base text-green-400"
+              >
+                {{ successMessage }}
+              </p>
+
+              <p
+                v-if="errorMessage"
+                class="text-base text-red-400"
+              >
+                {{ errorMessage }}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 </template>
 
