@@ -6,6 +6,7 @@ import VibeGallerySection from '~/components/gallery/VibeGallerySection.vue'
 import SiteFooter from '~/components/footer/SiteFooter.vue'
 import PdfLinks from '~/components/menu/PdfLinks.vue'
 import OffersSection from '~/components/offer/OffersSection.vue'
+import { ReservationBubble } from '~/modules/reservations'
 
 import { SIGNATURE_COCKTAILS } from '~/constants/cocktails'
 import { PHONE_HREF, MAPS_HREF } from '~/constants/links'
@@ -52,5 +53,26 @@ const hero = {
     <VibeGallerySection />
     <VisitSection id="visit" />
   </main>
+    <ReservationBubble
+      :labels="{
+        title: 'Tisch reservieren',
+        date: 'Datum',
+        time: 'Uhrzeit',
+        partySize: 'Personen',
+        name: 'Name',
+        phone: 'Telefon',
+        email: 'E-Mail',
+        submit: 'Reservierung senden',
+        submitting: 'Wird gesendet...',
+        open: 'Tisch reservieren',
+      }"
+      :messages="{
+        RESERVATION_CREATED: 'Reservierung gesendet.',
+        NO_AVAILABILITY: 'Für diese Uhrzeit ist leider nichts frei.',
+        VALIDATION_ERROR: 'Bitte fülle alle Pflichtfelder aus.',
+        REQUEST_FAILED: 'Reservierungsanfrage fehlgeschlagen.',
+        UNKNOWN_ERROR: 'Etwas ist schiefgelaufen.',
+      }"
+    />
   <SiteFooter />
 </template>
