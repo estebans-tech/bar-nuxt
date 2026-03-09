@@ -87,7 +87,23 @@ watch(
   },
 )
 
+function closeReservation(): void {
+  open.value = false
+}
 
+function onKeydown(event: KeyboardEvent): void {
+  if (event.key === 'Escape' && open.value) {
+    closeReservation()
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('keydown', onKeydown)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', onKeydown)
+})
 </script>
 <template>
   <div>
@@ -110,7 +126,7 @@ watch(
         type="button"
         class="absolute inset-0 h-full w-full bg-black/60 backdrop-blur-[2px]"
         aria-label="Close reservation dialog"
-        @click="open = false"
+        @click="closeReservation"
       />
 
       <div
