@@ -59,6 +59,8 @@ export default defineNuxtConfig({
     buildAssetsDir: '/_nuxt/',
   },
   runtimeConfig: {
+    n8nWebhookUrl: process.env.N8N_WEBHOOK_URL,
+    n8nWebhookKey: process.env.N8N_WEBHOOK_KEY,
     public: {
       // add safe public runtime envs here when needed
     }
